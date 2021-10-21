@@ -18,6 +18,6 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Title of the Memoir</a></li>
       after: |
-        <li><a href="https://github.com/GitHubID/Repository" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/LafontRapnouilTristan/EcoPhyCofoG_guide" target="blank">Published with bookdown</a></li>
     download: "pdf"
 bookdown::word_document2: default
