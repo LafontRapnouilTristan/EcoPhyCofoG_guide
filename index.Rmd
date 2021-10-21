@@ -84,7 +84,7 @@ backcover:
     abstract: |
       English abstract, on the last page.
   
-      This is a bookdown template based on LaTeX memoir class.
+      This is the user's guide of EcoFoG's ecophysiology lab
     keywords:
       - Keyword in English
       - As a list
