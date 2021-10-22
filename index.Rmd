@@ -23,7 +23,7 @@ maintitlepage:
     An explanatory sentence.
     Leave an empty line for line breaks.
 # ... or a PDF cover
-pdftitlepage: images/cover.pdf
+pdftitlepage: images/mariono.pdf
 # Language
 lang: en-US
 otherlangs: [fr-FR,it]
