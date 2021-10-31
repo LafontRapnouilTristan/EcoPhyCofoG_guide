@@ -2,8 +2,8 @@ fig:bigroots
 fig:bromeroot
 fig:scantransp
 fig:bromescan
-fig:stencil-1
-fig:stencil-2
+fig:scanstencil-1
+fig:scanstencil-2
 intro
 handbook-architecture
 morpho-anatomy
