@@ -1,0 +1,328 @@
+--- 
+title: "User's guide for Ecofog's Ecophysiology Lab"
+author: "Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil"
+date: "`r Sys.Date()`"
+url: https://GitHubID.github.io/Repository/
+github-repo: GitHubID/Repository
+description: "Bookdown template based on LaTeX memoir class"
+cover-image: "images/logo.png"
+# Title page...
+maintitlepage:
+  epigraph: |
+    This document is reproducible thanks to:
+    \begin{itemize}
+      \item \LaTeX and its class memoir (\url{http://www.ctan.org/pkg/memoir}).
+      \item R (\url{http://www.r-project.org/}) and RStudio (\url{http://www.rstudio.com/})
+      \item bookdown (\url{http://bookdown.org/}) and memoiR (\url{https://ericmarcon.github.io/memoiR/})
+    \end{itemize}
+  credits: |
+    Name of the owner of the logo
+    
+    \url{http://www.company.com}
+    
+    An explanatory sentence.
+    Leave an empty line for line breaks.
+# ... or a PDF cover
+pdftitlepage: images/mariono.pdf
+# Language
+lang: en-US
+otherlangs: [fr-FR,it]
+# LaTeX
+documentclass: memoir
+classoption:
+  - extrafontsizes
+  - onecolumn
+  - openright
+# Paper, font
+papersize: A4
+fontsize: 12pt
+# Fonts installed by a package. LaTeX tex-gyre package must be installed for:
+# mainfont: texgyretermes          # Times New Roman for the text
+mainfontoptions:
+  - Extension=.otf
+  - UprightFont=*-regular
+  - BoldFont=*-bold
+  - BoldItalicFont=*-bolditalic
+# mathfont: texgyretermes-math.otf # Times New Roman for equations
+# memoir Style
+MemoirChapStyle: daleif1           # or companion with large margins
+MemoirPageStyle: Ruled             # or companion with large margins
+# Margins
+largemargins: false                # or true for large margins
+smallmargin: 1.5in                 # outer margin (small).
+largemargin: 3in                   # outer margin (large)
+marginnote:  1.8in                 # note width in large margin
+spinemargin: 1.5in                 # spine margin. Reduce to 1.2 with large margins.
+uppermargin: 1.5in                 # upper margin
+lowermargin: 1in                   # lower margin
+# Table of contents
+toc-depth: 2
+# Section numbering
+secnum-depth: section
+# List of tables / Figures
+lot: false
+lof: true
+# Bibliography
+bibliography: references.bib
+biblatexoptions:
+  - backend=biber
+  - style=authoryear-ibid  # or verbose-inote with large margins
+# - pageref=true           # uncomment for verbose-inotes style
+  - isbn=false
+  - backref=true
+  - giveninits=true
+  - uniquename=init
+  - maxcitenames=2
+  - maxbibnames=150
+  - sorting=nyt
+  - sortcites=false
+# Chapter summary text
+chaptersummary: In a Nutshell
+# Back Cover
+backcover:
+  - language: english
+    abstract: |
+      English abstract, on the last page.
+  
+      This is the user's guide of EcoFoG's ecophysiology lab
+    keywords:
+      - Keyword in English
+      - As a list
+    abstractlabel: Abstract
+    keywordlabel: Keywords
+backcoverfontsize: normalsize
+# Figure cropping may be set to no if ghostscript is not installed
+fig_crop: true
+# Do not modify
+site: bookdown::bookdown_site
+always_allow_html: true
+graphics: true
+link-citations: true
+colorlinks: true
+---
+
+# Title page...
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {#intro}
+
+
+Plant functional traits are the features (morphological, physiological, phenological) that represent ecological strategies and determine *describe?* how plants respond to environmental factors, affect other trophic levels and influence ecosystem properties. Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits. The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
+
+This handbook presents the different protocols used in the ecophysio lab. We therefore suggest the methodological principles for a more open and transparent science. This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and the associated R-scripts to upload/clean the raw data. 
+
+<!--chapter:end:01-introduction.Rmd-->
+
+# Handbook architecture
+
+This handbook is written for operational ends. As such, it is not a review or scientific paper thoroughly presenting each traits but rather a list of protocols associated with routinely measured traits in this lab.
+
+Each chapter of this book correspond to one trait and associated measurement process.
+
+
+## Morpho-anatomy
+
+## Hydraulics
+
+## Fluorescence
+ 
+## Fluxes and gaz exchange
+ 
+## Microbial
+
+## Greenhouse setups and tips
+
+## Machine info
+
+<!--chapter:end:02-architecture.Rmd-->
+
+
+
+## Root Morphology
+### Image Acquisition
+#### Format
+#### Scanner
+#### Scan process
+##### Flat scan
+##### Transparent
+### Image processing
+### WinRhizo
+#### Installation
+#### Startup
+#### First analysis
+#### Calibration
+#### Batch
+#### Pixel classification
+#### Output
+
+<!--chapter:end:03-morpho-anatomy.Rmd-->
+
+---
+title: "04-hydraulics"
+author: "Marion Boisseaux"
+date: "31/10/2021"
+output: html_document
+---
+
+# Leaf turgor loss point, $\pi_{tlp}$
+
+We assessed the leaf turgor loss point, $\pi_{tlp}$ in MPa, from a previously established relationship with the osmotic potential at full hydration, $\pi_{osm}$ in MPa. $\pi_{osm}$ is linked to the equilibrium solute concentration value $C_0$ (in mmol.kg^{-1}) directly measured with a vapor pressure osmometer (Vapro 5600, Wescor, Logan, UT). This is referred as the *osmometer method* (Bartlett et al. 2012a; Maréchaux et al. 2016).
+
+## Materials
+
+
+* Vapor pressure osmometer (Vapro 5520, Wescor, Logan, UT)
+* Vapro software (Vapro Lab Report)
+* Fridge
+* Liquid Nitrogen
+* Ziplock bag  
+* Paper towel 
+* Distilled water
+* Metal tea ball
+* Tin foil
+* Needle  
+* Liquid nitrogen gloves + goggles
+* Liquid nitrogen contenant
+* 2 Tweezers
+* Cork borer
+
+## Methods
+
+### Installing Vapro for measurements
+
+* Turn on Vapro the day before for the thermocouple's stability
+* Test Water Quality *cf Vapro_cheatsheet*
+* Clean 
+* Calibration *cf Vapro_cheatsheet*
+* Control tests *cf Vapro_cheatsheet*
+* Verify temperature
+* Always have the black diamond at the center of the display
+
+Used daily:
+* clean beforehand
+* select automatic mode (10 runs)
+
+### Sampling on the field
+
+* Collect at least 3 healthy mature leaves on branch
+* Place them in sample ziplock bag with: 
+  + wet paper towel
+  + Exhale in bag to saturate in CO~2~
+  + Annotate bag with sample information
+* Zip bag and stock in cooler
+
+### Lab measurements
+
+#### Field day
+* Recut branch under water
+* Replace in ziplock bag with wet paper towel 
+* Put 24h in fridge to hydrate overnight
+
+#### N+1 Field day
+
+Vapro: 
+ 
+* check distilled water in vapro reservoir
+* clean
+* select automatic mode (10 runs)
+* make sure vapro software is on 
+
+Sample measurement:
+
+* Sample from a leaf a 5 mm disc with a cork borer: *avoid 1^st^ and 2^nd^ order veins to avoid apoplastic dilution that would lead to less negative osmometer values*
+* Wrap disc in tin foil
+* Immerse in liquid nitrogen for at least 2 min using metal tea ball
+* Puncture 10-15 times with needle 
+* Place in vapro chamber
+
+In total, disc are exposed to air for less than 40 seconds for all the steps. 
+
+* Record value C~0~ when the difference between consecutive 2-min measurements fell below strictly 5 mmol.kg^-1^ after at least three runs.
+
+* If error! or Nr_Run > 10 : 
++ try a 2^nd^ cycle with same leaf
++ try a 3^rd^ cycle with another leaf 
++ otherwise record *NA*
+
+* Beware of the stuck leaf inside the vapro! If so *cf Vapro_cheatsheet*
+
+
+#### End measurements
+
+Clean Vapro
+
+For more information on the vapro machine, please refer to the *vapro cheatsheet* in the machine category. 
+
+
+<!--chapter:end:04-hydraulics.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:05-fluorescence.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:06-fluxes_and_gaz_exchange.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:07-microbial.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:08-greenhouse_tips.Rmd-->
+
+---
+title: "09-machine"
+author: "Marion Boisseaux"
+date: "31/10/2021"
+output: html_document
+---
+
+
+# Vapor pressure osmometer - Vapro 5520 cheatsheet
+
+* [**$\pi_{TLP}$** vapro cheatsheet](./document/machine/Vapro 5520/Vapro_cheatsheet.pdf)
+
+
+
+<!--chapter:end:09-machine.Rmd-->
+
+`r if (knitr:::is_html_output()) '# References {-}'`
+
+<!--chapter:end:99-references.Rmd-->
+
+---
+title: "Memoir Template"
+output: html_document
+---
+
+This template is based on _Bookdown_ and the _Memoir_ LaTeX class to allow writing a book, a report, a PhD thesis, etc. in _R Markdown_.
+
+The main file is _index.Rmd_ which contains the description of the book in its header. All other _.Rmd_ files in the folder contain a chapter. 
+The _references.bib_ file contains the bibliography.
+
+This file will have to be deleted, as well as _81-getting_started.Rmd_ and _82-syntax.Rmd_: they have to be replaced by the content of the book.
+
+To get started, create a new R project from this folder.
+Then open _index.Rmd_ and click on the _Build Book_ button in the _Build_ window of Rstudio.
+
+<!--chapter:end:EcoPhyCoFoG_guide.Rmd-->
+
