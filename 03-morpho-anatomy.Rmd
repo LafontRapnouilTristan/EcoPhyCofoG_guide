@@ -15,7 +15,7 @@ The higher the resolution, the more pixel you will have and the more precise wil
 #### Scanner
 
 Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
-[EPSON's V800](document/machine/EPSON_V800/info.) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
+[EPSON's V800](document/machine/EPSON_V800/test.txt) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
 And the scanning software is [ViewScan](document/software/Viewscan/test.txt)
 
 #### Scan process
@@ -35,21 +35,21 @@ Choosing this option will simplify your protocol and can suffice for simple and 
 If your root are too big \@ref(fig:bigroots), then self-shading can appear on flat scan and bias winrhizo's analysis. To avoid this shading you can remove the background from the scanner's roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.
 
 ```{r bigroots, echo=FALSE, out.width="50%", fig.cap="Roots to thick to be flat scanned"}
-knitr::include_graphics('document/traits/RootMorpho/figures/thickroot')
+knitr::include_graphics('document/trait/rootmorpho/thickroot.PNG')
 ```
 
 
 Another case where you can prefer `Transparent` option is for complex root systems (e.g. bromeliaceae, \@ref(fig:bromeroot)) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the `Transparent` mode.
 
 ```{r bromeroot, echo=FALSE, out.width="50%", fig.cap="Complex bromeliad adventitious root system"}
-knitr::include_graphics('document/traits/RootMorpho/figures/bromeroot.tif')
+knitr::include_graphics('document/trait/rootmorpho/bromeroot.jpg')
 ```
 
 **BEWARE:** The `Transparent` scan window is smaller than the normal mode scan. The actual scanned zone is showed \@ref(fig:scantransp) and you must make sure that you roots are well placed within this area.
 
 
 ```{r scantransp, echo=FALSE, out.width="50%", fig.cap="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner"}
-knitr::include_graphics('document/traits/RootMorpho/figures/scan_transp.png')
+knitr::include_graphics('document/trait/rootmorpho/scan_transp.png')
 ```
 
 ### Image processing
@@ -60,14 +60,16 @@ If this is your choice, make sure that your images only contain roots!! Sometime
 For instance, this \@ref(fig:bromescan) is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.
 
 ```{r bromescan, echo=FALSE, out.width="50%", fig.cap="Scan of a bromeliad root system in water-filled petri dish"}
-knitr::include_graphics('document/traits/RootMorpho/figures/scan_exemple.tif')
+
+grid::grid.raster( tiff::readTIFF( "document/trait/rootmorpho/scan_exemple.tif") )
 ```
 
 To re-crop these images we use the freeware `XnConvert`. The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
-Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/).
+Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/test.txt).
 
 ```{r stencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
-knitr::include_graphics('document/traits/RootMorpho/figures/squre_stencil.jpg')
+knitr::include_graphics('document/trait/rootmorpho/squre_stencil.jpg')
+knitr::include_graphics('document/trait/rootmorpho/squre_stencil2.jpg')
 ```
 
 ### WinRhizo
@@ -93,13 +95,13 @@ In the image, you can now see which roots have been analyzed. This have a skelet
 
 WELL DONE! You just analyze your first picture!
 
-You can practice with scans available [here](document/traits/RootMorpho/Data/)
+You can practice with scans available [here][Resources]
 
 #### Calibration
 
 If not calibrated (associated with a scale), winrhizo will display results in pixels. `.TIFF` files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
 
-However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to "manually" calibrate your image. Winrhizo calibration files are saved as `.CAL`. In the *Calibration* menu you can load pre-existing calibration files. You will find the `calib_imge.TIFF` [here](document/software/Winrhizo/calib_imge.TIF). To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on *calibration* -> *pixel size method* -> *object of known dimension* -> *1 image* -> width=1 , height=1, border=0.35, units=cm -> *Ok*
+However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to "manually" calibrate your image. Winrhizo calibration files are saved as `.CAL`. In the *Calibration* menu you can load pre-existing calibration files. You will find the `calib_imge.TIFF` [here](document/trait/rootmorpho/calib_imge.TIF). To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on *calibration* -> *pixel size method* -> *object of known dimension* -> *1 image* -> width=1 , height=1, border=0.35, units=cm -> *Ok*
 
 Then, winrhizo will propose you to save the calibration in a `.CAL` file that can be loaded later and used for all your images at a given resolution. \textcolor{red}{DO NOT NAME YOUR FILE Scanner.cal}. 
 Please, when you create a `.CAL` at a previously not used resolution, store a copy of the calibration file [here](document/software/Winrhizo/) so that your work helps your successors!!
@@ -111,3 +113,6 @@ We saw how to analyze a [single picture or region ][First analysis]but you might
 #### Pixel classification
 
 #### Output
+
+
+## Resources
