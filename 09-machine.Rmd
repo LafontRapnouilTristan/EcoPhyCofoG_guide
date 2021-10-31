@@ -1,11 +1,3 @@
----
-title: "09-machine"
-author: "Marion Boisseaux"
-date: "31/10/2021"
-output: html_document
----
-
-
 # Vapor pressure osmometer - Vapro 5520 cheatsheet
 
 * [**$\pi_{TLP}$** vapro cheatsheet](./document/machine/Vapro 5520/Vapro_cheatsheet.pdf)

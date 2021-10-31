@@ -1,3 +1,6 @@
+EcoPhyCofoG : 1.000.T9017
+clean local run files
+
 EcoPhyCofoG : 1.000.T9016
 reindent hydraulics and news updte
 
