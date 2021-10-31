@@ -48,46 +48,6 @@
 % Strikeout
 
 % Necessary for code chunks
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % Listings package
 
@@ -430,44 +390,6 @@ Leave an empty line for line breaks.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \LargeMargins
-\hypertarget{introduction}{%
-\chapter*{Introduction}\label{introduction}}
-\addcontentsline{toc}{chapter}{Introduction}
-
-This document allows you to create a book in PDF format (and ePub format) at the same time as an HTML version to be published on the web.
-The syntax is that of \textbf{Markdown} with some extensions.
-
-The \textbf{bookdown} package must be installed from CRAN or GitHub:
-
-\scriptsize
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github('rstudio/bookdown')}
-\end{Highlighting}
-\end{Shaded}
-
-\normalsize
-
-The book is organized in chapters.
-Each chapter is an Rmd file, whose name normally begins with its number (e.g.~\texttt{01-intro.Rmd}).
-All Rmd files in the project folder are actually treated as chapters, sorted by filename.
-The index.Rmd file is special: it contains the document header and the first chapter.
-
-This first chapter is placed in the foreword of the printed book: it should not be numbered (hence the \texttt{\{-\}} code next to the title) in the HTML version.
-It must end with the LaTeX command \texttt{\textbackslash{}mainmatter} which marks the beginning of the body of the book.
-
-The outline levels start with \texttt{\#} for chapters (only one per file), \texttt{\#\#} for sections, etc.
-
-Compilation in PDF format is done by XeLaTeX, which must be installed.
-
-While writing, it is strongly advised to create only the HTML file, which is much faster than a LaTeX compilation.
-Each chapter can be viewed very quickly by clicking on the \emph{Knit} button above the source window.
-The entire book is created by clicking on the \emph{Build Book} button in the RStudio \emph{Build} window.
-The button's drop-down list allows you to create all documents or limit yourself to one format.
-
 \mainmatter
 
 \hypertarget{intro}{%
@@ -493,17 +415,20 @@ Each chapter of this book correspond to one trait and associated measurement pro
 \hypertarget{fluorescence}{%
 \section{Fluorescence}\label{fluorescence}}
 
-\hypertarget{fluxes-and-gaz-exchange}{%
-\section{Fluxes and gaz exchange}\label{fluxes-and-gaz-exchange}}
+\hypertarget{gaz-fluxes-and-exchanges}{%
+\section{Gaz fluxes and exchanges}\label{gaz-fluxes-and-exchanges}}
 
-\hypertarget{microbial}{%
-\section{Microbial}\label{microbial}}
+\hypertarget{microbiology-and-metabarcoding}{%
+\section{Microbiology and metabarcoding}\label{microbiology-and-metabarcoding}}
 
 \hypertarget{greenhouse-setups-and-tips}{%
 \section{Greenhouse setups and tips}\label{greenhouse-setups-and-tips}}
 
-\hypertarget{machine-info}{%
-\section{Machine info}\label{machine-info}}
+\hypertarget{device-info}{%
+\section{Device info}\label{device-info}}
+
+\hypertarget{morpho-anatomy-1}{%
+\chapter{Morpho-anatomy}\label{morpho-anatomy-1}}
 
 \hypertarget{root-morphology}{%
 \section{Root Morphology}\label{root-morphology}}
@@ -689,13 +614,16 @@ We saw how to analyze a \protect\hyperlink{first-analysis}{single picture or reg
 \hypertarget{resources}{%
 \section{Resources}\label{resources}}
 
+\hypertarget{hydraulics-1}{%
+\chapter{Hydraulics}\label{hydraulics-1}}
+
 \hypertarget{leaf-turgor-loss-point-pi_tlp}{%
-\subsection{\texorpdfstring{Leaf turgor loss point, \(\pi_{tlp}\)}{Leaf turgor loss point, \textbackslash pi\_\{tlp\}}}\label{leaf-turgor-loss-point-pi_tlp}}
+\section{\texorpdfstring{Leaf turgor loss point, \(\pi_{tlp}\)}{Leaf turgor loss point, \textbackslash pi\_\{tlp\}}}\label{leaf-turgor-loss-point-pi_tlp}}
 
 We assessed the leaf turgor loss point, \(\pi_{tlp}\) in MPa, from a previously established relationship with the osmotic potential at full hydration, \(\pi_{osm}\) in MPa. \(\pi_{osm}\) is linked to the equilibrium solute concentration value \(C_0\) (in mmol.kg\^{}\{-1\}) directly measured with a vapor pressure osmometer (Vapro 5600, Wescor, Logan, UT). This is referred as the \emph{osmometer method} (Bartlett et al.~2012a; Maréchaux et al.~2016).
 
 \hypertarget{materials}{%
-\subsection{Materials}\label{materials}}
+\section{Materials}\label{materials}}
 
 \begin{itemize}
 \tightlist
@@ -730,10 +658,10 @@ We assessed the leaf turgor loss point, \(\pi_{tlp}\) in MPa, from a previously 
 \end{itemize}
 
 \hypertarget{methods}{%
-\subsection{Methods}\label{methods}}
+\section{Methods}\label{methods}}
 
 \hypertarget{installing-vapro-for-measurements}{%
-\subsubsection{Installing Vapro for measurements}\label{installing-vapro-for-measurements}}
+\subsection{Installing Vapro for measurements}\label{installing-vapro-for-measurements}}
 
 \begin{itemize}
 \tightlist
@@ -758,7 +686,7 @@ Used daily:
 * select automatic mode (10 runs)
 
 \hypertarget{sampling-on-the-field}{%
-\subsubsection{Sampling on the field}\label{sampling-on-the-field}}
+\subsection{Sampling on the field}\label{sampling-on-the-field}}
 
 \begin{itemize}
 \tightlist
@@ -781,10 +709,10 @@ Used daily:
 \end{itemize}
 
 \hypertarget{lab-measurements}{%
-\subsubsection{Lab measurements}\label{lab-measurements}}
+\subsection{Lab measurements}\label{lab-measurements}}
 
 \hypertarget{field-day}{%
-\paragraph{Field day}\label{field-day}}
+\subsubsection{Field day}\label{field-day}}
 
 \begin{itemize}
 \tightlist
@@ -797,7 +725,7 @@ Used daily:
 \end{itemize}
 
 \hypertarget{n1-field-day}{%
-\paragraph{N+1 Field day}\label{n1-field-day}}
+\subsubsection{N+1 Field day}\label{n1-field-day}}
 
 Vapro:
 
@@ -847,26 +775,26 @@ In total, disc are exposed to air for less than 40 seconds for all the steps.
 \end{itemize}
 
 \hypertarget{end-measurements}{%
-\paragraph{End measurements}\label{end-measurements}}
+\subsubsection{End measurements}\label{end-measurements}}
 
 Clean Vapro
 
 For more information on the vapro machine, please refer to the \emph{vapro cheatsheet} in the machine category.
 
 \hypertarget{leaf-midday-water-potential}{%
-\section{Leaf midday water potential \$}\label{leaf-midday-water-potential}}
+\chapter{Leaf midday water potential \$}\label{leaf-midday-water-potential}}
 
 \hypertarget{pressure-chamber-method}{%
-\subsection{Pressure chamber method}\label{pressure-chamber-method}}
+\section{Pressure chamber method}\label{pressure-chamber-method}}
 
 \hypertarget{psychrometry-method}{%
-\subsection{Psychrometry method}\label{psychrometry-method}}
+\section{Psychrometry method}\label{psychrometry-method}}
 
 \hypertarget{relative-water-content-rwc}{%
-\section{Relative water content RWC (\%)}\label{relative-water-content-rwc}}
+\chapter{Relative water content RWC (\%)}\label{relative-water-content-rwc}}
 
 \hypertarget{material}{%
-\subsection{Material}\label{material}}
+\section{Material}\label{material}}
 
 \emph{Ziplock bag
 }Paper towel
@@ -878,7 +806,7 @@ For more information on the vapro machine, please refer to the \emph{vapro cheat
 }envelop
 
 \hypertarget{method}{%
-\subsection{Method}\label{method}}
+\section{Method}\label{method}}
 
 Before going on the field:
 * write individual code on ziplock bag
@@ -911,8 +839,23 @@ From Sapes et al 2020 and Barrs \& Weatherley 1962.
 \hypertarget{gs}{%
 \section{gs}\label{gs}}
 
+\hypertarget{fluorescence-1}{%
+\chapter{Fluorescence}\label{fluorescence-1}}
+
+\hypertarget{gaz-fluxes-and-exchanges-1}{%
+\chapter{Gaz fluxes and exchanges}\label{gaz-fluxes-and-exchanges-1}}
+
+\hypertarget{microbiology-and-metabarcoding-1}{%
+\chapter{Microbiology and metabarcoding}\label{microbiology-and-metabarcoding-1}}
+
+\hypertarget{greenhouse-setups-and-tips-1}{%
+\chapter{Greenhouse setups and tips}\label{greenhouse-setups-and-tips-1}}
+
+\hypertarget{device-info-1}{%
+\chapter{Device info}\label{device-info-1}}
+
 \hypertarget{vapor-pressure-osmometer---vapro-5520-cheatsheet}{%
-\chapter{Vapor pressure osmometer - Vapro 5520 cheatsheet}\label{vapor-pressure-osmometer---vapro-5520-cheatsheet}}
+\section{Vapor pressure osmometer - Vapro 5520 cheatsheet}\label{vapor-pressure-osmometer---vapro-5520-cheatsheet}}
 
 \begin{itemize}
 \tightlist

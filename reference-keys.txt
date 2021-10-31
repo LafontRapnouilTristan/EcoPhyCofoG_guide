@@ -9,10 +9,11 @@ handbook-architecture
 morpho-anatomy
 hydraulics
 fluorescence
-fluxes-and-gaz-exchange
-microbial
+gaz-fluxes-and-exchanges
+microbiology-and-metabarcoding
 greenhouse-setups-and-tips
-machine-info
+device-info
+morpho-anatomy-1
 root-morphology
 image-acquisition
 format
@@ -30,6 +31,7 @@ batch
 pixel-classification
 output
 resources
+hydraulics-1
 leaf-turgor-loss-point-pi_tlp
 materials
 methods
@@ -47,4 +49,9 @@ material
 method
 gmin
 gs
+fluorescence-1
+gaz-fluxes-and-exchanges-1
+microbiology-and-metabarcoding-1
+greenhouse-setups-and-tips-1
+device-info-1
 vapor-pressure-osmometer---vapro-5520-cheatsheet
