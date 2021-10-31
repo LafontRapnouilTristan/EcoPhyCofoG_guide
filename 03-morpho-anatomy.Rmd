@@ -34,7 +34,7 @@ Choosing this option will simplify your protocol and can suffice for simple and 
 
 If your root are too big \@ref(fig:bigroots), then self-shading can appear on flat scan and bias winrhizo's analysis. To avoid this shading you can remove the background from the scanner's roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.
 
-```{r bigroots, echo=FALSE, out.width="50%", fig.cap="Roots to thick to be "flat scanned""}
+```{r bigroots, echo=FALSE, out.width="50%", fig.cap="Roots to thick to be flat scanned"}
 knitr::include_graphics('document/traits/RootMorpho/figures/thickroot')
 ```
 
