@@ -321,7 +321,7 @@
 
 \author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
 
-\date{2021-10-29}
+\date{2021-10-31}
 
 
 % Include headers (preamble.tex) here
@@ -470,562 +470,454 @@ The button's drop-down list allows you to create all documents or limit yourself
 
 \mainmatter
 
-\hypertarget{getting_started}{%
-\chapter{Getting Started}\label{getting_started}}
-
-\emph{RStudio} in version higher than 1 must be used.
-The \textbf{bookdown} package must be installed.
-
-For the creation of the PDF file, an installation of LaTeX is necessary.
-Under Windows, use \href{https://miktex.org/download}{MikTex}.
-The automatic download of missing packages (under Windows: MiKTeX settings, \emph{Install missing packages=Yes}) is required.
-
-The main file is \emph{index.Rmd} which contains the description of the book in its header.
-All other \emph{.Rmd} files in the folder contain a chapter: the order of chapters is that of the file names, sorted alphabetically.
-The \emph{references.bib} file contains the bibliography.
-
-The basic parameters of the project must be entered in the following files.
-
-\hypertarget{index}{%
-\section{index.Rmd}\label{index}}
-
-In the file header, enter the title of the work and the name of the author(s).
-
-\begin{verbatim}
-title: "Title of the Memoir" 
-author: "Authors' names"
-\end{verbatim}
-
-The date field may be kept to display the knitting date automatically.
-
-The \texttt{url} field contains the link to the GitHub pages of the project.
-It is used by \texttt{build\_readme()}.
-
-The \texttt{github-repo} field contains the name of the repository of the project on GitHub.
-It is used to build a link to the repository from the menu bar of the GitBook version of the document.
-
-\texttt{description} is used by \texttt{build\_readme()} and to build an HTML meta tag intended for search engines.
-\texttt{cover-image} is the name of an image file that will be used by social networks when the GitBook is shared.
-Twitter uses both to build a link to the project.
-If a PDF file is used as the PDF book cover (see below), a good idea is to export it to PNG and declare the PNG file in \texttt{cover-image}.
-
-The cover will be:
-
-\begin{itemize}
-\tightlist
-\item
-  that of a book if the \emph{maintitlepage} statement is present.
-  The content of \emph{epigraph} and \emph{credits} will be written on page 2, with \texttt{images/logo.pdf}.
-\item
-  the first page of the PDF file declared in the \emph{pdftitlepage} instruction if it is present.
-\end{itemize}
-
-Delete one of the two instructions in the header or both covers will be built, like in the gallery\footnote{\url{https://ericmarcon.github.io/memoiR/gallery/memoir/MyBook.pdf}}.
-
-The languages are specified according to the IETF language tags, such as \enquote{en-US}.
-The main language (\texttt{lang}) is that of the structure of the document, translating elements such as \enquote{chapter}.
-The other languages (\texttt{otherlangs}) can be used to switch language inside the PDF document to benefit from correct hyphenation.
-
-LaTeX specific options are:
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{documentclass}: the document class is \emph{memoir} for this template.
-  The options of the \emph{memoir} class are listed, not to be changed normally.
-\item
-  \emph{papersize}: A4.
-\item
-  \emph{fontsize}: 11pt.
-\item
-  \emph{mainfont} and \emph{mathfont} may replace the standard Computer Modern font.
-  Tex Gyre fonts\footnote{\url{https://www.ctan.org/pkg/tex-gyre}} are a good choice.
-  Both \textbf{tex-gyre} and \textbf{tex-gyre-math} LaTeX packages must be available.
-\item
-  \emph{MemoirChapStyle} and \emph{MemoirPageStyle} define the style of the document.
-  Two styles are favored: \emph{companion} for documents with large outer margins containing notes, references and captions, or \emph{daleif1} and \emph{Ruled} for more classical layouts with small margins.
-\item
-  Margins: choose whether to use \emph{largemargins} or not, and adjust the other parameters according to that.
-  Margin values should work well in most cases.
-\item
-  \emph{toc-depth}: number of levels in the table of contents, 2 by default (i.e.~\texttt{\#\#\#} subsections are shown).
-\item
-  \emph{secnum-depth}: The lowest numbered level in the document. Default is \texttt{section} (i.e.~\texttt{\#\#}).
-  Alternatives are \texttt{chapter} (i.e.~\texttt{\#}), \texttt{subsection} (i.e.~\texttt{\#\#\#}) or \texttt{subsubsection} (i.e.~\texttt{\#\#\#\#}).
-\item
-  \emph{lot} and \emph{lof} to add lists of tables and figures.
-\end{itemize}
-
-The name of the \texttt{.bib} file containing the references is in \texttt{bibliography}.
-It must be entered with its \texttt{.bib} extension.
-
-Bibliography is managed by BibLaTeX, whose options should not be changed except for the style.
-It is \texttt{verbose-inote} in documents with large margins to show the full citations in them.
-The citations are called as notes in the text.
-\texttt{authoryear-ibid} is suited for small-margin documents: the citations in the text contain author and year, and no footnote is used.
-The line \texttt{pageref=true} must be deleted or commented out if this style is used or an error may occur during LaTeX compilation.
-
-\texttt{longbibliography} formats the bibliography on two columns with a small font when it is set to \texttt{true}.
-If \texttt{false}, the regular font is used in a single column with small margins.
-
-The back cover appears in PDF outputs only.
-It is designed to to display abstract and keyword in several languages if necessary.
-The items of \texttt{backcover} are a list:
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
 
-\begin{itemize}
-\tightlist
-\item
-  language: the name of the language, that will be passed to the LaTeX command \texttt{\textbackslash{}selectlanguage\{\}}.
-\item
-  abstract: the content of the abstract.
-\item
-  keywords: a list of keywords.
-\item
-  abstractlabel and keywordlabel: the localized text to print before abstract and keywords.
-\end{itemize}
+Plant functional traits are the features (morphological, physiological, phenological) that represent ecological strategies and determine \emph{describe?} how plants respond to environmental factors, affect other trophic levels and influence ecosystem properties. Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits. The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
 
-\texttt{backcoverfontsize} may be changed better fit the page size, according to the length of the abstracts.
+This handbook presents the different protocols used in the ecophysio lab. We therefore suggest the methodological principles for a more open and transparent science. This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and the associated R-scripts to upload/clean the raw data.
 
-Some options should not be modified, including:
+\hypertarget{handbook-architecture}{%
+\chapter{Handbook architecture}\label{handbook-architecture}}
 
-\begin{itemize}
-\tightlist
-\item
-  \emph{fig\_crop}: yes to allow cropping of excess margins of figures.
-  GhostScript must be installed.
-  If it is not, or in order to save computing time, the option may be set to \texttt{no}.
-\end{itemize}
+This handbook is written for operational ends. As such, it is not a review or scientific paper thoroughly presenting each traits but rather a list of protocols associated with routinely measured traits in this lab.
 
-Some may be added to the header:
+Each chapter of this book correspond to one trait and associated measurement process.
 
-\begin{itemize}
-\tightlist
-\item
-  \emph{fontfamily}: \href{https://en.wikibooks.org/wiki/LaTeX/Fonts\#Font_families}{font}, \emph{lmodern} by default.
-\item
-  \emph{linestretch}: line spacing, 1 by default.
-\end{itemize}
+\hypertarget{morpho-anatomy}{%
+\section{Morpho-anatomy}\label{morpho-anatomy}}
 
-For a student thesis, prepare the cover page with Word, Powerpoint or a DTP program and save it in PDF format, in A4 size.
-Only the first page of the PDF is used.
+\hypertarget{hydraulics}{%
+\section{Hydraulics}\label{hydraulics}}
 
-\hypertarget{bookdown.yml}{%
-\section{\_bookdown.yml}\label{bookdown.yml}}
+\hypertarget{fluorescence}{%
+\section{Fluorescence}\label{fluorescence}}
 
-Enter the name of the Rmd file that will be the result of the merging of all chapters and choose if it should be destroyed after use.
-It will also be the name of the PDF and Word files.
-The default options will suit most uses.
+\hypertarget{fluxes-and-gaz-exchange}{%
+\section{Fluxes and gaz exchange}\label{fluxes-and-gaz-exchange}}
 
-\begin{verbatim}
-book_filename: "MyBook"
-delete_merged_file: true
-\end{verbatim}
+\hypertarget{microbial}{%
+\section{Microbial}\label{microbial}}
 
-If the project is hosted on GitHub, indicate its address.
-Otherwise, delete the line.
+\hypertarget{greenhouse-setups-and-tips}{%
+\section{Greenhouse setups and tips}\label{greenhouse-setups-and-tips}}
 
-\begin{verbatim}
-repo: "https://github.com/GitHubID/Repository"
-\end{verbatim}
+\hypertarget{machine-info}{%
+\section{Machine info}\label{machine-info}}
 
-The knitted files are stored in the output directory.
-\texttt{docs} is the good choice for GitHub Pages.
+\hypertarget{root-morphology}{%
+\section{Root Morphology}\label{root-morphology}}
 
-\hypertarget{output.yml}{%
-\section{\_output.yml}\label{output.yml}}
+Root morphology analysis (length, diameter, etc.) are conducted using the Winrhizo software.
 
-Customize the table of contents in HTML format.
+Winrhizo is a licenced software created by Regent Instrument Canada Inc.~It exist 4 different version and we own the \emph{Basic Version}. It allows root morphology analysis from scans.
 
-\begin{verbatim}
-config:
-  toc:
-    before: |
-      <li><a href="./">Bookdown book</a></li>
-    after: |
-      <li><a href="https://github.com/GitHubID/Repository
-\end{verbatim}
+\hypertarget{image-acquisition}{%
+\subsection{Image Acquisition}\label{image-acquisition}}
 
-\hypertarget{multilingual-documents}{%
-\section{Multilingual documents}\label{multilingual-documents}}
+\hypertarget{format}{%
+\subsubsection{Format}\label{format}}
 
-Languages are declared in the document header.
+Supported image format are \texttt{.TIFF}, \texttt{.JPEG} and \texttt{.BMP}. \texttt{.TIFF}and \texttt{.BMP} are not compressed and are thus to be preferred. \texttt{.TIFF} images are compatible with all OS and should be privileged but you must be careful to save them \emph{uncompressed} as \texttt{WinRhizo} won't be able to open \emph{compressed} ones.
 
-The main language of the document (\texttt{lang}) changes the name of some elements, such as the table of contents.
-To use other languages in the text, they must be declared in \texttt{otherlangs}.
+The higher the resolution, the more pixel you will have and the more precise will be your measurements. However, with resolution, scan time and image size increase. 800DPI is the standard in this lab but 400 is the winrhizo recommendation. This depend on the required level of precision as well as the size of the analyzed roots ( the finer the higher must be the resolution to get more details).
 
-Changing the language has no effect in HTML, but changes hyphenation in PDF output.
+\hypertarget{scanner}{%
+\subsubsection{Scanner}\label{scanner}}
 
-The language change in basic markdown format,
+Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
+\href{document/machine/EPSON_V800/test.txt}{EPSON's V800} scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
+And the scanning software is \href{document/software/Viewscan/test.txt}{ViewScan}
 
-\begin{verbatim}
-::: {lang=en-US}
-\end{verbatim}
+\hypertarget{scan-process}{%
+\subsubsection{Scan process}\label{scan-process}}
 
-is not supported by R Markdown.
-See the correct syntax in section \ref{sec:languages}.
+Paste the wall-taped doc.
 
-\hypertarget{syntax}{%
-\chapter{Syntax}\label{syntax}}
+\hypertarget{flat-scan}{%
+\paragraph{Flat scan}\label{flat-scan}}
 
-\scriptsize
+You can decide to use basic scan options with light only coming from below. If you do so you need to have a white background installed under the scanner's roof (if black roots, if pale ones you'll need a black background).
 
-\begin{Summary}
-Deliver the take-home message here.
+Choosing this option will simplify your protocol and can suffice for simple and thin enough root systems.
 
-It can contain several paragraphs.
-\end{Summary}
+\textbf{EXEMPLE} scan marion
 
-\normalsize
+\hypertarget{transparent}{%
+\paragraph{Transparent}\label{transparent}}
 
-The syntax of \emph{R Mardown} extended by \emph{Bookdown} is recalled here.
-
-In RStudio, create a new document of type Document R Markdown.
-The wizard allows you to choose between different formats.
-
-Click on \emph{From template}: from templates installed by packages.
-The memoiR package templates are displayed: choose \emph{Memoir}.
-
-Each chapter of the book is an Rmd file, whose name normally starts with its number (e.g.~\texttt{01-intro.Rmd}).
-All Rmd files in the project folder are actually treated as chapters, sorted by file name, including those provided by the template (startup and syntax) which should be deleted except for \texttt{99-references.Rmd} which contains the bibliography, placed at the end.
-The \texttt{index.Rmd} file is special: it contains the document header and the first chapter.
-
-Each other file starts with a top-level title:
-
-\begin{verbatim}
-# Title of the Chapter
-\end{verbatim}
-
-If the document is made of parts containing chapters, the file with the fist chapter of each part must start with:
-
-\begin{verbatim}
-# (PART) Title of the Part {-}
-  
-# Title of the Chapter
-\end{verbatim}
-
-Note the \texttt{\{-\}} instruction after the title of the part to avoid having it numbered.
-
-Appendices are introduced as a special part:
-
-\begin{verbatim}
-# (APPENDIX) Appendix {-} 
-
-# Title of the first appendix
-\end{verbatim}
-
-\hypertarget{write}{%
-\section{Write}\label{write}}
-
-The main features of Markdown are summarized here.
-A quick and complete training is offered by RStudio\footnote{\url{https://rmarkdown.rstudio.com/lesson-1.html}}.
-
-The text is written without any formatting other than line breaks.
-A simple line break has no effect on the document produced: it allows to separate sentences to simplify the tracking of the source code by git.
-
-A line break marks a paragraph change.
-
-The different levels of the plan are designated by the number of braces at the beginning of the line: \texttt{\#} for a level 1 title, \texttt{\#\#} for a level 2 title, etc.
-A space separates the hashes and the title text.
-
-Bullet lists are marked by a dash (followed by a space) at the beginning of the line.
-An empty line is required before the beginning of the list, but the elements of the list are separated by a simple line break.
-Indented lists are created by inserting 4 spaces before the dash at the beginning of the line.
-Last, numbered lists are created in the same way by replacing the hyphens by numbers, whose value does not matter.
-
-In the text, the italicized parts are surrounded by a star or an underscore (\texttt{*italic*}), while two stars mark the bold.
-
-\hypertarget{r-code}{%
-\section{R code}\label{r-code}}
-
-R code is included in code chunks (\emph{code chunks}) that are easily created by clicking on the \enquote{Insert a new code chunk} button above the source code window in RStudio.
-They start and end with three quotation marks on a new line.
-These code chunks can contain R code but also Python code for example: the type of code is indicated in the header on the first line, before the name of the code chunk, then a comma separated list of options, for example:
-
-\begin{verbatim}
-```{r cars, echo=TRUE}
-```
-\end{verbatim}
-
-The name and options are optional: the minimum header is \texttt{\{r\}}.
-
-The most useful options are:
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{echo} to show (\texttt{=TRUE}) or hide (\texttt{=FALSE}) the code.
-\item
-  \texttt{message=FALSE} to hide the opening messages of some packages.
-\item
-  \texttt{warning=FALSE} to hide warnings.
-\end{itemize}
-
-The default options are declared in the code snippet named \enquote{Options} at the beginning of the Markdown document, in the \texttt{opts\_chunk\$set()} function.
-The \texttt{echo} option should be set to \texttt{FALSE} by default for a scientific article for example.
-
-When it is \texttt{TRUE}, the code is printed as follow
-
-\scriptsize
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\DecValTok{2} \OperatorTok{+}\StringTok{ }\DecValTok{2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 4
-\end{verbatim}
-
-\normalsize
-
-\hypertarget{figures}{%
-\section{Figures}\label{figures}}
-
-\scriptsize
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{plot}\NormalTok{(pressure)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=\widthw]{MyBook_files/figure-latex/pressure-1} 
-
-}
-
-\caption{A full width figure}\label{fig:pressure}
-\end{figure}
-
-\normalsize
-
-Figures can be created by the R code (figure \ref{fig:pressure}).
-With Bookdown, a label is associated with each figure: its name is \texttt{fig:xxx} where \texttt{xxx} is the name of the R code snippet.
-References are made with the command \texttt{\textbackslash{}@ref(fig:xxx)}.
-
-The header of the code snippet of the figure \ref{fig:pressure} is:
-
-\begin{verbatim}
-```{r pressure, fig.cap="Title of the figure, out.width="\\widthw"}
-```
-\end{verbatim}
-
-It contains at least the name of the figure and its caption.
-
-The default width of figures is set in the option chunk in \texttt{index.Rmd}.
-It is \texttt{out.width=\textquotesingle{}80\%\textquotesingle{}} in this template, i.e.~80\% of the width of the text.
-If a full-width figure is needed, including the margin width, use \texttt{out.width="\textbackslash{}\textbackslash{}widthw"} in its code snippet.
-
-If the caption is long, the header is not easy to read.
-Also, the caption is limited to simple text.
-For more elaborate captions, it is possible to declare the caption in a separate paragraph that begins with the text \texttt{(ref:FigureName)}.
-The figure \ref{fig:pressure2} benefits from an improved caption.
-
-
+If your root are too big \ref{fig:bigroots}, then self-shading can appear on flat scan and bias winrhizo's analysis. To avoid this shading you can remove the background from the scanner's roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.
 
 \scriptsize
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{MyBook_files/figure-latex/pressure2-1} 
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/rootmorpho/thickroot} 
 
 }
 
-\caption{Title with \emph{italic}, math (\(\sqrt\pi\)) and reference to figure \ref{fig:pressure}}\label{fig:pressure2}
+\caption{Roots to thick to be flat scanned}\label{fig:bigroots}
 \end{figure}
 
 \normalsize
 
-The text in \texttt{fig.cap}, \enquote{Title of figure} previously, is replaced by \texttt{(ref:pressure)} \emph{within the quotation marks} and the caption is entered in a paragraph starting with \texttt{(ref:pressure)} followed by a space.
-Captions are limited to a single paragraph.
-They should not contain bibliographic references or references to the figures may not find them: if necessary, cite the source of a figure in the text.
-
-Figures that are not created by R but come from files are embedded in a piece of code by the \texttt{include\_graphics()} function whose argument is the file containing the image to be displayed.
-Always place these files in the \texttt{images} folder for good organization.
-
-\hypertarget{tables}{%
-\section{Tables}\label{tables}}
-
-The horizontal - and vertical separators \textbar{} allow to draw a table according to the Markdown syntax, but it is not the best method.
-
-Tables can also be produced by R code.
-The content of the table is in a dataframe.
-The \texttt{kable} function in the \emph{knitr} package prepares the table for display and passes the result to the \texttt{kable\_styling} function in the \emph{kableExtra} package for final formatting.
+Another case where you can prefer \texttt{Transparent} option is for complex root systems (e.g.~bromeliaceae, \ref{fig:bromeroot}) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the \texttt{Transparent} mode.
 
 \scriptsize
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(}\StringTok{"tidyverse"}\NormalTok{)}
-\KeywordTok{names}\NormalTok{(iris) <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Sepal length ($l_s$)"}\NormalTok{, }\StringTok{"Width"}\NormalTok{, }\StringTok{"Petal length"}\NormalTok{,}
-    \StringTok{"Width"}\NormalTok{, }\StringTok{"Species"}\NormalTok{)}
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{head}\NormalTok{(iris), }\DataTypeTok{caption =} \StringTok{"Table created by R"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-    \DataTypeTok{escape =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{%>%}
-\StringTok{    }\NormalTok{kableExtra}\OperatorTok{::}\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{bootstrap_options =} \StringTok{"striped"}\NormalTok{,}
-        \DataTypeTok{full_width =} \OtherTok{FALSE}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
 
-\begin{table}
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/rootmorpho/bromeroot} 
 
-\caption{\label{tab:kable}Table created by R}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal length ($l_s$) & Width & Petal length & Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
+}
+
+\caption{Complex bromeliad adventitious root system}\label{fig:bromeroot}
+\end{figure}
 
 \normalsize
 
-The caption is specified by the \texttt{caption} argument and referencing is possible because the table is given a label whose name is \texttt{tab:} followed by the name of the code snippet (table \ref{tab:kable}).
-As with figures, an enhanced legend can be written in a separate paragraph.
+\textbf{BEWARE:} The \texttt{Transparent} scan window is smaller than the normal mode scan. The actual scanned zone is showed \ref{fig:scantransp} and you must make sure that you roots are well placed within this area.
 
-Always use the \texttt{booktabs\ =\ TRUE} argument so that the thickness of the separator lines is optimal in LaTeX.
-Since the table contains mathematics (in the name of the first column), the \texttt{escape\ =\ FALSE} option is necessary.
+\scriptsize
 
-The \texttt{bootstrap\_options\ =\ "striped"} style option provides more readable tables in HTML.
-Last, the \texttt{full\_width\ =\ FALSE} option allows you to adjust the width of the table to its content instead of occupying all the available width.
+\begin{figure}
 
-\hypertarget{maths}{%
-\section{Maths}\label{maths}}
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/rootmorpho/scan_transp} 
 
-Equations in LaTeX format can be inserted in line, like \(A=\pi r^2\) (code: \texttt{\$A=\textbackslash{}pi\ r\^{}2\$}) or isolated (the \$ are doubled) like \[e^{i \pi} = -1.\]
+}
 
-They can be numbered: see equation \eqref{eq:disk}, using the \texttt{\textbackslash{}equation} environment.
+\caption{Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner}\label{fig:scantransp}
+\end{figure}
 
-\begin{equation}
-  A = \pi r^2.
-  \label{eq:disk}
-\end{equation}
+\normalsize
 
-The numbered equation is created by the following code:
+\hypertarget{image-processing}{%
+\subsection{Image processing}\label{image-processing}}
 
-\begin{verbatim}
-\begin{equation}
-  A = \pi r^2.
-  \label{eq:disk}
-\end{equation}
-\end{verbatim}
+To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
+However, when having a lot of scans you might want to automatize the process using the \texttt{batch} option.
+If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
+For instance, this \ref{fig:bromescan} is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.
 
-\hypertarget{cross-references}{%
-\section{Cross-references}\label{cross-references}}
+\scriptsize
 
-Figures and tables have an automatically generated label, identical to the name of the code snippet prefixed with \texttt{fig:} and \texttt{tab:}.
+\begin{figure}
 
-For equations, the label is added manually by the code \texttt{(\textbackslash{}\#eq:xxx)} before the end of the equation.
+{\centering \includegraphics[width=0.5\linewidth]{MyBook_files/figure-latex/bromescan-1} 
 
-Sections can be tagged by ending their title with \texttt{\{\#yyy\}}.
+}
 
-Bookmarks can also be placed freely in the text with the command \texttt{(ref:zzz)}.
+\caption{Scan of a bromeliad root system in water-filled petri dish}\label{fig:bromescan}
+\end{figure}
 
-In all cases, the call to the reference is made by the command \texttt{\textbackslash{}@ref(ref:zzz)}.
+\normalsize
 
-\hypertarget{bibliography}{%
-\section{Bibliography}\label{bibliography}}
+To re-crop these images we use the freeware \texttt{XnConvert}. The petri dish has always been placed in the same place using a stencil \ref{fig:scanstencil} on the scan window, enabling us to recrop all scans to the same size.
+Detailed \texttt{XnConvert} tutorial is available \href{document/software/XnConvert/test.txt}{HERE}.
 
-Bibliographic references in bibtex format must be included in the \texttt{.bib} file declared in the header of the Markdown document.
+\scriptsize
 
-\begin{verbatim}
-bibliography: references.bib
-\end{verbatim}
+\begin{figure}
 
-They can be called in the text, between brackets by the code \texttt{{[}@CitationKey{]}}, as sidenotes \autocite{Xie2016}, or without square brackets, to include the authors' names in the text, such as \textcite{Xie2018} .
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/rootmorpho/squre_stencil} 
 
-Bibliography is handled by pandoc when producing Word or HTML documents.
-The bibliographic style can be specified, by adding the line
+}
 
-\begin{verbatim}
-csl:file_name.csl
-\end{verbatim}
+\caption{Stencil used for inwater root scans}\label{fig:stencil-1}
+\end{figure}
+\begin{figure}
 
-in the document header and copying the \emph{.csl} style file into the project folder.
-The default style (if no csl is specified) is \enquote{chicago-author-date}.
-Several thousand styles are available \footnote{\url{https://github.com/citation-style-language/styles}}.
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/rootmorpho/squre_stencil2} 
 
-For PDF documents, the bibliography is handled by BibLaTeX, see section \ref{index}.
+}
 
-\hypertarget{forcing-line-breaks}{%
-\section{Forcing line breaks}\label{forcing-line-breaks}}
+\caption{Stencil used for inwater root scans}\label{fig:stencil-2}
+\end{figure}
 
-Hyphenation is handled automatically in LaTeX.
-If a word is not hyphenated correctly, add its hyphenation in the preamble of the file with the command \texttt{hyphenation} (words are separated by spaces, hyphenation locations are represented by dashes).
+\normalsize
 
-If LaTeX can't find a solution for the line break, for example because some code is too long a non-breaking block, add the LaTeX command \texttt{\textbackslash{}break} to the line break location.
-Do not leave a space before the command.
-The HTML document ignores LaTeX commands.
+\hypertarget{winrhizo}{%
+\subsection{WinRhizo}\label{winrhizo}}
 
-\hypertarget{sec:languages}{%
-\section{Languages}\label{sec:languages}}
+\hypertarget{installation}{%
+\subsubsection{Installation}\label{installation}}
 
-Languages are declared in the document header.
+The winrhizo software is contained on a CD (ask \href{https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit\#gid=0}{\textbf{Eliane Louisanna}}. To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.
 
-The main language of the document (\texttt{lang}) changes the name of some elements, such as the table of contents.
-The change of language in the document (one of \texttt{otherlangs}) is managed in LaTeX but not in HTML by inserting on a new line the following command:
+\hypertarget{startup}{%
+\subsubsection{Startup}\label{startup}}
 
-\begin{verbatim}
-\selectlanguage{english}
-\end{verbatim}
+\hypertarget{first-analysis}{%
+\subsubsection{First analysis}\label{first-analysis}}
 
-The current language has an effect only in LaTeX output: a space is added before double punctuation in French, the size of spaces is larger at the beginning of sentences in English, etc.
-The \texttt{\textbackslash{}selectlanguage} command is simply ignored in HTML.
+Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click \emph{Image} -\textgreater{} \emph{Origin} -\textgreater{} \emph{From File}. Then you can click the \emph{acquisition }icon \textbf{PIC}.
+This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display \texttt{.TIFF}.
+When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.
 
-Language codes are used in the header, such as \texttt{en-US} but language names are necessary in \texttt{\textbackslash{}selectlanguage\{\}}.
-Name matches are listed in table 3 of the polyglossia package documentation\footnote{\url{http://mirrors.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf}}.
+When an image or region is analyzed, winrhizo display the \emph{sample identification} window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click \emph{OK} to do the analysis or \emph{Cancel} to abort it.
 
-\hypertarget{chapter-summary}{%
-\section{Chapter summary}\label{chapter-summary}}
+After you clicked \emph{OK}, winrhizo starts the analysis (can be stopped pressing \emph{S}). When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to \emph{open one}, \emph{create one} or \emph{save nothing}. Selecting \emph{create one} will create a new \texttt{.TXT} file to store analysis data (more info about output \protect\hyperlink{output}{here}). Selecting \emph{open one} will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on \emph{save nothing}, guess?
 
-The take-home message of each chapter can be displayed in a box, see the beginning of this one.
-The code is that of a code block of type \enquote{Summary}.
+In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it \protect\hyperlink{pixel-classification}{here}).
 
-\begin{verbatim}
-```{block, type='Summary'}
-Some text for this block.
-```
-\end{verbatim}
+WELL DONE! You just analyze your first picture!
 
-Its heading text is set in the header of \texttt{index.Rmd}:
+You can practice with scans available \protect\hyperlink{resources}{here}
 
-\begin{verbatim}
-chaptersummary: In a Nutshell
-\end{verbatim}
+\hypertarget{calibration}{%
+\subsubsection{Calibration}\label{calibration}}
 
-\hypertarget{documentation}{%
-\section{Documentation}\label{documentation}}
+If not calibrated (associated with a scale), winrhizo will display results in pixels. \texttt{.TIFF} files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
 
-\hypertarget{user-documentation}{%
-\subsection{User documentation}\label{user-documentation}}
+However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to \enquote{manually} calibrate your image. Winrhizo calibration files are saved as \texttt{.CAL}. In the \emph{Calibration} menu you can load pre-existing calibration files. You will find the \texttt{calib\_imge.TIFF} \href{document/trait/rootmorpho/calib_imge.TIF}{here}. To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on \emph{calibration} -\textgreater{} \emph{pixel size method} -\textgreater{} \emph{object of known dimension} -\textgreater{} \emph{1 image} -\textgreater{} width=1 , height=1, border=0.35, units=cm -\textgreater{} \emph{Ok}
+
+Then, winrhizo will propose you to save the calibration in a \texttt{.CAL} file that can be loaded later and used for all your images at a given resolution. \textcolor{red}{DO NOT NAME YOUR FILE Scanner.cal}.
+Please, when you create a \texttt{.CAL} at a previously not used resolution, store a copy of the calibration file \href{document/software/Winrhizo/}{here} so that your work helps your successors!!
+
+\hypertarget{batch}{%
+\subsubsection{Batch}\label{batch}}
+
+We saw how to analyze a \protect\hyperlink{first-analysis}{single picture or region}but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a \emph{batch} (i.e.~a folder) containing any number of images you want.
+
+\hypertarget{pixel-classification}{%
+\subsubsection{Pixel classification}\label{pixel-classification}}
+
+\hypertarget{output}{%
+\subsubsection{Output}\label{output}}
+
+\hypertarget{resources}{%
+\section{Resources}\label{resources}}
+
+\hypertarget{leaf-turgor-loss-point-pi_tlp}{%
+\subsection{\texorpdfstring{Leaf turgor loss point, \(\pi_{tlp}\)}{Leaf turgor loss point, \textbackslash pi\_\{tlp\}}}\label{leaf-turgor-loss-point-pi_tlp}}
+
+We assessed the leaf turgor loss point, \(\pi_{tlp}\) in MPa, from a previously established relationship with the osmotic potential at full hydration, \(\pi_{osm}\) in MPa. \(\pi_{osm}\) is linked to the equilibrium solute concentration value \(C_0\) (in mmol.kg\^{}\{-1\}) directly measured with a vapor pressure osmometer (Vapro 5600, Wescor, Logan, UT). This is referred as the \emph{osmometer method} (Bartlett et al.~2012a; Maréchaux et al.~2016).
+
+\hypertarget{materials}{%
+\subsection{Materials}\label{materials}}
 
 \begin{itemize}
 \tightlist
 \item
-  The book \href{https://bookdown.org/yihui/bookdown/}{bookdown: Authoring Books and Technical Documents with R Markdown} by Yihui Xie, the author of \textbf{bookdown} and \textbf{knitr}.
-  All the necessary details for writing (writing equations, cross-references, etc.) are given.
+  Vapor pressure osmometer (Vapro 5520, Wescor, Logan, UT)
 \item
-  The \href{https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf}{R Markdown cheat sheet} for the syntax.
+  Vapro software (Vapro Lab Report)
+\item
+  Fridge
+\item
+  Liquid Nitrogen
+\item
+  Ziplock bag\\
+\item
+  Paper towel
+\item
+  Distilled water
+\item
+  Metal tea ball
+\item
+  Tin foil
+\item
+  Needle\\
+\item
+  Liquid nitrogen gloves + goggles
+\item
+  Liquid nitrogen contenant
+\item
+  2 Tweezers
+\item
+  Cork borer
 \end{itemize}
 
-\hypertarget{documentation-for-developers}{%
-\subsection{Documentation for developers}\label{documentation-for-developers}}
+\hypertarget{methods}{%
+\subsection{Methods}\label{methods}}
+
+\hypertarget{installing-vapro-for-measurements}{%
+\subsubsection{Installing Vapro for measurements}\label{installing-vapro-for-measurements}}
 
 \begin{itemize}
 \tightlist
 \item
-  \href{http://rmarkdown.rstudio.com/pdf_document_format.html\#advanced_customization}{LaTeX file format customization}.
+  Turn on Vapro the day before for the thermocouple's stability
 \item
-  The \href{https://pandoc.org/MANUAL.html}{Pandoc manual} for possible options in the YAML header.
+  Test Water Quality \emph{cf Vapro\_cheatsheet}
+\item
+  Clean
+\item
+  Calibration \emph{cf Vapro\_cheatsheet}
+\item
+  Control tests \emph{cf Vapro\_cheatsheet}
+\item
+  Verify temperature
+\item
+  Always have the black diamond at the center of the display
+\end{itemize}
+
+Used daily:
+* clean beforehand
+* select automatic mode (10 runs)
+
+\hypertarget{sampling-on-the-field}{%
+\subsubsection{Sampling on the field}\label{sampling-on-the-field}}
+
+\begin{itemize}
+\tightlist
+\item
+  Collect at least 3 healthy mature leaves on branch
+\item
+  Place them in sample ziplock bag with:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    wet paper towel
+  \item
+    Exhale in bag to saturate in CO\textsubscript{2}
+  \item
+    Annotate bag with sample information
+  \end{itemize}
+\item
+  Zip bag and stock in cooler
+\end{itemize}
+
+\hypertarget{lab-measurements}{%
+\subsubsection{Lab measurements}\label{lab-measurements}}
+
+\hypertarget{field-day}{%
+\paragraph{Field day}\label{field-day}}
+
+\begin{itemize}
+\tightlist
+\item
+  Recut branch under water
+\item
+  Replace in ziplock bag with wet paper towel
+\item
+  Put 24h in fridge to hydrate overnight
+\end{itemize}
+
+\hypertarget{n1-field-day}{%
+\paragraph{N+1 Field day}\label{n1-field-day}}
+
+Vapro:
+
+\begin{itemize}
+\tightlist
+\item
+  check distilled water in vapro reservoir
+\item
+  clean
+\item
+  select automatic mode (10 runs)
+\item
+  make sure vapro software is on
+\end{itemize}
+
+Sample measurement:
+
+\begin{itemize}
+\tightlist
+\item
+  Sample from a leaf a 5 mm disc with a cork borer: \emph{avoid 1\textsuperscript{st} and 2\textsuperscript{nd} order veins to avoid apoplastic dilution that would lead to less negative osmometer values}
+\item
+  Wrap disc in tin foil
+\item
+  Immerse in liquid nitrogen for at least 2 min using metal tea ball
+\item
+  Puncture 10-15 times with needle
+\item
+  Place in vapro chamber
+\end{itemize}
+
+In total, disc are exposed to air for less than 40 seconds for all the steps.
+
+\begin{itemize}
+\item
+  Record value C\textsubscript{0} when the difference between consecutive 2-min measurements fell below strictly 5 mmol.kg\textsuperscript{-1} after at least three runs.
+\item
+  If error! or Nr\_Run \textgreater{} 10 :
+\item
+  try a 2\textsuperscript{nd} cycle with same leaf
+\item
+  try a 3\textsuperscript{rd} cycle with another leaf
+\item
+  otherwise record \emph{NA}
+\item
+  Beware of the stuck leaf inside the vapro! If so \emph{cf Vapro\_cheatsheet}
+\end{itemize}
+
+\hypertarget{end-measurements}{%
+\paragraph{End measurements}\label{end-measurements}}
+
+Clean Vapro
+
+For more information on the vapro machine, please refer to the \emph{vapro cheatsheet} in the machine category.
+
+\hypertarget{leaf-midday-water-potential}{%
+\section{Leaf midday water potential \$}\label{leaf-midday-water-potential}}
+
+\hypertarget{pressure-chamber-method}{%
+\subsection{Pressure chamber method}\label{pressure-chamber-method}}
+
+\hypertarget{psychrometry-method}{%
+\subsection{Psychrometry method}\label{psychrometry-method}}
+
+\hypertarget{relative-water-content-rwc}{%
+\section{Relative water content RWC (\%)}\label{relative-water-content-rwc}}
+
+\hypertarget{material}{%
+\subsection{Material}\label{material}}
+
+\emph{Ziplock bag
+}Paper towel
+\emph{Distilled water
+}Fridge
+\emph{Analytical balance
+}Sharpie
+\emph{cooler
+}envelop
+
+\hypertarget{method}{%
+\subsection{Method}\label{method}}
+
+Before going on the field:
+* write individual code on ziplock bag
+* preweight ziplock bag
+
+On the field:
+* collect leaf
+* clean leaf with clean paper towel
+* place leaf in preweighted corresponding ziplock bag
+* place bag in cooler for transport to the lab
+
+In the lab:
+* weight the closed ziplock with the leaf (\emph{fresh weight})
+* delicately take the leaf out of the bag, wrap it in moist paper towel and place the wrap back in the ziplock bag
+* place ziplock bag in the fridge during 24 hours
+* 24 hours later, take out the leaf and wipe off water excess
+* weight re-hydrated leaf (\emph{saturated weight})
+* place leaf in envelop for oven-drying during at least 72h
+* weight dry leaf (\emph{dry weight})
+
+Calculate RWC (\%):
+
+RWC = \(\frac{(fresh\ weight-dry\ weight)}{(saturated\ weight-dry\ weight)}\) X 100
+
+From Sapes et al 2020 and Barrs \& Weatherley 1962.
+
+\hypertarget{gmin}{%
+\section{gmin}\label{gmin}}
+
+\hypertarget{gs}{%
+\section{gs}\label{gs}}
+
+\hypertarget{vapor-pressure-osmometer---vapro-5520-cheatsheet}{%
+\chapter{Vapor pressure osmometer - Vapro 5520 cheatsheet}\label{vapor-pressure-osmometer---vapro-5520-cheatsheet}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{./document/machine/Vapro\%205520/Vapro_cheatsheet.pdf}{\textbf{\(\pi_{TLP}\)} vapro cheatsheet}
 \end{itemize}
 
 This template is based on \emph{Bookdown} and the \emph{Memoir} LaTeX class to allow writing a book, a report, a PhD thesis, etc. in \emph{R Markdown}.
