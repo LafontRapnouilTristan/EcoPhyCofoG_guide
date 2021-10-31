@@ -1,3 +1,21 @@
+EcoPhyCofoG : 1.000.T9015
+Local knit and News updte
+
+EcoPhyCofoG : 1.000.T9014
+change logo and cover pathways
+
+EcoPhyCofoG : 1.000.T9013
+add .txt files to create these pathways
+
+EcoPhyCofoG : 1.000.T9012
+add rootmorpho pictures
+
+EcoPhyCofoG : 1.000.T9011
+recreate "images" folder for template compatibility
+
+EcoPhyCofoG : 1.000.T9010
+update all links and pathways of rootmorpho
+
 EcoPhyCofoG : 1.000.T9009 
 change logo and cover pathways
 
