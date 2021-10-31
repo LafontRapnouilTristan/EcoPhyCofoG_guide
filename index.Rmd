@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 url: https://GitHubID.github.io/Repository/
 github-repo: GitHubID/Repository
 description: "Bookdown template based on LaTeX memoir class"
-cover-image: "images/logo.png"
+cover-image: "document/aesthetic/logo.png"
 # Title page...
 maintitlepage:
   epigraph: |
@@ -23,7 +23,7 @@ maintitlepage:
     An explanatory sentence.
     Leave an empty line for line breaks.
 # ... or a PDF cover
-pdftitlepage: images/mariono.pdf
+pdftitlepage: document/aesthetic/mariono.pdf
 # Language
 lang: en-US
 otherlangs: [fr-FR,it]
