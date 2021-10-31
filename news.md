@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 EcoPhyCofoG : 1.000.T9015
 Local knit and News updte
 
@@ -21,6 +22,11 @@ change logo and cover pathways
 
 EcoPhyCofoG : 1.000.T9008 
 rm "" in scantransp chunck title
+=======
+
+EcoPhyCofoG : 1.000.M9006: 
+adding RWC protocol
+>>>>>>> 091dbe909f61898fe1d70a89717698b8e6866749
 
 EcoPhyCofoG : 1.000.T9007 
 rm "" in bigroot chunck title

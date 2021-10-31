@@ -94,3 +94,53 @@ Clean Vapro
 
 For more information on the vapro machine, please refer to the *vapro cheatsheet* in the machine category. 
 
+
+
+# Leaf midday water potential $
+
+## Pressure chamber method
+## Psychrometry method
+
+# Relative water content RWC (%)
+
+## Material
+
+*Ziplock bag
+*Paper towel
+*Distilled water
+*Fridge
+*Analytical balance
+*Sharpie
+*cooler
+*envelop
+
+## Method
+
+Before going on the field:
+* write individual code on ziplock bag
+* preweight ziplock bag 
+
+On the field:
+* collect leaf
+* clean leaf with clean paper towel
+* place leaf in preweighted corresponding ziplock bag
+* place bag in cooler for transport to the lab
+
+In the lab:
+* weight the closed ziplock with the leaf (*fresh weight*)
+* delicately take the leaf out of the bag, wrap it in moist paper towel and place the wrap back in the ziplock bag 
+* place ziplock bag in the fridge during 24 hours
+* 24 hours later, take out the leaf and wipe off water excess 
+* weight re-hydrated leaf (*saturated weight*)
+* place leaf in envelop for oven-drying during at least 72h
+* weight dry leaf (*dry weight*)
+
+Calculate RWC (%):
+
+RWC = $\frac{(fresh\ weight-dry\ weight)}{(saturated\ weight-dry\ weight)}$ X 100
+
+From Sapes et al 2020 and Barrs & Weatherley 1962.
+	
+
+# gmin
+# gs
