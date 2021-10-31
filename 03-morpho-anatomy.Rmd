@@ -69,7 +69,7 @@ grid::grid.raster( tiff::readTIFF( "document/trait/rootmorpho/scan_exemple.tif")
 To re-crop these images we use the freeware `XnConvert`. The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
 Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/test.txt).
 
-```{r stencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
+```{r scanstencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
 knitr::include_graphics('document/trait/rootmorpho/squre_stencil.jpg')
 knitr::include_graphics('document/trait/rootmorpho/squre_stencil2.jpg')
 ```
