@@ -1,42 +1,30 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.29)  31 OCT 2021 16:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.20)  31 OCT 2021 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **MyBook.tex
 (./MyBook.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-10-18>
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/
-memoir.cls
-Document Class: memoir 2021/06/16 v3.7p configurable book, report, article docu
-ment class
+L3 programming layer <2021-10-18> (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2021/06/16 v3.7p configurable book, report, article document class
 \onelineskip=\skip47
 \lxvchars=\skip48
 \xlvchars=\skip49
 \@memcnta=\count178
 \c@@memmarkcntra=\count179
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex
-/iftex.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 \stockheight=\skip50
 \stockwidth=\skip51
 \trimtop=\skip52
 \trimedge=\skip53
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 70
-6.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lm
-r.fd
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 706.
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/
-mem12.clo
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/mem12.clo
 File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmod
-ern.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -70,9 +58,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fo
-ntenc.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 \binding=\skip54
@@ -162,9 +148,7 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 \beforePoemTitleskip=\skip114
 \midPoemTitleskip=\skip115
 \afterPoemTitleskip=\skip116
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/a
-rray.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen143
 \ar@mcellbox=\box50
@@ -173,17 +157,11 @@ Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \extratabsurround=\skip117
 \backup@length=\skip118
 \ar@cellbox=\box51
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/d
-column.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/d
-elarray.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/t
-abularx.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen145
 \TX@old@table=\dimen146
@@ -345,8 +323,7 @@ LaTeX Info: Redefining \emph on input line 7662.
 
 Class memoir Warning: Haven't found the textcase package,
 (memoir)              resorting to embedded copy of v0.07 (2004/10/07),
-(memoir)              consider installing the textcase package on input line 12
-989.
+(memoir)              consider installing the textcase package on input line 12989.
 
 \c@figure=\count298
 \c@lofdepth=\count299
@@ -388,13 +365,9 @@ Package tocloft [2008/07/23] emulated by memoir.
 Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfont
-s/amssymb.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfont
-s/amsfonts.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks24
 \symAMSa=\mathgroup4
@@ -402,30 +375,20 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath
-/amsmath.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip191
 For additional information on amsmath, use the `?' option.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath
-/amstext.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath
-/amsgen.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen183
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath
-/amsbsy.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen184
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath
-/amsopn.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count302
@@ -465,15 +428,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode
--math/unicode-math.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kerne
-l/expl3.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-10-18 L3 programming layer (loader) 
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backe
-nd/l3backend-xetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
 (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count314
@@ -486,28 +443,16 @@ File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
 \g__pdf_backend_link_int=\count320
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode
--math/unicode-math-xetex.sty
-Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
-TeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packa
-ges/xparse/xparse.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2021-08-27 L3 Experimental document command parser
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packa
-ges/l3keys2e/l3keys2e.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspe
-c/fontspec.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspe
-c/fontspec-xetex.sty
-Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
-X
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count321
 \l__fontspec_language_int=\count322
 \l__fontspec_strnum_int=\count323
@@ -522,19 +467,11 @@ X
 \l__fontspec_tmpa_dim=\dimen192
 \l__fontspec_tmpb_dim=\dimen193
 \l__fontspec_tmpc_dim=\dimen194
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fo
-ntenc.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspe
-c/fontspec.cfg)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fi
-x-cm.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts
-1enc.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -542,24 +479,13 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \g__um_fonts_used_int=\count333
 \l__um_primecount_int=\count334
 \g__um_primekern_muskip=\muskip17
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode
--math/unicode-math-table.tex)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote
-/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/te
-xtcomp.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microty
-pe/microtype.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/keyval.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks30
 )
@@ -569,30 +495,20 @@ LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen195
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
 \MT@listname@count=\count336
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microty
-pe/microtype-xetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microty
-pe/microtype.cfg
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/
-xcolor.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s-cfg/color.cfg
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s-def/xetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -603,21 +519,13 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/dvipsnam.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/
-svgnam.def
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/
-x11nam.def
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
 File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/l
-ongtable.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip194
 \LTright=\skip195
@@ -635,13 +543,9 @@ Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \c@LT@tables=\count340
 \c@LT@chunks=\count341
 \LT@p@ftn=\toks32
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/ta
-bu.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidt
-h/varwidth.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box63
 \sift@deathcycles=\count342
@@ -670,43 +574,27 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@hleads=\box66
 \tabu@vleads=\box67
 \tabu@cellskip=\skip198
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtool
-s/footnote.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box68
 \fn@width=\dimen264
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/graphicx.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/graphics.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/trig.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s-cfg/graphics.cfg
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
 \Gin@req@height=\dimen265
 \Gin@req@width=\dimen266
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile
-/grffile.sty
-Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
-y)
-Package grffile Info: This package is an empty stub for compatibility on input 
-line 40.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumite
-m/enumitem.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip199
 \enit@outerparindent=\dimen267
@@ -714,29 +602,16 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box69
 \enit@count@id=\count349
 \enitdp@description=\count350
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/polyglossia.sty
-Package: polyglossia 2021/04/12 v1.53 Modern multilingual typesetting with XeLa
-TeX and LuaLaTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbo
-x/etoolbox.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2021/04/12 v1.53 Modern multilingual typesetting with XeLaTeX and LuaLaTeX
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count351
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecmd
-s/makecmds.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval
-/xkeyval.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyv
-al/xkeyval.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyv
-al/xkvutils.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks36
 \XKV@tempa@toks=\toks37
 )
@@ -744,9 +619,7 @@ al/xkvutils.tex
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \xpg@normalclass=\XeTeXcharclass1
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-latex.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-latex.ldf
 File: gloss-latex.ldf polyglossia: module for default language
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -768,13 +641,9 @@ braces):
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 )
 Package polyglossia Info: Default language is latex.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-en-US.ldf
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-en-US.ldf
 File: gloss-en-US.ldf polyglossia: module for en-US (english)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-english.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
 File: gloss-english.ldf polyglossia: module for english
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -811,9 +680,7 @@ braces):
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Package polyglossia Info: Option: English, variant=american.
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-english.ldf
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
 File: gloss-english.ldf polyglossia: module for english
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -855,13 +722,9 @@ Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Default language is english.
 Package polyglossia Info: Option: English, variant=american.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-fr-FR.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-fr-FR.ldf
 File: gloss-fr-FR.ldf polyglossia: module for fr-FR (french)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-french.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-french.ldf
 File: gloss-french.ldf polyglossia: module for french
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -915,8 +778,7 @@ braces):
 >  {french/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `french'
-(polyglossia)                I will use \language=\l@nohyphenation instead on i
-nput line 12.
+(polyglossia)                I will use \language=\l@nohyphenation instead on input line 12.
 
 \l@french = a dialect from \language\l@nohyphenation 
 \french@openbrackets=\XeTeXcharclass2
@@ -927,9 +789,7 @@ nput line 12.
 \french@punctguillstart=\XeTeXcharclass7
 \french@punctguillend=\XeTeXcharclass8
 Package polyglossia Info: Option: French, variant=french.
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-french.ldf
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-french.ldf
 File: gloss-french.ldf polyglossia: module for french
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -983,8 +843,7 @@ braces):
 >  {french/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `french'
-(polyglossia)                I will use \language=\l@nohyphenation instead on i
-nput line 12.
+(polyglossia)                I will use \language=\l@nohyphenation instead on input line 12.
 
 \l@french = a dialect from \language\l@nohyphenation 
 \french@openbrackets=\XeTeXcharclass9
@@ -1000,13 +859,9 @@ Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
 Package polyglossia Info: Option: French, variant=french.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-it.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-it.ldf
 File: gloss-it.ldf polyglossia: module for it (italian)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/gloss-italian.ldf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-italian.ldf
 File: gloss-italian.ldf polyglossia: module for italian
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1076,62 +931,38 @@ braces):
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `italian'
-(polyglossia)                I will use \language=\l@nohyphenation instead on i
-nput line 11.
+(polyglossia)                I will use \language=\l@nohyphenation instead on input line 11.
 
 \l@italian = a dialect from \language\l@nohyphenation 
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglo
-ssia/babelsh.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/babelsh.def
 File: babelsh.def 2019/09/30 Babel common definitions for shorthands
  Taken verbatim from babel files (2019/09/27 v3.34)
 )
 Package polyglossia Info: Making " an active character on input line 33.
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/biblatex.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfte
-xcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwa
-rerr/infwarerr.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcm
-ds/ltxcmds.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptio
-ns/kvoptions.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvset
-keys/kvsetkeys.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/
-logreq.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count353
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/
-logreq.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/if
-then.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url
-.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1192,9 +1023,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count398
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/blx-dm.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -1285,21 +1114,15 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip276
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/blx-unicode.def)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/blx-compat.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/biblatex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 \c@textcitecount=\count467
 \c@textcitetotal=\count468
@@ -1317,30 +1140,22 @@ File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-ibid'...
 Package biblatex Info: ... file 'authoryear-ibid.bbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/bbx/authoryear-ibid.bbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/authoryear-ibid.bbx
 File: authoryear-ibid.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/bbx/authoryear.bbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 File: authoryear.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/bbx/standard.bbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count476
 \c@bbx:relatedtotal=\count477
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-ibid'...
 Package biblatex Info: ... file 'authoryear-ibid.cbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/cbx/authoryear-ibid.cbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/authoryear-ibid.cbx
 File: authoryear-ibid.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1352,60 +1167,30 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/biblatex.cfg
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bclogo/
-bclogo.sty
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bclogo/bclogo.sty
 Package: bclogo 2016/01/10 v3.1
 \bc@invboxh=\skip277
 \bc@invboxd=\skip278
 \bc@titleLength=\skip279
 \logowidth=\skip280
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/fro
-ntendlayer/tikz.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/bas
-iclayer/pgf.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/uti
-lities/pgfrcs.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfutil-common.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks38
 \pgfutil@tempdima=\dimen268
 \pgfutil@tempdimb=\dimen269
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfutil-common-lists.tex))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfutil-latex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box70
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfrcs.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/p
-gf.revision.tex)
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/bas
-iclayer/pgfcore.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/sys
-temlayer/pgfsys.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsys.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfkeys.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks39
 \pgfkeys@temptoks=\toks40
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfkeysfiltered.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks41
 ))
 \pgf@x=\dimen270
@@ -1428,82 +1213,36 @@ tilities/pgfkeysfiltered.code.tex
 \t@pgf@tokb=\toks43
 \t@pgf@tokc=\toks44
 \pgf@sys@id@count=\count482
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgf.cfg
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-xetex.def
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsys-xetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
 File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsys-dvipdfmx.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsys-common-pdf.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )
 \pgfsys@objnum=\count483
-)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsyssoftpath.code.tex
+))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count484
 \pgfsyssoftpath@bigbuffer@items=\count485
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/s
-ystemlayer/pgfsysprotocol.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcore.code.tex
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmath.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathcalc.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathutil.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathparser.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen280
 \pgfmath@count=\count486
 \pgfmath@box=\box71
 \pgfmath@toks=\toks45
 \pgfmath@stack@operand=\toks46
 \pgfmath@stack@operation=\toks47
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.basic.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.trigonometric.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.random.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.comparison.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.base.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.round.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.misc.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfunctions.integerarithmetics.code.tex)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmathfloat.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count487
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfint.code.tex)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorepoints.code.tex
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen281
 \pgf@picmaxx=\dimen282
@@ -1519,134 +1258,76 @@ File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yy=\dimen292
 \pgf@zx=\dimen293
 \pgf@zy=\dimen294
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorepathconstruct.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen295
 \pgf@path@lasty=\dimen296
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorepathusage.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen297
 \pgf@shorten@start@additional=\dimen298
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorescopes.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box72
 \pgf@hbox=\box73
 \pgf@layerbox@main=\box74
 \pgf@picture@serial@count=\count488
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoregraphicstate.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen299
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoretransformations.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen300
 \pgf@pt@y=\dimen301
 \pgf@pt@temp=\dimen302
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorequick.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoreobjects.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorepathprocessing.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorearrows.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen303
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoreshade.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen304
 \pgf@sys@shading@range@num=\count489
 \pgf@shadingcount=\count490
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoreimage.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoreexternal.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box75
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorelayers.code.tex
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcoretransparency.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorepatterns.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/b
-asiclayer/pgfcorerdf.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-odules/pgfmoduleshapes.code.tex
+))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box76
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-odules/pgfmoduleplot.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/com
-patibility/pgfcomp-version-0-65.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen305
 \pgf@nodesepend=\dimen306
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/com
-patibility/pgfcomp-version-1-18.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/uti
-lities/pgffor.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/uti
-lities/pgfkeys.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgfkeys.code.tex))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/mat
-h/pgfmath.sty
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmath.code.tex))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/u
-tilities/pgffor.code.tex
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-ath/pgfmath.code.tex)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen307
 \pgffor@skip=\dimen308
 \pgffor@stack=\toks48
 \pgffor@toks=\toks49
-))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/tikz.code.tex
+)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/l
-ibraries/pgflibraryplothandlers.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count491
 \pgfplotmarksize=\dimen309
@@ -1667,50 +1348,32 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikznumberofchildren=\count493
 \tikznumberofcurrentchild=\count494
 \tikz@fig@count=\count495
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-odules/pgfmodulematrix.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmatrixcurrentrow=\count496
 \pgfmatrixcurrentcolumn=\count497
 \pgf@matrix@numberofcolumns=\count498
 )
 \tikz@expandcount=\count499
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframe
-d/mdframed.sty
+))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zr
-ef-abspage.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zr
-ef-base.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
 Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdef
-inekeys/kvdefinekeys.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexc
-mds/etexcmds.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook
-/auxhook.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/at
-begshi-ltx.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -1758,9 +1421,7 @@ Package zref Info: New property: abspage on input line 66.
 \mdf@subsubtitlebelowskip@length=\skip318
 \mdf@subsubtitleinneraboveskip@length=\skip319
 \mdf@subsubtitleinnerbelowskip@length=\skip320
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframe
-d/md-frame-1.mdf
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
 \mdf@frametitlebox=\box81
@@ -1806,25 +1467,13 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@env@ii=\count505
 \c@mdf@zref@counter=\count506
 Package zref Info: New property: mdf@pagevalue on input line 895.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/l
-ibraries/pgflibraryfadings.code.tex
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/f
-rontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/m
-odules/pgfmoduledecorations.code.tex
+))) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen318
 \pgfdecoratedremainingdistance=\dimen319
 \pgfdecoratedinputsegmentcompleteddistance=\dimen320
@@ -1835,11 +1484,7 @@ odules/pgfmoduledecorations.code.tex
 \pgfdecorationsegmentlength=\dimen324
 )
 \tikz@lib@dec@box=\box86
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/l
-ibraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex
-/ifpdf.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 Invalid UTF-8 byte or sequence at line 164 replaced by U+FFFD.
@@ -1860,9 +1505,7 @@ Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 454 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 454 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 454 replaced by U+FFFD.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/marginf
-ix/marginfix.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/marginfix/marginfix.sty
 Package: marginfix 2020/05/06 v1.2 Fix Margin Paragraphs
 \Mfx@inject@insert=\insert247
 \Mfx@marginbox=\box88
@@ -1876,9 +1519,7 @@ Package: marginfix 2020/05/06 v1.2 Fix Margin Paragraphs
 \marginheightadjustment=\dimen330
 \marginposadjustment=\dimen331
 \Mfx@strutheight=\dimen332
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/c
-alc.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count510
 \calc@Bcount=\count511
@@ -1893,9 +1534,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \widthw=\skip357
 \rf=\skip358
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textpos
-/textpos.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2020/09/26 v1.10
 Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
 Package textpos Info: choosing support for LaTeX3 on input line 61.
@@ -1911,13 +1550,9 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@oy=\dimen341
 \TP@tbargs=\toks50
 TextBlockOrigin set to 0pt x 0pt
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpage
-s/pdfpages.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic
-/eso-pic.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen342
 \ESO@tempdimb=\dimen343
@@ -1925,9 +1560,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pagewidth=\dimen344
 \AM@pageheight=\dimen345
 \AM@fboxrule=\dimen346
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpage
-s/ppxetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2021/03/06 v0.5t Pdfpages driver for XeTeX (AM)
 )
 \pdfpages@includegraphics@status=\count513
@@ -1937,9 +1570,7 @@ File: ppxetex.def 2021/03/06 v0.5t Pdfpages driver for XeTeX (AM)
 \AM@toc@title=\toks52
 \c@AM@survey=\count515
 \AM@templatesizebox=\box93
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquote
-s/csquotes.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 \csq@reset=\count516
 \csq@gtype=\count517
@@ -1948,58 +1579,37 @@ Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 \csq@maxlvl=\count520
 \csq@tshold=\count521
 \csq@ltx@everypar=\toks53
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquote
-s/csquotes.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquote
-s/csquotes.cfg
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling strict warnings.
 Package csquotes Info: Enabling multilingual quotes.
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/hyperref.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfes
-cape/pdfescape.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor
-/hycolor.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxm
-acro/letltxmacro.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
 \@linkdim=\dimen347
 \Hy@linkcounter=\count522
 \Hy@pagecounter=\count523
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/pd1enc.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intca
-lc/intcalc.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count524
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/puenc.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4073.
@@ -2013,15 +1623,10 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count525
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen348
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitse
-t/bitset.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigin
-tcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count526
 \Field@Width=\dimen349
@@ -2038,55 +1643,37 @@ LaTeX Info: Redefining \pageref on input line 6150.
 \Hy@abspage=\count527
 \c@Item=\count528
 \c@Hfootnote=\count529
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/
-memhfixc.sty
-Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir cl
-ass
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir class
 \c@memhycontfloat=\count530
 \c@Hpagenote=\count531
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/hxetex.def
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/strin
-genc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \pdfm@box=\box94
 \c@Hy@AnnotLevel=\count532
 \HyField@AnnotCount=\count533
 \Fld@listcount=\count534
 \c@bookmark@seq@number=\count535
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfi
-lecheck/rerunfilecheck.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/at
-veryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniqu
-ecounter/uniquecounter.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip359
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 271.
 Package hyperref Info: Option `breaklinks' set `true' on input line 271.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soul/
-soul.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks54
 \SOUL@lasttoken=\toks55
@@ -2102,7 +1689,25 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \feline@chapter=\box95
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
-No file MyBook.aux.
+(./MyBook.aux
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 26.
+LaTeX Info: Redefining \sffamily on input line 26.
+LaTeX Info: Redefining \ttfamily on input line 26.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 150.
+LaTeX Info: Redefining \sffamily on input line 150.
+LaTeX Info: Redefining \ttfamily on input line 150.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+)
 \openout1 = `MyBook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 335.
@@ -2151,19 +1756,16 @@ Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:scri
-pt=math;language=dflt;"
+(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:scri
-pt=math;language=dflt;"
+(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
@@ -2186,38 +1788,28 @@ Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latin
-modern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=Ma
-thScriptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:
-script=math;language=dflt;"<7.2-10.2>s*[0.9999970497384594]"[latinmodern-math.o
-tf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[0.9999970497384594]"[latinmo
-dern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <10.2->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:scri
-pt=math;language=dflt;"
+(fontspec)             <->s*[0.9999970497384594]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 335.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 335.
-
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 335.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 335.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `bold' on input line 335.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 335.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 335.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2251,11 +1843,7 @@ Package fontspec Info: latinmodern-math scale = 1.000097049443433.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latin
-modern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=Ma
-thScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustme
-nt={\fontdimen
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
 (fontspec)             8\font =8.124pt\relax \fontdimen 9\font =4.728pt\relax
 (fontspec)             \fontdimen 10\font =5.328pt\relax \fontdimen 11\font
 (fontspec)             =8.232pt\relax \fontdimen 12\font =4.14pt\relax
@@ -2271,10 +1859,7 @@ nt={\fontdimen
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->s*[1.000097049443433]"[latinmodern-math.otf]/OT:s
-cript=math;language=dflt;"<7.2-10.2>s*[1.000097049443433]"[latinmodern-math.otf
-]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[1.000097049443433]"[latinmoder
-n-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <10.2->s*[1.000097049443433]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[1.000097049443433]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[1.000097049443433]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 8\font =8.124pt\relax \fontdimen 9\font
@@ -2288,8 +1873,7 @@ n-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             22\font =3.0pt\relax \fontdimen 20\font =0pt\relax
 (fontspec)             \fontdimen 21\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.000097049443433]"[latinmodern-math.otf]/OT:scrip
-t=math;language=dflt;"
+(fontspec)             <->s*[1.000097049443433]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 8\font =8.124pt\relax \fontdimen 9\font
@@ -2306,13 +1890,11 @@ t=math;language=dflt;"
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 335.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 335.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 335.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `bold' on input line 335.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 335.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 335.
 
 Package fontspec Info: latinmodern-math scale = 0.9999970497384594.
 
@@ -2346,11 +1928,7 @@ Package fontspec Info: latinmodern-math scale = 0.9998970500334856.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             'latinmodern-math.otf' with options
-(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latin
-modern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=Ma
-thScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustme
-nt={\fontdimen
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
 (fontspec)             8\font =0.48pt\relax \fontdimen 9\font =2.4pt\relax
 (fontspec)             \fontdimen 10\font =2.004pt\relax \fontdimen 11\font
 (fontspec)             =1.332pt\relax \fontdimen 12\font =7.2pt\relax
@@ -2360,10 +1938,7 @@ nt={\fontdimen
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <10.2->s*[0.9998970500334856]"[latinmodern-math.otf]/OT:
-script=math;language=dflt;"<7.2-10.2>s*[0.9998970500334856]"[latinmodern-math.o
-tf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[0.9998970500334856]"[latinmo
-dern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <10.2->s*[0.9998970500334856]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[0.9998970500334856]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[0.9998970500334856]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 8\font =0.48pt\relax \fontdimen 9\font
@@ -2371,8 +1946,7 @@ dern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             \fontdimen 11\font =1.332pt\relax \fontdimen 12\font
 (fontspec)             =7.2pt\relax \fontdimen 13\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9998970500334856]"[latinmodern-math.otf]/OT:scri
-pt=math;language=dflt;"
+(fontspec)             <->s*[0.9998970500334856]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
 (fontspec)             \fontdimen 8\font =0.48pt\relax \fontdimen 9\font
@@ -2381,61 +1955,44 @@ pt=math;language=dflt;"
 (fontspec)             =7.2pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 3
-35.
+(Font)              `largesymbols' in the math version `normal' on input line 335.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 335.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 335.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 335
-.
+(Font)              `largesymbols' in the math version `bold' on input line 335.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 335.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 335.
 LaTeX Info: Redefining \microtypecontext on input line 335.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microty
-pe/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Mod
-ern Roman (RS)
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
 )
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/lbx/american.lbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/american.lbx
 File: american.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/lbx/english.lbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/lbx/english.lbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/lbx/french.lbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/french.lbx
 File: french.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/lbx/italian.lbx
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -2447,42 +2004,29 @@ Package biblatex Info: ... and expl3
 (biblatex)             2021-10-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblate
-x/blx-case-expl3.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
 \openout4 = `MyBook.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'MyBook.bbl' not found.
-No file MyBook.bbl.
+Package biblatex Info: ... file 'MyBook.bbl' found.
+(./MyBook.bbl)
 Package biblatex Info: Reference section=0 on input line 335.
 Package biblatex Info: Reference segment=0 on input line 335.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflsca
-pe/pdflscape.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphic
-s/lscape.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
-
 )
 Package hyperref Info: Link coloring ON on input line 335.
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperre
-f/nameref.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcoun
-t/refcount.sty
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(c:/Users/marion.boisseaux/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/getti
-tlestring/gettitlestring.sty
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count536
@@ -2493,11 +2037,9 @@ LaTeX Info: Redefining \nameref on input line 335.
 LaTeX Info: Redefining \ref on input line 335.
 LaTeX Info: Redefining \pageref on input line 335.
 LaTeX Info: Redefining \nameref on input line 335.
+(./MyBook.out) (./MyBook.out)
 \@outlinefile=\write6
 \openout6 = `MyBook.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Option: English, variant=american.
@@ -2506,22 +2048,463 @@ LaTeX Info: Redefining \sffamily on input line 335.
 LaTeX Info: Redefining \ttfamily on input line 335.
 Package polyglossia Info: Option: English, variant=american.
 Package polyglossia Info: Option: English, variant=american.
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf, page 1>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf, page 1>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf, page 1>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf, page 1>
+File: images/mariono.pdf Graphic file (type pdf)
+<use images/mariono.pdf, page 1>
+[1
 
-! Package pdfpages Error: Cannot find file `images/mariono.pdf'.
 
-See the pdfpages package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.341 \includepdf[pages=1]{images/mariono.pdf}
-                                               
+] [2
+
+]
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+TextBlockOrigin set to \stockwidth -\paperwidth -\trimedge  x \trimtop 
+
+Overfull \hbox (12.9342pt too wide) in paragraph at lines 355--355
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TU+qtm on input line 355.
+LaTeX Font Info:    No file TUqtm.fd. on input line 355.
+
+LaTeX Font Warning: Font shape `TU/qtm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 355.
+
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+
+LaTeX Font Warning: Font shape `TU/qtm/m/sc' undefined
+(Font)              using `TU/qtm/m/n' instead on input line 355.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+
+ []
+
+[3
+
+]
+TextBlockOrigin set to \trimedge  x \trimtop 
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.4pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 355.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 355.
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.40076pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.3991pt on input line 355.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 355.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 355.
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 355.
+(c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/Users/Arthur Collu Collu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]\TU/lmr/m/n/12 bookdown ([][]$[][][][] [] [] [] [][][][][][][][] [] [][][][]$[][]) and memoiR ([][]$[][][][][] [] [] []
+ []
+
+File: images//logo.pdf Graphic file (type pdf)
+<use images//logo.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+
+ []
+
+[4]
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+
+LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
+(Font)              using `TU/lmr/bx/n' instead on input line 373.
+
+(./MyBook.toc
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+
+Overfull \hbox (0.33597pt too wide) detected at line 59
+ \TU/lmr/m/n/12 xvii
+ []
+
+
+Overfull \hbox (6.92397pt too wide) detected at line 97
+ \TU/lmr/bx/n/12 xxiii
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 99.
+LaTeX Info: Redefining \sffamily on input line 99.
+LaTeX Info: Redefining \ttfamily on input line 99.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 101.
+LaTeX Info: Redefining \sffamily on input line 101.
+LaTeX Info: Redefining \ttfamily on input line 101.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+[5
+
+] [6] [7
+
+
+] [8
+
+] [9] [10
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[11]
+File: document/trait/rootmorpho/thickroot.png Graphic file (type bmp)
+<document/trait/rootmorpho/thickroot.png>
+[12]
+File: document/trait/rootmorpho/bromeroot.jpg Graphic file (type bmp)
+<document/trait/rootmorpho/bromeroot.jpg>
+File: document/trait/rootmorpho/scan_transp.png Graphic file (type bmp)
+<document/trait/rootmorpho/scan_transp.png>
+File: MyBook_files/figure-latex/bromescan-1.pdf Graphic file (type pdf)
+<use MyBook_files/figure-latex/bromescan-1.pdf>
+
+LaTeX Warning: Reference `fig:scanstencil' on page xiii undefined on input line 491.
+
+[13]
+File: document/trait/rootmorpho/squre_stencil.jpg Graphic file (type bmp)
+<document/trait/rootmorpho/squre_stencil.jpg>
+File: document/trait/rootmorpho/squre_stencil2.jpg Graphic file (type bmp)
+<document/trait/rootmorpho/squre_stencil2.jpg>
+[14] [15] [16] [17] [18
+
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 24.88228pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 20.7419pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 17.28157pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 24.87733pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 20.73778pt on input line 555.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 17.27815pt on input line 555.
+[19] [20
+
+] [21] [22
+
+]
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+
+LaTeX Warning: Empty bibliography on input line 633.
+
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+(./MyBook.lof
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 27.
+LaTeX Info: Redefining \sffamily on input line 27.
+LaTeX Info: Redefining \ttfamily on input line 27.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+) [23
+
+
+
+
+]
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 664.5pt by 380pt
+Spine and edge margins: 108.405pt and 108.405pt
+Upper and lower margins: 108.405pt and 72.14185pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7.22743pt and 7.22743pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+LaTeX Info: Redefining \rmfamily on input line 664.
+LaTeX Info: Redefining \sffamily on input line 664.
+LaTeX Info: Redefining \ttfamily on input line 664.
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--672
+
+ []
+
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 673.
+LaTeX Info: Redefining \sffamily on input line 673.
+LaTeX Info: Redefining \ttfamily on input line 673.
+Package polyglossia Info: Option: English, variant=american.
+File: images/logo.pdf Graphic file (type pdf)
+<use images/logo.pdf>
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {french/script}  =>  {Latin}
+>  {french/lcscript}  =>  {latin}
+>  {french/scripttag}  =>  {}
+>  {french/language}  =>  {French}
+>  {french/langtag}  =>  {FRA}
+>  {french/bcp47}  =>  {fr-FR}
+>  {french/hyphennames}  =>  {french,francais}
+>  {french/direction}  =>  {LR}
+>  {french/hyphenmins}  =>  {2,2}
+>  {french/frenchspacing}  =>  {true}
+>  {french/indentfirst}  =>  {true}
+>  {french/fontsetup}  =>  {true}
+>  {french/envname}  =>  {french}
+>  {french/babelname}  =>  {french}
+>  {french/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {french/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {italian/script}  =>  {latin}
+>  {italian/lcscript}  =>  {latin}
+>  {italian/scripttag}  =>  {}
+>  {italian/language}  =>  {Italian}
+>  {italian/langtag}  =>  {ITA}
+>  {italian/bcp47}  =>  {it}
+>  {italian/hyphennames}  =>  {italian}
+>  {italian/direction}  =>  {LR}
+>  {italian/hyphenmins}  =>  {2,2}
+>  {italian/frenchspacing}  =>  {true}
+>  {italian/indentfirst}  =>  {true}
+>  {italian/fontsetup}  =>  {true}
+>  {italian/envname}  =>  {italian}
+>  {italian/babelname}  =>  {italian}
+>  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[24
+
+
+]
+\tf@toc=\write7
+\openout7 = `MyBook.toc'.
+
+\tf@lof=\write8
+\openout8 = `MyBook.lof'.
+
+(./MyBook.aux
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 26.
+LaTeX Info: Redefining \sffamily on input line 26.
+LaTeX Info: Redefining \ttfamily on input line 26.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+LaTeX Info: Redefining \rmfamily on input line 150.
+LaTeX Info: Redefining \sffamily on input line 150.
+LaTeX Info: Redefining \ttfamily on input line 150.
+Package polyglossia Info: Option: English, variant=american.
+Package polyglossia Info: Option: English, variant=american.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `MyBook.out' has not changed.
+(rerunfilecheck)             Checksum: C59248880E22E1172F06862A168CA6FD;4377.
+Package logreq Info: Writing requests to 'MyBook.run.xml'.
+\openout1 = `MyBook.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 42961 strings out of 478472
- 843915 string characters out of 5858878
- 1807641 words of memory out of 5000000
- 62660 multiletter control sequences out of 15000+600000
- 413358 words of font info for 38 fonts, out of 8000000 for 9000
+ 43523 strings out of 478472
+ 860415 string characters out of 5859542
+ 1824597 words of memory out of 5000000
+ 63109 multiletter control sequences out of 15000+600000
+ 419154 words of font info for 84 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,2n,120p,1151b,3688s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,17n,120p,1151b,5526s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-No pages of output.
+Output written on MyBook.pdf (24 pages).

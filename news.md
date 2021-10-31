@@ -1,3 +1,9 @@
+EcoPhyCofoG : 1.000.T9009 
+change logo and cover pathways
+
+EcoPhyCofoG : 1.000.T9008 
+rm "" in scantransp chunck title
+
 EcoPhyCofoG : 1.000.T9007 
 rm "" in bigroot chunck title
 
