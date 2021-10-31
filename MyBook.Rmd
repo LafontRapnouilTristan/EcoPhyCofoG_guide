@@ -1,0 +1,341 @@
+--- 
+title: "User's guide for Ecofog's Ecophysiology Lab"
+author: "Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil"
+date: "`r Sys.Date()`"
+url: https://GitHubID.github.io/Repository/
+github-repo: GitHubID/Repository
+description: "Bookdown template based on LaTeX memoir class"
+cover-image: "document/aesthetic/logo.png"
+# Title page...
+maintitlepage:
+  epigraph: |
+    This document is reproducible thanks to:
+    \begin{itemize}
+      \item \LaTeX and its class memoir (\url{http://www.ctan.org/pkg/memoir}).
+      \item R (\url{http://www.r-project.org/}) and RStudio (\url{http://www.rstudio.com/})
+      \item bookdown (\url{http://bookdown.org/}) and memoiR (\url{https://ericmarcon.github.io/memoiR/})
+    \end{itemize}
+  credits: |
+    Name of the owner of the logo
+    
+    \url{http://www.company.com}
+    
+    An explanatory sentence.
+    Leave an empty line for line breaks.
+# ... or a PDF cover
+pdftitlepage: document/aesthetic/mariono.pdf
+# Language
+lang: en-US
+otherlangs: [fr-FR,it]
+# LaTeX
+documentclass: memoir
+classoption:
+  - extrafontsizes
+  - onecolumn
+  - openright
+# Paper, font
+papersize: A4
+fontsize: 12pt
+# Fonts installed by a package. LaTeX tex-gyre package must be installed for:
+# mainfont: texgyretermes          # Times New Roman for the text
+mainfontoptions:
+  - Extension=.otf
+  - UprightFont=*-regular
+  - BoldFont=*-bold
+  - BoldItalicFont=*-bolditalic
+# mathfont: texgyretermes-math.otf # Times New Roman for equations
+# memoir Style
+MemoirChapStyle: daleif1           # or companion with large margins
+MemoirPageStyle: Ruled             # or companion with large margins
+# Margins
+largemargins: false                # or true for large margins
+smallmargin: 1.5in                 # outer margin (small).
+largemargin: 3in                   # outer margin (large)
+marginnote:  1.8in                 # note width in large margin
+spinemargin: 1.5in                 # spine margin. Reduce to 1.2 with large margins.
+uppermargin: 1.5in                 # upper margin
+lowermargin: 1in                   # lower margin
+# Table of contents
+toc-depth: 2
+# Section numbering
+secnum-depth: section
+# List of tables / Figures
+lot: false
+lof: true
+# Bibliography
+bibliography: references.bib
+biblatexoptions:
+  - backend=biber
+  - style=authoryear-ibid  # or verbose-inote with large margins
+# - pageref=true           # uncomment for verbose-inotes style
+  - isbn=false
+  - backref=true
+  - giveninits=true
+  - uniquename=init
+  - maxcitenames=2
+  - maxbibnames=150
+  - sorting=nyt
+  - sortcites=false
+# Chapter summary text
+chaptersummary: In a Nutshell
+# Back Cover
+backcover:
+  - language: english
+    abstract: |
+      English abstract, on the last page.
+  
+      This is the user's guide of EcoFoG's ecophysiology lab
+    keywords:
+      - Keyword in English
+      - As a list
+    abstractlabel: Abstract
+    keywordlabel: Keywords
+backcoverfontsize: normalsize
+# Figure cropping may be set to no if ghostscript is not installed
+fig_crop: true
+# Do not modify
+site: bookdown::bookdown_site
+always_allow_html: true
+graphics: true
+link-citations: true
+colorlinks: true
+---
+
+# Title page...
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {#intro}
+
+
+Plant functional traits are the features (morphological, physiological, phenological) that represent ecological strategies and determine *describe?* how plants respond to environmental factors, affect other trophic levels and influence ecosystem properties. Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits. The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
+
+This handbook presents the different protocols used in the ecophysio lab. We therefore suggest the methodological principles for a more open and transparent science. This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and the associated R-scripts to upload/clean the raw data. 
+
+<!--chapter:end:01-introduction.Rmd-->
+
+# Handbook architecture
+
+This handbook is written for operational ends. As such, it is not a review or scientific paper thoroughly presenting each traits but rather a list of protocols associated with routinely measured traits in this lab.
+
+Each chapter of this book correspond to one trait and associated measurement process.
+
+
+## Morpho-anatomy
+
+## Hydraulics
+
+## Fluorescence
+ 
+## Fluxes and gaz exchange
+ 
+## Microbial
+
+## Greenhouse setups and tips
+
+## Machine info
+
+<!--chapter:end:02-architecture.Rmd-->
+
+## Root Morphology
+
+Root morphology analysis (length, diameter, etc.) are conducted using the Winrhizo software.
+
+Winrhizo is a licenced software created by Regent Instrument Canada Inc. It exist 4 different version and we own the *Basic Version*. It allows root morphology analysis from scans. 
+
+### Image Acquisition
+
+#### Format
+
+Supported image format are `.TIFF`, `.JPEG` and `.BMP`. `.TIFF`and `.BMP` are not compressed and are thus to be preferred. `.TIFF` images are compatible with all OS and should be privileged but you must be careful to save them *uncompressed* as `WinRhizo` won't be able to open *compressed* ones.
+
+The higher the resolution, the more pixel you will have and the more precise will be your measurements. However, with resolution, scan time and image size increase. 800DPI is the standard in this lab but 400 is the winrhizo recommendation. This depend on the required level of precision as well as the size of the analyzed roots ( the finer the higher must be the resolution to get more details). 
+
+#### Scanner
+
+Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
+[EPSON's V800](document/machine/EPSON_V800/info.) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
+And the scanning software is [ViewScan](document/software/Viewscan/test.txt)
+
+#### Scan process
+
+Paste the wall-taped doc.
+
+##### Flat scan
+
+You can decide to use basic scan options with light only coming from below. If you do so you need to have a white background installed under the scanner's roof (if black roots, if pale ones you'll need a black background).
+
+Choosing this option will simplify your protocol and can suffice for simple and thin enough root systems.
+
+**EXEMPLE** scan marion
+
+##### Transparent
+
+If your root are too big \@ref(fig:bigroots), then self-shading can appear on flat scan and bias winrhizo's analysis. To avoid this shading you can remove the background from the scanner's roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.
+
+```{r bigroots, echo=FALSE, out.width="50%", fig.cap="Roots to thick to be flat scanned"}
+knitr::include_graphics('document/traits/RootMorpho/figures/thickroot')
+```
+
+
+Another case where you can prefer `Transparent` option is for complex root systems (e.g. bromeliaceae, \@ref(fig:bromeroot)) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the `Transparent` mode.
+
+```{r bromeroot, echo=FALSE, out.width="50%", fig.cap="Complex bromeliad adventitious root system"}
+knitr::include_graphics('document/traits/RootMorpho/figures/bromeroot.tif')
+```
+
+**BEWARE:** The `Transparent` scan window is smaller than the normal mode scan. The actual scanned zone is showed \@ref(fig:scantransp) and you must make sure that you roots are well placed within this area.
+
+
+```{r scantransp, echo=FALSE, out.width="50%", fig.cap="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner"}
+knitr::include_graphics('document/traits/RootMorpho/figures/scan_transp.png')
+```
+
+### Image processing
+
+To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
+However, when having a lot of scans you might want to automatize the process using the `batch` option.
+If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
+For instance, this \@ref(fig:bromescan) is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.
+
+```{r bromescan, echo=FALSE, out.width="50%", fig.cap="Scan of a bromeliad root system in water-filled petri dish"}
+knitr::include_graphics('document/traits/RootMorpho/figures/scan_exemple.tif')
+```
+
+To re-crop these images we use the freeware `XnConvert`. The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
+Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/).
+
+```{r stencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
+knitr::include_graphics('document/traits/RootMorpho/figures/squre_stencil.jpg')
+```
+
+### WinRhizo
+
+#### Installation
+
+The winrhizo software is contained on a CD (ask [**Eliane Louisanna**](https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0). To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.
+
+#### Startup
+
+#### First analysis
+
+Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click *Image* -> *Origin* -> *From File*. Then you can click the *acquisition *icon **PIC**. 
+This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display `.TIFF`. 
+When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.
+
+When an image or region is analyzed, winrhizo display the *sample identification* window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click *OK* to do the analysis or *Cancel* to abort it.
+
+After you clicked *OK*, winrhizo starts the analysis (can be stopped pressing *S*). When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to *open one*, *create one* or *save nothing*. Selecting *create one* will create a new `.TXT` file to store analysis data (more info about output [here][Output]). Selecting *open one* will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on *save nothing*, guess? 
+
+In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it [here][Pixel classification]).
+
+WELL DONE! You just analyze your first picture!
+
+You can practice with scans available [here](document/traits/RootMorpho/Data/)
+
+#### Calibration
+
+If not calibrated (associated with a scale), winrhizo will display results in pixels. `.TIFF` files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
+
+However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to "manually" calibrate your image. Winrhizo calibration files are saved as `.CAL`. In the *Calibration* menu you can load pre-existing calibration files. You will find the `calib_imge.TIFF` [here](document/software/Winrhizo/calib_imge.TIF). To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on *calibration* -> *pixel size method* -> *object of known dimension* -> *1 image* -> width=1 , height=1, border=0.35, units=cm -> *Ok*
+
+Then, winrhizo will propose you to save the calibration in a `.CAL` file that can be loaded later and used for all your images at a given resolution. \textcolor{red}{DO NOT NAME YOUR FILE Scanner.cal}. 
+Please, when you create a `.CAL` at a previously not used resolution, store a copy of the calibration file [here](document/software/Winrhizo/) so that your work helps your successors!!
+
+#### Batch
+
+We saw how to analyze a [single picture or region ][First analysis]but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a *batch* (i.e. a folder) containing any number of images you want. 
+
+#### Pixel classification
+
+#### Output
+
+<!--chapter:end:03-morpho-anatomy.Rmd-->
+
+
+# Leaf turgor loss point, $\pi_{tlp}$
+
+Placeholder
+
+
+## Materials
+## Methods
+### Installing Vapro for measurements
+### Sampling on the field
+### Lab measurements
+#### Field day
+#### N+1 Field day
+#### End measurements
+
+<!--chapter:end:04-hydraulics.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:05-fluorescence.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:06-fluxes_and_gaz_exchange.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:07-microbial.Rmd-->
+
+
+
+## R Markdown
+## Including Plots
+
+<!--chapter:end:08-greenhouse_tips.Rmd-->
+
+---
+title: "09-machine"
+author: "Marion Boisseaux"
+date: "31/10/2021"
+output: html_document
+---
+
+
+# Vapor pressure osmometer - Vapro 5520 cheatsheet
+
+* [**$\pi_{TLP}$** vapro cheatsheet](./document/machine/Vapro 5520/Vapro_cheatsheet.pdf)
+
+
+
+<!--chapter:end:09-machine.Rmd-->
+
+`r if (knitr:::is_html_output()) '# References {-}'`
+
+<!--chapter:end:99-references.Rmd-->
+
+---
+title: "Memoir Template"
+output: html_document
+---
+
+This template is based on _Bookdown_ and the _Memoir_ LaTeX class to allow writing a book, a report, a PhD thesis, etc. in _R Markdown_.
+
+The main file is _index.Rmd_ which contains the description of the book in its header. All other _.Rmd_ files in the folder contain a chapter. 
+The _references.bib_ file contains the bibliography.
+
+This file will have to be deleted, as well as _81-getting_started.Rmd_ and _82-syntax.Rmd_: they have to be replaced by the content of the book.
+
+To get started, create a new R project from this folder.
+Then open _index.Rmd_ and click on the _Build Book_ button in the _Build_ window of Rstudio.
+
+<!--chapter:end:EcoPhyCoFoG_guide.Rmd-->
+
