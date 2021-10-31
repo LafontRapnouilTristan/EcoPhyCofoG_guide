@@ -1,0 +1,106 @@
+---
+title: "Vapro_cheatsheet"
+author: "Marion Boisseaux"
+date: "18/12/2020"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+
+### Notion de thermocouple  
+
+Un thermocouple est un capteur servant à mesurer la température. IL se compose de 2 métaux de nature différente. Chauffé ou réfrigéré le thermocouple produit une tension qui est transcrite en température. 
+
+### Notion de psychrométrie  
+
+Avec un psychromètre (équipé d'un thermocouple!) on mesure l'état énergétique du solvant: la tension de vapeur. La tension de vapeur dépend des forces avec lesquelles le solvant est retenu. La présence de solutés dans le solvant va modifier cet état énergétique et donc la tension de vapeur. 
+
+### Notion d'osmolalité  
+
+L’osmomètre à tension de vapeur 5600 Vapro® de Wescor mesure l’osmolalité des solutions. 
+
+C'est une mesure du nombre d'osmoles de soluté par kg de solvant et donc représente le nombre de particules qui sont osmotiquement actives, cad capables d'attirer et de garder l'eau. 
+
+Les mesures d'osmolalité peuvent aussi être effectuées pour déterminer le poids moléculaire, la pression de vapeur et toutes les autres caractéristiques annexes des échantillons de laboratoire. 
+
+**le vapro nous indique alors une concentration**
+
+## Fonctionnement du vapro  
+
+![](C:\Users\marion.boisseaux\Pictures\Saved Pictures\Materiel&Method\Vapro_logo.png)
+
+Fonctionne sur un ondulateur : permet de bien filtrer les fréquences pour que ça soit homogène 
+
+Utilise de l'eau distillée, remplir la cuve la + éloignée quand necessaire  
+Cartouche bleue quand elle fonctionne, puis vire au rose après bcp d'utilisations.  
+
+Les mesures de pression de vapeur sont la meilleure méthode pour déterminer l'osmalalité *(the thermodynamic limitations of vapor pressure osmometry are least restrictive.)*
+
+The vapor pressure method determines osmolality at room temperature with the sample in natural equilibrium. This precludes cryoscopic artifacts due to high viscosity, suspended particles, or other conditions that can interfere with freezing point determinations, giving Vapro a much broader range of error-free applications.
+
+
+## Méthode pour déterminer les Ptlp
+
+*Cf. Bartlett, 2012a et Maréchaux, 2015*  
+
+La concentration C0 est ensuite traduite à l'aide de 2 équations différentes pour avoir le Ptlp.
+
+## Quand la feuille se bloque  
+
+1. Menu / selection / configuration / debloquage chambre  
+2. Eteindre appareil  
+3.	Enlever couvercle  
+4. Devisser en étoiles (un peu à chaque fois) les 4 vices et enlever la prise câble  
+5. NE PAS POSER LE THERMOCOUPLE SUR LA TABLE : le renverser pour qu’il soit face vers le haut (côté visse sur la table)  
+6. Enlever la feuille qui coince  
+7. NE PAS TOUCHER LE THERMOCOUPLE : nettoyer autour avec la solution n°1 ammoniac puis n°2 deionized solution. Nettoyer à l’interieur AUTOUR de la chambre (pas à l’interieur)  
+8. Remettre les vices et les visser un peu à chaque fois (pas d’un coup)  
+9. Remettre le couvercle  
+10. Allumer le vapro  
+11. Faire clean avant de relancer une mesure  
+
+## Calibration
+
+Quand calibrer?  
+ 
+* Après avoir démonter la chambre, si la feuille était bloquée  
+* Quand les paramètres du vapro ont changé (témpérature,...)
+* Après changement de la cartouche: (couleur normal violet PAS ROSE!) *quand le clean n'arrive pas à se faire à cause d'un mauvais séchage, il faut changer la cartouche.*  
+* En début de chaque semaine de terrain  
+
+Calibration:  
+
+1. Test de la qualité de l'eau: SELECT/MENU DE CONFIGURATION/TEST APPAREIL/QUALITE EAU/ENTER. Ecrire la valeur affichée dans le cahier. Bonne valeur tant que c'est inférieure à 5 micro Siemens.  
+2. Faire un clean  
+3. Calibration pour les concentrations 290 / 1000 / 100 dans cet ordre
+  + Prendre les fioles
+  + Prendre les pastilles blanches de 7 mm de diamètre
+  + Déposer 10 µL sur la pastille 
+  + S'assurer du mode normal
+  + close
+  + écrire la valeur de la calibration sur le cahier / appuyer sur calibrate 
+
+La calibration est bonne quand le delta :  
+  
+* est de **3 mmol.kg^-1^** autour de la valeur de référence: 290 mmol.kg^-1^  
+* est de **5 mmol.kg^-1^** autour de la valeur de référence: 1000 mmol.kg^-1^  
+* est de **2 mmol.kg^-1^** autour de la valeur de référence: 100 mmol.kg^-1^  
+
+Le niveau de contamination s'affiche qu'au niveau de la calibration 100 mmol.kg^-1^. Il doit etre inférieur à 10. Cela correspond à la propreté de la chambre. 
+
+## Test control 
+
+3 fioles controle existent dont les intervalles de concentration se recoupent. 
+
+Utilisation de la fiole gamme la + forte pour être au plus proche des valeurs de nos échantillons : 294-345 mmol.kg^-1^
+
+
+# Questions résiduelles
+
+* Interet des fioles de controle de concentration faibles?  
+* Sur les 3 fioles de controle, faut-il toutes les passer en test aussi?
+* Si nous sommes en dehors de la gamme, doit-on recalibrer?
+
+
