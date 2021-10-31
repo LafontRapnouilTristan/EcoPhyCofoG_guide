@@ -1,3 +1,7 @@
+
+EcoPhyCofoG : 1.000.M9006: 
+adding RWC protocol
+
 EcoPhyCofoG : 1.000.T9007 
 rm "" in bigroot chunck title
 
