@@ -11,10 +11,10 @@ Each chapter of this book correspond to one trait and associated measurement pro
 
 ## Fluorescence
  
-## Fluxes and gaz exchange
+## Gaz fluxes and exchanges
  
-## Microbial
+## Microbiology and metabarcoding
 
 ## Greenhouse setups and tips
 
-## Machine info
+## Device info

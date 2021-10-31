@@ -1,4 +1,6 @@
-# Vapor pressure osmometer - Vapro 5520 cheatsheet
+# Device info
+
+## Vapor pressure osmometer - Vapro 5520 cheatsheet
 
 * [**$\pi_{TLP}$** vapro cheatsheet](./document/machine/Vapro 5520/Vapro_cheatsheet.pdf)
 
