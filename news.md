@@ -1,3 +1,6 @@
+EcoPhyCofoG : 1.000.T9018
+add "tiff" to workflow required pckge
+
 EcoPhyCofoG : 1.000.T9017
 clean local run files
 
