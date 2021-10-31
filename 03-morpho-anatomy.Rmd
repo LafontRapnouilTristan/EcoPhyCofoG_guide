@@ -48,7 +48,7 @@ knitr::include_graphics('document/traits/RootMorpho/figures/bromeroot.tif')
 **BEWARE:** The `Transparent` scan window is smaller than the normal mode scan. The actual scanned zone is showed \@ref(fig:scantransp) and you must make sure that you roots are well placed within this area.
 
 
-```{r scantransp, echo=FALSE, out.width="50%", fig.cap=""Flat" (red) and "Transparent" (blue) scan zone of EPSON's V800 scanner"}
+```{r scantransp, echo=FALSE, out.width="50%", fig.cap="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner"}
 knitr::include_graphics('document/traits/RootMorpho/figures/scan_transp.png')
 ```
 
