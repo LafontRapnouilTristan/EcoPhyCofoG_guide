@@ -17,8 +17,8 @@ The higher the resolution, the more pixel you will have and the more precise wil
 #### Scanner
 
 Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
-[EPSON's V800](document/machine/EPSON_V800/test.txt) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
-And the scanning software is [ViewScan](document/software/Viewscan/test.txt)
+[EPSON's V800](document/machine/EPSON_V800/usersguide.pdf) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
+And the scanning software is [ViewScan](document/software/Viewscan/Parametre_Scanner.pdf)
 
 #### Scan process
 
@@ -67,7 +67,7 @@ grid::grid.raster( tiff::readTIFF( "document/trait/rootmorpho/scan_exemple.tif")
 ```
 
 To re-crop these images we use the freeware `XnConvert`. The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
-Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/test.txt).
+Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/XnConvert_tuto.pdf).
 
 ```{r scanstencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
 knitr::include_graphics('document/trait/rootmorpho/squre_stencil.jpg')
