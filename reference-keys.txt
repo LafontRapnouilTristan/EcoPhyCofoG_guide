@@ -7,13 +7,6 @@ fig:scanstencil-2
 intro
 handbook-architecture
 morpho-anatomy
-hydraulics
-fluorescence
-gaz-fluxes-and-exchanges
-microbiology-and-metabarcoding
-greenhouse-setups-and-tips
-device-info
-morpho-anatomy-1
 root-morphology
 image-acquisition
 format
@@ -31,7 +24,7 @@ batch
 pixel-classification
 output
 resources
-hydraulics-1
+hydraulics
 leaf-turgor-loss-point-pi_tlp
 materials
 methods
@@ -49,9 +42,9 @@ material
 method
 gmin
 gs
-fluorescence-1
-gaz-fluxes-and-exchanges-1
-microbiology-and-metabarcoding-1
-greenhouse-setups-and-tips-1
-device-info-1
+fluorescence
+gaz-fluxes-and-exchanges
+microbiology-and-metabarcoding
+greenhouse-setups-and-tips
+device-info
 vapor-pressure-osmometer---vapro-5520-cheatsheet
