@@ -1,3 +1,6 @@
+EcoPhyCofoG : 1.000.T9025
+Try to fix the Intro section bug on gh-pages
+
 EcoPhyCofoG : 1.000.T9024
 add documents linked in rootmorpho
 
