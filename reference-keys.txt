@@ -1,3 +1,8 @@
+fig:polygon
+fig:zoomin
+fig:detouring
+fig:ctrlmpopup
+fig:measid
 fig:bigroots
 fig:bromeroot
 fig:scantransp
@@ -7,7 +12,11 @@ fig:scanstencil-2
 intro
 handbook-architecture
 morpho-anatomy
-root-morphology
+shoot-traits
+mass-associated-traits
+leaf-surface
+stem
+root-traits
 image-acquisition
 format
 scanner

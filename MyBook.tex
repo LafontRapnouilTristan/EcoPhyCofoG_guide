@@ -281,7 +281,7 @@
 
 \author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
 
-\date{2021-11-01}
+\date{2021-11-05}
 
 
 % Include headers (preamble.tex) here
@@ -390,14 +390,19 @@ Leave an empty line for line breaks.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \LargeMargins
-\mainmatter
-
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
-Plant functional traits are the features (morphological, physiological, phenological) that represent ecological strategies and determine \emph{describe?} how plants respond to environmental factors, affect other trophic levels and influence ecosystem properties. Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits. The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
+Plant functional traits are the features (morphological, physiological, phenological) that represent ecological strategies and determine \emph{describe?} how plants respond to environmental factors, affect other trophic levels and influence ecosystem properties.
+Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits.
+The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
 
-This handbook presents the different protocols used in the ecophysio lab. We therefore suggest the methodological principles for a more open and transparent science. This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and the associated R-scripts to upload/clean the raw data.
+This handbook presents the different protocols used in the ecophysio lab.
+We therefore suggest the methodological principles for a more open and transparent science.
+This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and links toward detailed tutorial or user's guide for all methods used in this lab.
+This handbook will be associated with a package \texttt{EcophyCofog} containing some usefull homemade functions to deal with some devices output.
+
+\mainmatter
 
 \hypertarget{handbook-architecture}{%
 \chapter{Handbook architecture}\label{handbook-architecture}}
@@ -423,8 +428,152 @@ Each chapter of this book correspond to one trait and associated measurement pro
 \hypertarget{morpho-anatomy}{%
 \chapter{Morpho-anatomy}\label{morpho-anatomy}}
 
-\hypertarget{root-morphology}{%
-\section{Root Morphology}\label{root-morphology}}
+\hypertarget{shoot-traits}{%
+\section{Shoot traits}\label{shoot-traits}}
+
+Shoot traits refer to all morpho-anatomical traits that can be measured on plant aerial part.
+Most of these traits are measured on the leaves but see \protect\hyperlink{stem}{Stem} section.
+
+\hypertarget{mass-associated-traits}{%
+\subsection{Mass associated traits}\label{mass-associated-traits}}
+
+Plant growth strategies and overall performances are often assessed via mass associated traits.
+Three masses are used to calculate different metrics.
+The \emph{Fresh Mass} (\textbf{FM}) which is the weight of freshly sampled leaves.
+The \emph{Turgid Mass} (\textbf{TM}) which is the mass of fully hydrated leaves.
+Leaf hydratation protocols are source of debate in EcoFog but are presented {[}here{]}{[}Leaf hydratation{]}
+And the \emph{Dry Mass} (\textbf{DM}) which is the mass of dryed leaves.
+
+To be compared, these weights must come from the same sample and we must measure the leaf projected surfaces.
+See \protect\hyperlink{leaf-surface}{here} for the leaf surface measurements protocols.
+
+From these masses and surfaces are calculated metrics such as {[}SLA/LMA{]}, {[}RWC{]}, {[}LDMC{]}, {[}WHC{]}.
+
+\textcolor{red}{Use the same balance for all you masses within an experiment!!}
+
+\hypertarget{leaf-surface}{%
+\subsubsection{Leaf surface}\label{leaf-surface}}
+
+Most of leaf surfaces are obtained from leaf scans using office scanner.
+The used scanners are \href{document/machine/EPSON_V800/usersguide.pdf}{EPSON's V800}.
+To acquire leaf scans please see \protect\hyperlink{image-acquisition}{Image Acquisition}.
+Depending on your research question you can either scan one leaf or several leaves (to have total leaf surface of your plant for instance).
+
+Once you have one scan per experimental unit you need to extract its surface.
+Surface measurements are made with the \href{document/software/ImageJ/user-guide-A4booklet.pdf}{\texttt{ImageJ}} freeware.
+\texttt{ImageJ} works on all \texttt{OS} and can be downloaded {[}here{]}{[}\url{https://imagej.nih.gov/ij/download.html}{]}
+
+Surface can be measured \textbf{manually} or \textbf{automatically}
+
+\textbf{Manual measurements} :
+
+Launch imageJ -\textgreater{} File -\textgreater{} Open (Ctrl + O) and browse for the picture you want to analyse.
+
+Then select the \texttt{polygon\ selection} tool \ref{fig:polygon}.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/polygon_selection_imageJ} 
+
+}
+
+\caption{Polygon selection tool in ImageJ}\label{fig:polygon}
+\end{figure}
+
+\normalsize
+
+Zoom (\texttt{-}/\texttt{+} or \texttt{Ctrl+wheel\ in/out}) into your image to see only the leaf you want to measure \ref{fig:zoomin}.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/Zoomin} 
+
+}
+
+\caption{Zooming in ImageJ}\label{fig:zoomin}
+\end{figure}
+
+\normalsize
+
+Then you can \texttt{left\ click} to detour your leaf \ref{fig:detouring}.
+The more points you have the more precise and close to the leaf your measruments will be.
+However, bear in mind that this is laborious and that as your zoomed in your error should be negligeable.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/detouring_leaf} 
+
+}
+
+\caption{Leaf detouring in ImageJ}\label{fig:detouring}
+\end{figure}
+
+\normalsize
+
+Once you've closed your polygon, press \texttt{ctrl+M}.
+A window containing the results will pop-up \ref{fig:ctrlmpopup}.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/ctrlMpopup} 
+
+}
+
+\caption{Results window in ImageJ}\label{fig:ctrlmpopup}
+\end{figure}
+
+\normalsize
+
+The Area will be expressed in the units of your photo.
+Some pictures have embedded scales in cm or inches but the default is usually in pixels (px).
+For more information see {[}ImageJ scale{]}.
+
+Each measurements will be added to the results window (one each time you press \texttt{ctrl+M}).
+You can then save this window in the \texttt{.csv}format clicking on \texttt{File}, \texttt{Save\ As} and browse for chosen location.
+You can either have one file per photo (i.e.~sample) and then name your file as your sample ID.
+Or you can decide to have one file for all your samples.
+Then you have to remember or write somewhere which measurements ID is associated to each of your samples to find who's who \ref{fig:measid}.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/measurementID} 
+
+}
+
+\caption{Measurement ID in ImageJ}\label{fig:measid}
+\end{figure}
+
+\normalsize
+
+\textbf{Automatic measurements}:
+
+This will allow you to analyze many data at the same time.
+To do so you will need to use an homemade ImageJ macro.
+
+\href{document/software/ImageJ/macro.txt}{Macro exemple}.
+
+To launch a batch process go to \texttt{Process}-\textgreater{} \texttt{Batch}-\textgreater{} \texttt{Macro...}.
+This will open a window.
+Fill the fields as follow:
++ \texttt{Input}: folder containing your pictures to be annalyzed
++ \texttt{Output}: folder to receive your output.
++ \texttt{Output\ format}: quite clear!
+
+\hypertarget{stem}{%
+\subsection{Stem}\label{stem}}
+
+\hypertarget{root-traits}{%
+\section{Root traits}\label{root-traits}}
 
 Root morphology analysis (length, diameter, etc.) are conducted using the Winrhizo software.
 
