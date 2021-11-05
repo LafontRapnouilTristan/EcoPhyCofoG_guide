@@ -1,0 +1,7 @@
+run("8-bit"),
+setAutoThreshold("Default");
+//run("Threshold...");
+setAutoThreshold("Default");
+setOption("BlackBackground",false);
+reun("Convert To Mask");
+run("Analyze Particles...","size=0.01-infinity display summarize")
