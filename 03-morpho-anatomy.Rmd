@@ -85,13 +85,105 @@ This will allow you to analyze many data at the same time.
 To do so you will need to use an homemade ImageJ macro.
 
 [Macro exemple](document/software/ImageJ/macro.txt).
+This macro is used to convert your colored scans in 8 bit black and white pictures.
+Then it set scale for 800 ppi scans (distances=800px known = 2.54 cm , pixel = 1). 
+With ppi -> pixel per inch and 1 inch = 2.54cm.
+The pixel ratio is 1 as vertical and horizontal resolution is the same.
+It sets the contrast and then anaylze size of particle bigger than 0.01 cm^2 and smaller than infinity.
+It displays the results in summarize form for each pictures in the folder.
+
+See [here](https://exeter-data-analytics.github.io/imagej-gui/macros.html) for a tutorial on macro recording in imageJ.
+
 
 To launch a batch process go to `Process`-> `Batch`-> `Macro...`.
 This will open a window.
 Fill the fields as follow:
- + `Input`: folder containing your pictures to be annalyzed
- + `Output`: folder to receive your output.
- + `Output format`: quite clear!
++ `Input`: folder containing your pictures to be annalyzed
++ `Output`: folder to receive your output.
++ `Output format`: quite clear!
+
+#### Calculation
+
+```{r,echo=F}
+library(kableExtra)
+traits <- data.frame(`Acronym` = c("LA",
+                                   "FM",
+                                   "TM",
+                                   "DM",
+                                   "LMA",
+                                   "SLA",
+                                   "LDMC",
+                                   "LS",
+                                   "RWC",
+                                   "WHC"),
+                     `Full name` =  c("Leaf area",
+                                      "Fresh mass",
+                                      "Turgid mass",
+                                      "Dry mass",
+                                      "Leaf mass area",
+                                      "Specific leaf area",
+                                      "Leaf dry mass content",
+                                      "Leaf succulence",
+                                      "Relative water content",
+                                      "Water holding capcity"),
+                     `Formula` = c("\ ",
+                                   "\ ",
+                                   "\ ",
+                                   "\ ",
+                                   "$DM/LA$ ",
+                                   "$LA/DM$ ",
+                                   "$DM/FM$ ",
+                                   "$(FM-DM)/LA$",
+                                   "$[(FM-DM)/(TM-DM)]*100$",
+                                   "$(TM-DM)/LA$"),
+                     check.names = F)
+
+knitr::kable(traits,booktabs=T,escape = F,caption = "Mass derived traits")
+```
+
+### Leaf anatomy
+
+#### Stomata and trichomes density
+
+Stomata and trichomes density are acquired via epidermis printing.
+First, apply double sided tape on your leaf and remove it.
+You now have a piece of tape with your trichomes on it. 
+Place it on a glass-slide with the trichome-covered side on the top.
+
+Then, to get your stomata, apply a thin coat of transparent nail polish and let it to dry.
+Then you remove it with double-sided tape and put it on a glass slide (nail polish on top). 
+
+Observations are made with the [`Olympus BX51`](document/machine/Olympus BX51/olympus_bx-51_bx52_microscope_manual.pdf)  microscope.
+
+And pictures are taken with the installed camera (currently [`Lumenera LW1135C-IO`](document/machine/Lumenera LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf) but about to change). 
+
+Pictures can then be uploaded in ImageJ and you can manually count stomata and trichomes using the `multipoint` tool.
+
+**There is a new opportunity to use `LabelStoma`, a deep leaning software for stomata detection. 
+It is developed by Ángela Casado-García and we are trying to make it work on some species that we study at EcoFog.**
+
+
+#### Anatomical structure
+
+Leaf anatomical observations are made on razor blade hand-made cross sections of leaves.
+
+```{r bromecut, echo=FALSE, out.width="50%", fig.cap="Hand made cross section of a bromeliad leaf"}
+knitr::include_graphics('document/trait/shootmorpho/bromecut1.jpg')
+```
+
+These cuts are directly placed in water/oil on a glass-slide and observed with the [`Olympus BX51`](document/machine/Olympus BX51/olympus_bx-51_bx52_microscope_manual.pdf)  microscope.
+
+And pictures are taken with the installed camera (currently [`Lumenera LW1135C-IO`](document/machine/Lumenera LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf) but about to change). 
+
+\textcolor{red}{Always use the same picture format!!}
+We recommend `JPEG` or `TIFF`.
+
+On these pictures you can then make measurements such as width of the epidermis and cuticle.
+The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the `draw segment` and `ctrl+M` output (area, angle of the line and length).
+
+**SEE MATTHIEU PICS**
+
+
 
 ### Stem
 
