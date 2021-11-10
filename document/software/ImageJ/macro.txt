@@ -1,7 +1,8 @@
-run("8-bit"),
+run("8-bit");
+run("Set Scale...", "distance=800 known=2.54 pixel=1 unit=cm");
 setAutoThreshold("Default");
 //run("Threshold...");
 setAutoThreshold("Default");
-setOption("BlackBackground",false);
-reun("Convert To Mask");
-run("Analyze Particles...","size=0.01-infinity display summarize")
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Analyze Particles...", "size=0.01-Infinity display summarize")
