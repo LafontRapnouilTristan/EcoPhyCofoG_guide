@@ -58,6 +58,8 @@ method
 gmin
 gs
 fluorescence
+theory
+fv.fm
 gaz-fluxes-and-exchanges
 microbiology-and-metabarcoding
 greenhouse-setups-and-tips

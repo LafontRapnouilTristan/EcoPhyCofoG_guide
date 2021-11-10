@@ -104,7 +104,10 @@
 <li class="chapter" data-level="4.4" data-path="hydraulics.html"><a href="hydraulics.html#gmin"><i class="fa fa-check"></i><b>4.4</b> gmin</a></li>
 <li class="chapter" data-level="4.5" data-path="hydraulics.html"><a href="hydraulics.html#gs"><i class="fa fa-check"></i><b>4.5</b> gs</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a></li>
+<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a><ul>
+<li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
+<li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F[v].F[m]</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
 <li class="chapter" data-level="7" data-path="microbiology-and-metabarcoding.html"><a href="microbiology-and-metabarcoding.html"><i class="fa fa-check"></i><b>7</b> Microbiology and metabarcoding</a></li>
 <li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
@@ -134,7 +137,45 @@
             <section class="normal" id="section-">
 <div id="fluorescence" class="section level1">
 <h1><span class="header-section-number">5</span> Fluorescence</h1>
+<p>Fluorescence measurements are made with the <a href="document/machine/MiniPAM%20II/minipamexp.pdf"><code>MiniPAM II</code></a> fluorometer.
+It is used to assess the efficiency of plant photosystems to convert light into chemical energy.</p>
+<p><a href="document/trait/fluorescence/Maxwell%20and%20Johnson%20-%202000%20-%20Chlorophyll%20fluorescence—a%20practical%20guide.pdf">Maxwell and Johnson <em>2000</em></a> provided a good synthesis of the theories behind these measurements.</p>
+<div id="theory" class="section level2">
+<h2><span class="header-section-number">5.1</span> Theory</h2>
+<p>We will try to summarize it a bit here.
+Light energy is either converted into <code>Photochemical energy</code>, <code>fluorescence</code> or <code>heat</code>.
+Measuring fluorescence can give information about the other if we control one (i.e. photochemistry).</p>
+<p>We use the <code>Kautsky effect</code>, a variation of the <code>fluorescence</code> pattern when exposing the leaf to light.
+When passing from darkness to light, photon will saturate the plant photosystem II and e^- acceptors.
+The PSII are sayed “closed” until e^- go down the reaction chain.</p>
+<p>Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!</p>
+<p>After this period, the fluorescence starts to fall again ==&gt; <code>fluorescence quenching</code>
+Because : 1 - e^- transfer away from the PSII increases with light activated enzymes. : <strong>photochemical quenching</strong>
+2 - Heat energy estimation : <strong>Non-photochemical quenching</strong></p>
+<p>~ 15 to 20 min are needed to reach the equilibrium but it varies between species.</p>
+<p>For usefull informations, we need to supress one of the 2 (typically 1).
+Indeed, if no photochemical quenching (PQ), then we only have non-photochemical quenching (NPQ).</p>
+<p>We thus use the <code>light doubling technique</code>.</p>
+<p>An high intensity-short duration flash closes all PSII.</p>
+<p>During this flash, the fluorescence yield reach values attained with no NPQ (<span class="math inline">\(F_m\)</span>).</p>
+<p><span class="math inline">\(F_0\)</span> is the fluorescence level when no actinic light (darkening + far red to open reaction centers).</p>
+<p><span class="math inline">\(F_t\)</span> is the steady state of fluorescence in actinic light.</p>
+<p>NPQ can too change with time and this is reflected as <span class="math inline">\(F_m\)</span> changes when PQ is off/negligible.</p>
+<p>We can then calculate :</p>
+<p><span class="math inline">\(\phi _{SII} = \frac{F&#39;_m-F_t}{F&#39;_m}\)</span> which is the proportion of light absorbed by PSII chlorophyll and used for photochemistry.</p>
+<p>and :</p>
+<p><span class="math inline">\(qP = \frac{F&#39;_m-F_t}{F&#39;_m-F&#39;_0}\)</span> the proportion of closed PSII reaction center, it increases with plant stress.</p>
+<p><span class="math inline">\(F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F&#39;_m-F&#39;_0}{F&#39;_m}\)</span> or with <span class="math inline">\(F°_m and F°_0\)</span> in the dark adapted state.</p>
+</div>
+<div id="fv.fm" class="section level2">
+<h2><span class="header-section-number">5.2</span> F[v].F[m]</h2>
+<p>To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place one on the target leaf for 30 minutes dark adaptation.
+Then press record on the MiniPAM screen to create a new data entry.
+And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
+You can either note the displayed value manually or extract it later with the MiniPAM associated software <a href="https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html"><code>Wincontrol</code></a>.
+If you chose the later, do note the correspondance between your subject ID and the record created by the MiniPAM.</p>
 
+</div>
 </div>
             </section>
 

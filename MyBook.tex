@@ -1075,6 +1075,64 @@ From Sapes et al 2020 and Barrs \& Weatherley 1962.
 \hypertarget{fluorescence}{%
 \chapter{Fluorescence}\label{fluorescence}}
 
+Fluorescence measurements are made with the \href{document/machine/MiniPAM\%20II/minipamexp.pdf}{\texttt{MiniPAM\ II}} fluorometer.
+It is used to assess the efficiency of plant photosystems to convert light into chemical energy.
+
+\href{document/trait/fluorescence/Maxwell\%20and\%20Johnson\%20-\%202000\%20-\%20Chlorophyll\%20fluorescence—a\%20practical\%20guide.pdf}{Maxwell and Johnson \emph{2000}} provided a good synthesis of the theories behind these measurements.
+
+\hypertarget{theory}{%
+\section{Theory}\label{theory}}
+
+We will try to summarize it a bit here.
+Light energy is either converted into \texttt{Photochemical\ energy}, \texttt{fluorescence} or \texttt{heat}.
+Measuring fluorescence can give information about the other if we control one (i.e.~photochemistry).
+
+We use the \texttt{Kautsky\ effect}, a variation of the \texttt{fluorescence} pattern when exposing the leaf to light.
+When passing from darkness to light, photon will saturate the plant photosystem II and e\^{}- acceptors.
+The PSII are sayed \enquote{closed} until e\^{}- go down the reaction chain.
+
+Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!
+
+After this period, the fluorescence starts to fall again ==\textgreater{} \texttt{fluorescence\ quenching}
+Because : 1 - e\^{}- transfer away from the PSII increases with light activated enzymes. : \textbf{photochemical quenching}
+2 - Heat energy estimation : \textbf{Non-photochemical quenching}
+
+\textasciitilde{} 15 to 20 min are needed to reach the equilibrium but it varies between species.
+
+For usefull informations, we need to supress one of the 2 (typically 1).
+Indeed, if no photochemical quenching (PQ), then we only have non-photochemical quenching (NPQ).
+
+We thus use the \texttt{light\ doubling\ technique}.
+
+An high intensity-short duration flash closes all PSII.
+
+During this flash, the fluorescence yield reach values attained with no NPQ (\(F_m\)).
+
+\(F_0\) is the fluorescence level when no actinic light (darkening + far red to open reaction centers).
+
+\(F_t\) is the steady state of fluorescence in actinic light.
+
+NPQ can too change with time and this is reflected as \(F_m\) changes when PQ is off/negligible.
+
+We can then calculate :
+
+\(\phi _{SII} = \frac{F'_m-F_t}{F'_m}\) which is the proportion of light absorbed by PSII chlorophyll and used for photochemistry.
+
+and :
+
+\(qP = \frac{F'_m-F_t}{F'_m-F'_0}\) the proportion of closed PSII reaction center, it increases with plant stress.
+
+\(F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F'_m-F'_0}{F'_m}\) or with \(F°_m and F°_0\) in the dark adapted state.
+
+\hypertarget{fv.fm}{%
+\section{F{[}v{]}.F{[}m{]}}\label{fv.fm}}
+
+To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place one on the target leaf for 30 minutes dark adaptation.
+Then press record on the MiniPAM screen to create a new data entry.
+And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
+You can either note the displayed value manually or extract it later with the MiniPAM associated software \href{https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html}{\texttt{Wincontrol}}.
+If you chose the later, do note the correspondance between your subject ID and the record created by the MiniPAM.
+
 \hypertarget{gaz-fluxes-and-exchanges}{%
 \chapter{Gaz fluxes and exchanges}\label{gaz-fluxes-and-exchanges}}
 
