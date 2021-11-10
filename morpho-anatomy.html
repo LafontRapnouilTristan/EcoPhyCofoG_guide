@@ -24,7 +24,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2021-11-05" />
+<meta name="date" content="2021-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -78,7 +78,8 @@
 <li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a><ul>
 <li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#mass-associated-traits"><i class="fa fa-check"></i><b>3.1.1</b> Mass associated traits</a></li>
-<li class="chapter" data-level="3.1.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#stem"><i class="fa fa-check"></i><b>3.1.2</b> Stem</a></li>
+<li class="chapter" data-level="3.1.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#leaf-anatomy"><i class="fa fa-check"></i><b>3.1.2</b> Leaf anatomy</a></li>
+<li class="chapter" data-level="3.1.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#stem"><i class="fa fa-check"></i><b>3.1.3</b> Stem</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a><ul>
 <li class="chapter" data-level="3.2.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-acquisition"><i class="fa fa-check"></i><b>3.2.1</b> Image Acquisition</a></li>
@@ -219,7 +220,14 @@ Figure 3.5: Measurement ID in ImageJ
 <p><strong>Automatic measurements</strong>:</p>
 <p>This will allow you to analyze many data at the same time.
 To do so you will need to use an homemade ImageJ macro.</p>
-<p><a href="document/software/ImageJ/macro.txt">Macro exemple</a>.</p>
+<p><a href="document/software/ImageJ/macro.txt">Macro exemple</a>.
+This macro is used to convert your colored scans in 8 bit black and white pictures.
+Then it set scale for 800 ppi scans (distances=800px known = 2.54 cm , pixel = 1).
+With ppi -&gt; pixel per inch and 1 inch = 2.54cm.
+The pixel ratio is 1 as vertical and horizontal resolution is the same.
+It sets the contrast and then anaylze size of particle bigger than 0.01 cm^2 and smaller than infinity.
+It displays the results in summarize form for each pictures in the folder.</p>
+<p>See <a href="https://exeter-data-analytics.github.io/imagej-gui/macros.html">here</a> for a tutorial on macro recording in imageJ.</p>
 <p>To launch a batch process go to <code>Process</code>-&gt; <code>Batch</code>-&gt; <code>Macro...</code>.
 This will open a window.
 Fill the fields as follow:
@@ -227,9 +235,176 @@ Fill the fields as follow:
 + <code>Output</code>: folder to receive your output.
 + <code>Output format</code>: quite clear!</p>
 </div>
+<div id="calculation" class="section level4">
+<h4><span class="header-section-number">3.1.1.2</span> Calculation</h4>
+<p></p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-1">Table 3.1: </span>Mass derived traits
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Acronym
+</th>
+<th style="text-align:left;">
+Full name
+</th>
+<th style="text-align:left;">
+Formula
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+LA
+</td>
+<td style="text-align:left;">
+Leaf area
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FM
+</td>
+<td style="text-align:left;">
+Fresh mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TM
+</td>
+<td style="text-align:left;">
+Turgid mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DM
+</td>
+<td style="text-align:left;">
+Dry mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LMA
+</td>
+<td style="text-align:left;">
+Leaf mass area
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(DM/LA\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SLA
+</td>
+<td style="text-align:left;">
+Specific leaf area
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(LA/DM\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LDMC
+</td>
+<td style="text-align:left;">
+Leaf dry mass content
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(DM/FM\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LS
+</td>
+<td style="text-align:left;">
+Leaf succulence
+</td>
+<td style="text-align:left;">
+<span class="math inline">\((FM-DM)/LA\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RWC
+</td>
+<td style="text-align:left;">
+Relative water content
+</td>
+<td style="text-align:left;">
+<span class="math inline">\([(FM-DM)/(TM-DM)]*100\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WHC
+</td>
+<td style="text-align:left;">
+Water holding capcity
+</td>
+<td style="text-align:left;">
+<span class="math inline">\((TM-DM)/LA\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div id="leaf-anatomy" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Leaf anatomy</h3>
+<div id="stomata-and-trichomes-density" class="section level4">
+<h4><span class="header-section-number">3.1.2.1</span> Stomata and trichomes density</h4>
+<p>Stomata and trichomes density are acquired via epidermis printing.
+First, apply double sided tape on your leaf and remove it.
+You now have a piece of tape with your trichomes on it.
+Place it on a glass-slide with the trichome-covered side on the top.</p>
+<p>Then, to get your stomata, apply a thin coat of transparent nail polish and let it to dry.
+Then you remove it with double-sided tape and put it on a glass slide (nail polish on top).</p>
+<p>Observations are made with the <a href="document/machine/Olympus%20BX51/olympus_bx-51_bx52_microscope_manual.pdf"><code>Olympus BX51</code></a> microscope.</p>
+<p>And pictures are taken with the installed camera (currently <a href="document/machine/Lumenera%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf"><code>Lumenera LW1135C-IO</code></a> but about to change).</p>
+<p>Pictures can then be uploaded in ImageJ and you can manually count stomata and trichomes using the <code>multipoint</code> tool.</p>
+<p><strong>There is a new opportunity to use <code>LabelStoma</code>, a deep leaning software for stomata detection.
+It is developed by Ángela Casado-García and we are trying to make it work on some species that we study at EcoFog.</strong></p>
+</div>
+<div id="anatomical-structure" class="section level4">
+<h4><span class="header-section-number">3.1.2.2</span> Anatomical structure</h4>
+<p>Leaf anatomical observations are made on razor blade hand-made cross sections of leaves.</p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromecut"></span>
+<img src="document/trait/shootmorpho/bromecut1.jpg" alt="Hand made cross section of a bromeliad leaf" width="50%" />
+<p class="caption">
+Figure 3.6: Hand made cross section of a bromeliad leaf
+</p>
+</div>
+
+<p>These cuts are directly placed in water/oil on a glass-slide and observed with the <a href="document/machine/Olympus%20BX51/olympus_bx-51_bx52_microscope_manual.pdf"><code>Olympus BX51</code></a> microscope.</p>
+<p>And pictures are taken with the installed camera (currently <a href="document/machine/Lumenera%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf"><code>Lumenera LW1135C-IO</code></a> but about to change).</p>
+<p>
+We recommend <code>JPEG</code> or <code>TIFF</code>.</p>
+<p>On these pictures you can then make measurements such as width of the epidermis and cuticle.
+The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the <code>draw segment</code> and <code>ctrl+M</code> output (area, angle of the line and length).</p>
+<p><strong>SEE MATTHIEU PICS</strong></p>
+</div>
 </div>
 <div id="stem" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Stem</h3>
+<h3><span class="header-section-number">3.1.3</span> Stem</h3>
 </div>
 </div>
 <div id="root-traits" class="section level2">
@@ -260,33 +435,33 @@ And the scanning software is <a href="document/software/Viewscan/Parametre_Scann
 </div>
 <div id="transparent" class="section level5">
 <h5><span class="header-section-number">3.2.1.3.2</span> Transparent</h5>
-<p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.6</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
-<p></p>
+<p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.7</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
+
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bigroots"></span>
 <img src="document/trait/rootmorpho/thickroot.PNG" alt="Roots to thick to be flat scanned" width="50%" />
 <p class="caption">
-Figure 3.6: Roots to thick to be flat scanned
+Figure 3.7: Roots to thick to be flat scanned
 </p>
 </div>
-<p></p>
-<p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.7</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
-<p></p>
+
+<p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.8</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
+
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromeroot"></span>
 <img src="document/trait/rootmorpho/bromeroot.JPG" alt="Complex bromeliad adventitious root system" width="50%" />
 <p class="caption">
-Figure 3.7: Complex bromeliad adventitious root system
+Figure 3.8: Complex bromeliad adventitious root system
 </p>
 </div>
-<p></p>
-<p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.8</a> and you must make sure that you roots are well placed within this area.</p>
-<p></p>
+
+<p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.9</a> and you must make sure that you roots are well placed within this area.</p>
+
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scantransp"></span>
 <img src="document/trait/rootmorpho/scan_transp.png" alt="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner" width="50%" />
 <p class="caption">
-Figure 3.8: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
+Figure 3.9: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
 </p>
 </div>
-<p></p>
+
 </div>
 </div>
 </div>
@@ -295,31 +470,31 @@ Figure 3.8: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanne
 <p>To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
 However, when having a lot of scans you might want to automatize the process using the <code>batch</code> option.
 If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
-For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.9</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
-<p></p>
+For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.10</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
+
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromescan"></span>
 <img src="MyBook_files/figure-html/bromescan-1.png" alt="Scan of a bromeliad root system in water-filled petri dish" width="50%" />
 <p class="caption">
-Figure 3.9: Scan of a bromeliad root system in water-filled petri dish
+Figure 3.10: Scan of a bromeliad root system in water-filled petri dish
 </p>
 </div>
-<p></p>
+
 <p>To re-crop these images we use the freeware <code>XnConvert</code>. The petri dish has always been placed in the same place using a stencil <a href="#fig:scanstencil"><strong>??</strong></a> on the scan window, enabling us to recrop all scans to the same size.
 Detailed <code>XnConvert</code> tutorial is available <a href="document/software/XnConvert/XnConvert_tuto.pdf">HERE</a>.</p>
-<p></p>
+
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-1"></span>
 <img src="document/trait/rootmorpho/squre_stencil.jpg" alt="Stencil used for inwater root scans" width="50%" />
 <p class="caption">
-Figure 3.10: Stencil used for inwater root scans
+Figure 3.11: Stencil used for inwater root scans
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-2"></span>
 <img src="document/trait/rootmorpho/squre_stencil2.jpg" alt="Stencil used for inwater root scans" width="50%" />
 <p class="caption">
-Figure 3.11: Stencil used for inwater root scans
+Figure 3.12: Stencil used for inwater root scans
 </p>
 </div>
-<p></p>
+
 </div>
 <div id="winrhizo" class="section level3">
 <h3><span class="header-section-number">3.2.3</span> WinRhizo</h3>

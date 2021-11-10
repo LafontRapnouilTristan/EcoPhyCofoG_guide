@@ -3,6 +3,8 @@ fig:zoomin
 fig:detouring
 fig:ctrlmpopup
 fig:measid
+tab:unnamed-chunk-1
+fig:bromecut
 fig:bigroots
 fig:bromeroot
 fig:scantransp
@@ -15,6 +17,10 @@ morpho-anatomy
 shoot-traits
 mass-associated-traits
 leaf-surface
+calculation
+leaf-anatomy
+stomata-and-trichomes-density
+anatomical-structure
 stem
 root-traits
 image-acquisition

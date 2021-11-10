@@ -281,7 +281,7 @@
 
 \author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
 
-\date{2021-11-05}
+\date{2021-11-10}
 
 
 % Include headers (preamble.tex) here
@@ -561,6 +561,14 @@ This will allow you to analyze many data at the same time.
 To do so you will need to use an homemade ImageJ macro.
 
 \href{document/software/ImageJ/macro.txt}{Macro exemple}.
+This macro is used to convert your colored scans in 8 bit black and white pictures.
+Then it set scale for 800 ppi scans (distances=800px known = 2.54 cm , pixel = 1).
+With ppi -\textgreater{} pixel per inch and 1 inch = 2.54cm.
+The pixel ratio is 1 as vertical and horizontal resolution is the same.
+It sets the contrast and then anaylze size of particle bigger than 0.01 cm\^{}2 and smaller than infinity.
+It displays the results in summarize form for each pictures in the folder.
+
+See \href{https://exeter-data-analytics.github.io/imagej-gui/macros.html}{here} for a tutorial on macro recording in imageJ.
 
 To launch a batch process go to \texttt{Process}-\textgreater{} \texttt{Batch}-\textgreater{} \texttt{Macro...}.
 This will open a window.
@@ -568,6 +576,89 @@ Fill the fields as follow:
 + \texttt{Input}: folder containing your pictures to be annalyzed
 + \texttt{Output}: folder to receive your output.
 + \texttt{Output\ format}: quite clear!
+
+\hypertarget{calculation}{%
+\subsubsection{Calculation}\label{calculation}}
+
+\scriptsize
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-1}Mass derived traits}
+\centering
+\begin{tabular}[t]{lll}
+\toprule
+Acronym & Full name & Formula\\
+\midrule
+LA & Leaf area & \\
+FM & Fresh mass & \\
+TM & Turgid mass & \\
+DM & Dry mass & \\
+LMA & Leaf mass area & $DM/LA$\\
+\addlinespace
+SLA & Specific leaf area & $LA/DM$\\
+LDMC & Leaf dry mass content & $DM/FM$\\
+LS & Leaf succulence & $(FM-DM)/LA$\\
+RWC & Relative water content & $[(FM-DM)/(TM-DM)]*100$\\
+WHC & Water holding capcity & $(TM-DM)/LA$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\normalsize
+
+\hypertarget{leaf-anatomy}{%
+\subsection{Leaf anatomy}\label{leaf-anatomy}}
+
+\hypertarget{stomata-and-trichomes-density}{%
+\subsubsection{Stomata and trichomes density}\label{stomata-and-trichomes-density}}
+
+Stomata and trichomes density are acquired via epidermis printing.
+First, apply double sided tape on your leaf and remove it.
+You now have a piece of tape with your trichomes on it.
+Place it on a glass-slide with the trichome-covered side on the top.
+
+Then, to get your stomata, apply a thin coat of transparent nail polish and let it to dry.
+Then you remove it with double-sided tape and put it on a glass slide (nail polish on top).
+
+Observations are made with the \href{document/machine/Olympus\%20BX51/olympus_bx-51_bx52_microscope_manual.pdf}{\texttt{Olympus\ BX51}} microscope.
+
+And pictures are taken with the installed camera (currently \href{document/machine/Lumenera\%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf}{\texttt{Lumenera\ LW1135C-IO}} but about to change).
+
+Pictures can then be uploaded in ImageJ and you can manually count stomata and trichomes using the \texttt{multipoint} tool.
+
+\textbf{There is a new opportunity to use \texttt{LabelStoma}, a deep leaning software for stomata detection.
+It is developed by Ángela Casado-García and we are trying to make it work on some species that we study at EcoFog.}
+
+\hypertarget{anatomical-structure}{%
+\subsubsection{Anatomical structure}\label{anatomical-structure}}
+
+Leaf anatomical observations are made on razor blade hand-made cross sections of leaves.
+
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/bromecut1} 
+
+}
+
+\caption{Hand made cross section of a bromeliad leaf}\label{fig:bromecut}
+\end{figure}
+
+\normalsize
+
+These cuts are directly placed in water/oil on a glass-slide and observed with the \href{document/machine/Olympus\%20BX51/olympus_bx-51_bx52_microscope_manual.pdf}{\texttt{Olympus\ BX51}} microscope.
+
+And pictures are taken with the installed camera (currently \href{document/machine/Lumenera\%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf}{\texttt{Lumenera\ LW1135C-IO}} but about to change).
+
+\textcolor{red}{Always use the same picture format!!}
+We recommend \texttt{JPEG} or \texttt{TIFF}.
+
+On these pictures you can then make measurements such as width of the epidermis and cuticle.
+The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the \texttt{draw\ segment} and \texttt{ctrl+M} output (area, angle of the line and length).
+
+\textbf{SEE MATTHIEU PICS}
 
 \hypertarget{stem}{%
 \subsection{Stem}\label{stem}}
