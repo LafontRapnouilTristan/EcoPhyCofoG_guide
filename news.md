@@ -1,3 +1,6 @@
+EcoPhyCofoG : 1.000.T9028
+Correct superscript in fluo
+
 EcoPhyCofoG : 1.000.T9027
 Fluorescence FvFm and theory
 
