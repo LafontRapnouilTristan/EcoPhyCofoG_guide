@@ -13,14 +13,18 @@ Measuring fluorescence can give information about the other if we control one (i
 
 We use the `Kautsky effect`, a variation of the `fluorescence` pattern when exposing the leaf to light.
 When passing from darkness to light, photon will saturate the plant photosystem II and e^- acceptors.
-The PSII are sayed "closed" until e^- go down the reaction chain.
+The PSII are sayed "closed" until e^-^ go down the reaction chain.
 
 Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!
 
 After this period, the fluorescence starts to fall again ==> `fluorescence quenching`
-Because : 1 - e^- transfer away from the PSII increases with light activated enzymes. : **photochemical quenching**
-          2 - Heat energy estimation : **Non-photochemical quenching**
-          
+
+Because : 
+
+1 - e^- transfer away from the PSII increases with light activated enzymes. : **photochemical quenching**
+
+2 - Heat energy estimation : **Non-photochemical quenching**
+
 ~ 15 to 20 min are needed to reach the equilibrium but it varies between species.
 
 For usefull informations, we need to supress one of the 2 (typically 1).
@@ -46,7 +50,7 @@ and :
 
 $qP = \frac{F'_m-F_t}{F'_m-F'_0}$ the proportion of closed PSII reaction center, it increases with plant stress.
 
-$F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F'_m-F'_0}{F'_m}$ or with $F°_m and F°_0$ in the dark adapted state.
+$F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F'_m-F'_0}{F'_m}$ or with $F°_m$ and $F°_0$ in the dark adapted state.
 
 ## F[v].F[m]
 
