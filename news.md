@@ -4,6 +4,9 @@ Correct superscript in fluo
 EcoPhyCofoG : 1.000.T9027
 Fluorescence FvFm and theory
 
+EcoPhyCofoG : 1.000.T9028
+Typo fluoro.
+
 EcoPhyCofoG : 1.000.T9027
 Leaf morphoanatomy traits.
 
