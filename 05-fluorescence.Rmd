@@ -52,7 +52,7 @@ $qP = \frac{F'_m-F_t}{F'_m-F'_0}$ the proportion of closed PSII reaction center,
 
 $F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F'_m-F'_0}{F'_m}$ or with $F°_m$ and $F°_0$ in the dark adapted state.
 
-## F[v].F[m]
+## F<sub>v</sub>.F<sub>m</sub>
 
 To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place one on the target leaf for 30 minutes dark adaptation. 
 Then press record on the MiniPAM screen to create a new data entry.
