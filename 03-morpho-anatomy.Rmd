@@ -17,7 +17,7 @@ And the *Dry Mass* (**DM**) which is the mass of dryed leaves.
 To be compared, these weights must come from the same sample and we must measure the leaf projected surfaces.
 See [here][Leaf surface] for the leaf surface measurements protocols.
 
-From these masses and surfaces are calculated metrics such as [SLA/LMA], [RWC], [LDMC], [WHC].
+From these masses and surfaces are calculated metrics such as SLA/LMA, RWC, LDMC, WHC ([Calculation]). 
 
 \textcolor{red}{Use the same balance for all you masses within an experiment!!}
 
