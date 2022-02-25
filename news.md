@@ -1,3 +1,12 @@
+EcoPhyCofoG : 1.000.T9031
+Edit link to calculation section
+
+EcoPhyCofoG : 1.000.T9030
+Rm $ in section title 
+
+EcoPhyCofoG : 1.000.T9029
+Correct subscript in FvFm section
+
 EcoPhyCofoG : 1.000.T9028
 Correct superscript in fluo
 
