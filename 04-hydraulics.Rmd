@@ -91,7 +91,7 @@ For more information on the vapro machine, please refer to the *vapro cheatsheet
 
 
 
-## Leaf midday water potential $
+## Leaf midday water potential
 
 ### Pressure chamber method
 ### Psychrometry method
