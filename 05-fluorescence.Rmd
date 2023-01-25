@@ -21,11 +21,11 @@ After this period, the fluorescence starts to fall again ==> `fluorescence quenc
 
 Because : 
 
-1 - e^- transfer away from the PSII increases with light activated enzymes. : **photochemical quenching**
+1 - e^- transfer away from the PSII increases with light activated enzymes : **photochemical quenching**
 
 2 - Heat energy estimation : **Non-photochemical quenching**
 
-~ 15 to 20 min are needed to reach the equilibrium but it varies between species.
+\~ 15 to 20 min are needed to reach the equilibrium but it varies between species.
 
 For usefull informations, we need to supress one of the 2 (typically 1).
 Indeed, if no photochemical quenching (PQ), then we only have non-photochemical quenching (NPQ).
