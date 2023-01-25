@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Fluorescence | User’s guide for Ecofog’s Ecophysiology Lab</title>
   <meta name="description" content="Bookdown template based on LaTeX memoir class" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Fluorescence | User’s guide for Ecofog’s Ecophysiology Lab" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://GitHubID.github.io/Repository/" />
   <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
   <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="github-repo" content="GitHubID/Repository" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2022-02-25" />
+<meta name="date" content="2023-01-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,8 +50,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -135,13 +135,13 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="fluorescence" class="section level1">
-<h1><span class="header-section-number">5</span> Fluorescence</h1>
+<div id="fluorescence" class="section level1 hasAnchor">
+<h1><span class="header-section-number">5</span> Fluorescence<a href="fluorescence.html#fluorescence" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Fluorescence measurements are made with the <a href="document/machine/MiniPAM%20II/minipamexp.pdf"><code>MiniPAM II</code></a> fluorometer.
 It is used to assess the efficiency of plant photosystems to convert light into chemical energy.</p>
 <p><a href="document/trait/fluorescence/Maxwell%20and%20Johnson%20-%202000%20-%20Chlorophyll%20fluorescence—a%20practical%20guide.pdf">Maxwell and Johnson <em>2000</em></a> provided a good synthesis of the theories behind these measurements.</p>
-<div id="theory" class="section level2">
-<h2><span class="header-section-number">5.1</span> Theory</h2>
+<div id="theory" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.1</span> Theory<a href="fluorescence.html#theory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will try to summarize it a bit here.
 Light energy is either converted into <code>Photochemical energy</code>, <code>fluorescence</code> or <code>heat</code>.
 Measuring fluorescence can give information about the other if we control one (i.e. photochemistry).</p>
@@ -151,12 +151,9 @@ The PSII are sayed “closed” until e<sup>-</sup> go down the reaction chain.<
 <p>Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!</p>
 <p>After this period, the fluorescence starts to fall again ==&gt; <code>fluorescence quenching</code></p>
 <p>Because :</p>
-<p>1 - e^- transfer away from the PSII increases with light activated enzymes. : <strong>photochemical quenching</strong></p>
-<dl>
-<dt>2 - Heat energy estimation : <strong>Non-photochemical quenching</strong></dt>
-<dd><p>15 to 20 min are needed to reach the equilibrium but it varies between species.</p>
-</dd>
-</dl>
+<p>1 - e^- transfer away from the PSII increases with light activated enzymes : <strong>photochemical quenching</strong></p>
+<p>2 - Heat energy estimation : <strong>Non-photochemical quenching</strong></p>
+<p>~ 15 to 20 min are needed to reach the equilibrium but it varies between species.</p>
 <p>For usefull informations, we need to supress one of the 2 (typically 1).
 Indeed, if no photochemical quenching (PQ), then we only have non-photochemical quenching (NPQ).</p>
 <p>We thus use the <code>light doubling technique</code>.</p>
@@ -171,8 +168,8 @@ Indeed, if no photochemical quenching (PQ), then we only have non-photochemical 
 <p><span class="math inline">\(qP = \frac{F&#39;_m-F_t}{F&#39;_m-F&#39;_0}\)</span> the proportion of closed PSII reaction center, it increases with plant stress.</p>
 <p><span class="math inline">\(F_v/F_m=\frac{\phi _{PSII}}{qP}=\frac{F&#39;_m-F&#39;_0}{F&#39;_m}\)</span> or with <span class="math inline">\(F°_m\)</span> and <span class="math inline">\(F°_0\)</span> in the dark adapted state.</p>
 </div>
-<div id="fv.fm" class="section level2">
-<h2><span class="header-section-number">5.2</span> F<sub>v</sub>.F<sub>m</sub></h2>
+<div id="fv.fm" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.2</span> F<sub>v</sub>.F<sub>m</sub><a href="fluorescence.html#fv.fm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place one on the target leaf for 30 minutes dark adaptation.
 Then press record on the MiniPAM screen to create a new data entry.
 And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
@@ -247,7 +244,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
