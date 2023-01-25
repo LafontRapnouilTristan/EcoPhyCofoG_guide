@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Morpho-anatomy | Memoir Template</title>
+  <meta name="description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Morpho-anatomy | Memoir Template" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+  <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="github-repo" content="GitHubID/Repository" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Morpho-anatomy | Memoir Template" />
+  
+  <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+
+<meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
+
+
+<meta name="date" content="2023-01-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="handbook-architecture.html"/>
+<link rel="next" href="hydraulics.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Title of the Memoir</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="handbook-architecture.html"><a href="handbook-architecture.html"><i class="fa fa-check"></i><b>2</b> Handbook architecture</a></li>
+<li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#mass-associated-traits"><i class="fa fa-check"></i><b>3.1.1</b> Mass associated traits</a></li>
+<li class="chapter" data-level="3.1.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#leaf-anatomy"><i class="fa fa-check"></i><b>3.1.2</b> Leaf anatomy</a></li>
+<li class="chapter" data-level="3.1.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#stem"><i class="fa fa-check"></i><b>3.1.3</b> Stem</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-acquisition"><i class="fa fa-check"></i><b>3.2.1</b> Image Acquisition</a></li>
+<li class="chapter" data-level="3.2.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-processing"><i class="fa fa-check"></i><b>3.2.2</b> Image processing</a></li>
+<li class="chapter" data-level="3.2.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#winrhizo"><i class="fa fa-check"></i><b>3.2.3</b> WinRhizo</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#resources"><i class="fa fa-check"></i><b>3.3</b> Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="hydraulics.html"><a href="hydraulics.html"><i class="fa fa-check"></i><b>4</b> Hydraulics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="hydraulics.html"><a href="hydraulics.html#leaf-turgor-loss-point-pi_tlp"><i class="fa fa-check"></i><b>4.1</b> Leaf turgor loss point, <span class="math inline">\(\pi_{tlp}\)</span></a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="hydraulics.html"><a href="hydraulics.html#materials"><i class="fa fa-check"></i><b>4.1.1</b> Materials</a></li>
+<li class="chapter" data-level="4.1.2" data-path="hydraulics.html"><a href="hydraulics.html#methods"><i class="fa fa-check"></i><b>4.1.2</b> Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="hydraulics.html"><a href="hydraulics.html#leaf-midday-water-potential"><i class="fa fa-check"></i><b>4.2</b> Leaf midday water potential</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="hydraulics.html"><a href="hydraulics.html#pressure-chamber-method"><i class="fa fa-check"></i><b>4.2.1</b> Pressure chamber method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="hydraulics.html"><a href="hydraulics.html#psychrometry-method"><i class="fa fa-check"></i><b>4.2.2</b> Psychrometry method</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="hydraulics.html"><a href="hydraulics.html#relative-water-content-rwc"><i class="fa fa-check"></i><b>4.3</b> Relative water content RWC (%)</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="hydraulics.html"><a href="hydraulics.html#material"><i class="fa fa-check"></i><b>4.3.1</b> Material</a></li>
+<li class="chapter" data-level="4.3.2" data-path="hydraulics.html"><a href="hydraulics.html#method"><i class="fa fa-check"></i><b>4.3.2</b> Method</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="hydraulics.html"><a href="hydraulics.html#gmin"><i class="fa fa-check"></i><b>4.4</b> gmin</a></li>
+<li class="chapter" data-level="4.5" data-path="hydraulics.html"><a href="hydraulics.html#gs"><i class="fa fa-check"></i><b>4.5</b> gs</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
+<li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F<sub>v</sub>.F<sub>m</sub></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
+<li class="chapter" data-level="7" data-path="microbiology-and-metabarcoding.html"><a href="microbiology-and-metabarcoding.html"><i class="fa fa-check"></i><b>7</b> Microbiology and metabarcoding</a></li>
+<li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
+<li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="device-info.html"><a href="device-info.html#vapor-pressure-osmometer---vapro-5520-cheatsheet"><i class="fa fa-check"></i><b>9.1</b> Vapor pressure osmometer - Vapro 5520 cheatsheet</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/LafontRapnouilTristan/EcoPhyCofoG_guide" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Memoir Template</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="morpho-anatomy" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Morpho-anatomy<a href="morpho-anatomy.html#morpho-anatomy" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="shoot-traits" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Shoot traits<a href="morpho-anatomy.html#shoot-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Shoot traits refer to all morpho-anatomical traits that can be measured on plant aerial part.
+Most of these traits are measured on the leaves but see <a href="morpho-anatomy.html#stem">Stem</a> section.</p>
+<div id="mass-associated-traits" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Mass associated traits<a href="morpho-anatomy.html#mass-associated-traits" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Plant growth strategies and overall performances are often assessed via mass associated traits.
+Three masses are used to calculate different metrics.
+The <em>Fresh Mass</em> (<strong>FM</strong>) which is the weight of freshly sampled leaves.
+The <em>Turgid Mass</em> (<strong>TM</strong>) which is the mass of fully hydrated leaves.
+Leaf hydratation protocols are source of debate in EcoFog but are presented [here][Leaf hydratation]
+And the <em>Dry Mass</em> (<strong>DM</strong>) which is the mass of dryed leaves.</p>
+<p>To be compared, these weights must come from the same sample and we must measure the leaf projected surfaces.
+See <a href="morpho-anatomy.html#leaf-surface">here</a> for the leaf surface measurements protocols.</p>
+<p>From these masses and surfaces are calculated metrics such as SLA/LMA, RWC, LDMC, WHC (<a href="morpho-anatomy.html#calculation">Calculation</a>).</p>
+<p></p>
+<div id="leaf-surface" class="section level4 hasAnchor" number="3.1.1.1">
+<h4><span class="header-section-number">3.1.1.1</span> Leaf surface<a href="morpho-anatomy.html#leaf-surface" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Most of leaf surfaces are obtained from leaf scans using office scanner.
+The used scanners are <a href="document/machine/EPSON_V800/usersguide.pdf">EPSON’s V800</a>.
+To acquire leaf scans please see <a href="morpho-anatomy.html#image-acquisition">Image Acquisition</a>.
+Depending on your research question you can either scan one leaf or several leaves (to have total leaf surface of your plant for instance).</p>
+<p>Once you have one scan per experimental unit you need to extract its surface.
+Surface measurements are made with the <a href="document/software/ImageJ/user-guide-A4booklet.pdf"><code>ImageJ</code></a> freeware.
+<code>ImageJ</code> works on all <code>OS</code> and can be downloaded [here][<a href="https://imagej.nih.gov/ij/download.html" class="uri">https://imagej.nih.gov/ij/download.html</a>]</p>
+<p>Surface can be measured <strong>manually</strong> or <strong>automatically</strong></p>
+<p><strong>Manual measurements</strong> :</p>
+<p>Launch imageJ -&gt; File -&gt; Open (Ctrl + O) and browse for the picture you want to analyse.</p>
+<p>Then select the <code>polygon selection</code> tool <a href="morpho-anatomy.html#fig:polygon">3.1</a>.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:polygon"></span>
+<img src="document/trait/shootmorpho/polygon_selection_imageJ.PNG" alt="Polygon selection tool in ImageJ" width="50%" />
+<p class="caption">
+Figure 3.1: Polygon selection tool in ImageJ
+</p>
+</div>
+<p></p>
+<p>Zoom (<code>-</code>/<code>+</code> or <code>Ctrl+wheel in/out</code>) into your image to see only the leaf you want to measure <a href="morpho-anatomy.html#fig:zoomin">3.2</a>.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:zoomin"></span>
+<img src="document/trait/shootmorpho/Zoomin.png" alt="Zooming in ImageJ" width="50%" />
+<p class="caption">
+Figure 3.2: Zooming in ImageJ
+</p>
+</div>
+<p></p>
+<p>Then you can <code>left click</code> to detour your leaf <a href="morpho-anatomy.html#fig:detouring">3.3</a>.
+The more points you have the more precise and close to the leaf your measruments will be.
+However, bear in mind that this is laborious and that as your zoomed in your error should be negligeable.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:detouring"></span>
+<img src="document/trait/shootmorpho/detouring_leaf.png" alt="Leaf detouring in ImageJ" width="50%" />
+<p class="caption">
+Figure 3.3: Leaf detouring in ImageJ
+</p>
+</div>
+<p></p>
+<p>Once you’ve closed your polygon, press <code>ctrl+M</code>.
+A window containing the results will pop-up <a href="morpho-anatomy.html#fig:ctrlmpopup">3.4</a>.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ctrlmpopup"></span>
+<img src="document/trait/shootmorpho/ctrlMpopup.png" alt="Results window in ImageJ" width="50%" />
+<p class="caption">
+Figure 3.4: Results window in ImageJ
+</p>
+</div>
+<p></p>
+<p>The Area will be expressed in the units of your photo.
+Some pictures have embedded scales in cm or inches but the default is usually in pixels (px).
+For more information see [ImageJ scale].</p>
+<p>Each measurements will be added to the results window (one each time you press <code>ctrl+M</code>).
+You can then save this window in the <code>.csv</code>format clicking on <code>File</code>, <code>Save As</code> and browse for chosen location.
+You can either have one file per photo (i.e. sample) and then name your file as your sample ID.
+Or you can decide to have one file for all your samples.
+Then you have to remember or write somewhere which measurements ID is associated to each of your samples to find who’s who <a href="morpho-anatomy.html#fig:measid">3.5</a>.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:measid"></span>
+<img src="document/trait/shootmorpho/measurementID.png" alt="Measurement ID in ImageJ" width="50%" />
+<p class="caption">
+Figure 3.5: Measurement ID in ImageJ
+</p>
+</div>
+<p></p>
+<p><strong>Automatic measurements</strong>:</p>
+<p>This will allow you to analyze many data at the same time.
+To do so you will need to use an homemade ImageJ macro.</p>
+<p><a href="document/software/ImageJ/macro.txt">Macro exemple</a>.
+This macro is used to convert your colored scans in 8 bit black and white pictures.
+Then it set scale for 800 ppi scans (distances=800px known = 2.54 cm , pixel = 1).
+With ppi -&gt; pixel per inch and 1 inch = 2.54cm.
+The pixel ratio is 1 as vertical and horizontal resolution is the same.
+It sets the contrast and then anaylze size of particle bigger than 0.01 cm^2 and smaller than infinity.
+It displays the results in summarize form for each pictures in the folder.</p>
+<p>See <a href="https://exeter-data-analytics.github.io/imagej-gui/macros.html">here</a> for a tutorial on macro recording in imageJ.</p>
+<p>To launch a batch process go to <code>Process</code>-&gt; <code>Batch</code>-&gt; <code>Macro...</code>.
+This will open a window.
+Fill the fields as follow:
++ <code>Input</code>: folder containing your pictures to be annalyzed
++ <code>Output</code>: folder to receive your output.
++ <code>Output format</code>: quite clear!</p>
+</div>
+<div id="calculation" class="section level4 hasAnchor" number="3.1.1.2">
+<h4><span class="header-section-number">3.1.1.2</span> Calculation<a href="morpho-anatomy.html#calculation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p></p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-1">Table 3.1: </span>Mass derived traits
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Acronym
+</th>
+<th style="text-align:left;">
+Full name
+</th>
+<th style="text-align:left;">
+Formula
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+LA
+</td>
+<td style="text-align:left;">
+Leaf area
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FM
+</td>
+<td style="text-align:left;">
+Fresh mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TM
+</td>
+<td style="text-align:left;">
+Turgid mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DM
+</td>
+<td style="text-align:left;">
+Dry mass
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LMA
+</td>
+<td style="text-align:left;">
+Leaf mass area
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(DM/LA\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SLA
+</td>
+<td style="text-align:left;">
+Specific leaf area
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(LA/DM\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LDMC
+</td>
+<td style="text-align:left;">
+Leaf dry mass content
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(DM/FM\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LS
+</td>
+<td style="text-align:left;">
+Leaf succulence
+</td>
+<td style="text-align:left;">
+<span class="math inline">\((FM-DM)/LA\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RWC
+</td>
+<td style="text-align:left;">
+Relative water content
+</td>
+<td style="text-align:left;">
+<span class="math inline">\([(FM-DM)/(TM-DM)]*100\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WHC
+</td>
+<td style="text-align:left;">
+Water holding capcity
+</td>
+<td style="text-align:left;">
+<span class="math inline">\((TM-DM)/LA\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+</div>
+<div id="leaf-anatomy" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Leaf anatomy<a href="morpho-anatomy.html#leaf-anatomy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="stomata-and-trichomes-density" class="section level4 hasAnchor" number="3.1.2.1">
+<h4><span class="header-section-number">3.1.2.1</span> Stomata and trichomes density<a href="morpho-anatomy.html#stomata-and-trichomes-density" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Stomata and trichomes density are acquired via epidermis printing.
+First, apply double sided tape on your leaf and remove it.
+You now have a piece of tape with your trichomes on it.
+Place it on a glass-slide with the trichome-covered side on the top.</p>
+<p>Then, to get your stomata, apply a thin coat of transparent nail polish and let it to dry.
+Then you remove it with double-sided tape and put it on a glass slide (nail polish on top).</p>
+<p>Observations are made with the <a href="document/machine/Olympus%20BX51/olympus_bx-51_bx52_microscope_manual.pdf"><code>Olympus BX51</code></a> microscope.</p>
+<p>And pictures are taken with the installed camera (currently <a href="document/machine/Lumenera%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf"><code>Lumenera LW1135C-IO</code></a> but about to change).</p>
+<p>Pictures can then be uploaded in ImageJ and you can manually count stomata and trichomes using the <code>multipoint</code> tool.</p>
+<p><strong>There is a new opportunity to use <code>LabelStoma</code>, a deep leaning software for stomata detection.
+It is developed by Ángela Casado-García and we are trying to make it work on some species that we study at EcoFog.</strong></p>
+</div>
+<div id="anatomical-structure" class="section level4 hasAnchor" number="3.1.2.2">
+<h4><span class="header-section-number">3.1.2.2</span> Anatomical structure<a href="morpho-anatomy.html#anatomical-structure" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Leaf anatomical observations are made on razor blade hand-made cross sections of leaves.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromecut"></span>
+<img src="document/trait/shootmorpho/bromecut1.jpg" alt="Hand made cross section of a bromeliad leaf" width="50%" />
+<p class="caption">
+Figure 3.6: Hand made cross section of a bromeliad leaf
+</p>
+</div>
+<p></p>
+<p>These cuts are directly placed in water/oil on a glass-slide and observed with the <a href="document/machine/Olympus%20BX51/olympus_bx-51_bx52_microscope_manual.pdf"><code>Olympus BX51</code></a> microscope.</p>
+<p>And pictures are taken with the installed camera (currently <a href="document/machine/Lumenera%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf"><code>Lumenera LW1135C-IO</code></a> but about to change).</p>
+<p>
+We recommend <code>JPEG</code> or <code>TIFF</code>.</p>
+<p>On these pictures you can then make measurements such as width of the epidermis and cuticle.
+The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the <code>draw segment</code> and <code>ctrl+M</code> output (area, angle of the line and length).</p>
+<p><strong>SEE MATTHIEU PICS</strong></p>
+</div>
+</div>
+<div id="stem" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Stem<a href="morpho-anatomy.html#stem" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="root-traits" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Root traits<a href="morpho-anatomy.html#root-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Root morphology analysis (length, diameter, etc.) are conducted using the Winrhizo software.</p>
+<p>Winrhizo is a licenced software created by Regent Instrument Canada Inc. It exist 4 different version and we own the <em>Basic Version</em>. It allows root morphology analysis from scans.</p>
+<div id="image-acquisition" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Image Acquisition<a href="morpho-anatomy.html#image-acquisition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="format" class="section level4 hasAnchor" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Format<a href="morpho-anatomy.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Supported image format are <code>.TIFF</code>, <code>.JPEG</code> and <code>.BMP</code>. <code>.TIFF</code>and <code>.BMP</code> are not compressed and are thus to be preferred. <code>.TIFF</code> images are compatible with all OS and should be privileged but you must be careful to save them <em>uncompressed</em> as <code>WinRhizo</code> won’t be able to open <em>compressed</em> ones.</p>
+<p>The higher the resolution, the more pixel you will have and the more precise will be your measurements. However, with resolution, scan time and image size increase. 800DPI is the standard in this lab but 400 is the winrhizo recommendation. This depend on the required level of precision as well as the size of the analyzed roots ( the finer the higher must be the resolution to get more details).</p>
+</div>
+<div id="scanner" class="section level4 hasAnchor" number="3.2.1.2">
+<h4><span class="header-section-number">3.2.1.2</span> Scanner<a href="morpho-anatomy.html#scanner" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog’s lab scale.
+<a href="document/machine/EPSON_V800/usersguide.pdf">EPSON’s V800</a> scanners are the ones used as this document is being written. The scanner model isn’t important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
+And the scanning software is <a href="document/software/Viewscan/Parametre_Scanner.pdf">ViewScan</a></p>
+</div>
+<div id="scan-process" class="section level4 hasAnchor" number="3.2.1.3">
+<h4><span class="header-section-number">3.2.1.3</span> Scan process<a href="morpho-anatomy.html#scan-process" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Paste the wall-taped doc.</p>
+<div id="flat-scan" class="section level5 hasAnchor" number="3.2.1.3.1">
+<h5><span class="header-section-number">3.2.1.3.1</span> Flat scan<a href="morpho-anatomy.html#flat-scan" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>You can decide to use basic scan options with light only coming from below. If you do so you need to have a white background installed under the scanner’s roof (if black roots, if pale ones you’ll need a black background).</p>
+<p>Choosing this option will simplify your protocol and can suffice for simple and thin enough root systems.</p>
+<p><strong>EXEMPLE</strong> scan marion</p>
+</div>
+<div id="transparent" class="section level5 hasAnchor" number="3.2.1.3.2">
+<h5><span class="header-section-number">3.2.1.3.2</span> Transparent<a href="morpho-anatomy.html#transparent" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.7</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bigroots"></span>
+<img src="document/trait/rootmorpho/thickroot.PNG" alt="Roots to thick to be flat scanned" width="50%" />
+<p class="caption">
+Figure 3.7: Roots to thick to be flat scanned
+</p>
+</div>
+<p></p>
+<p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.8</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromeroot"></span>
+<img src="document/trait/rootmorpho/bromeroot.JPG" alt="Complex bromeliad adventitious root system" width="50%" />
+<p class="caption">
+Figure 3.8: Complex bromeliad adventitious root system
+</p>
+</div>
+<p></p>
+<p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.9</a> and you must make sure that you roots are well placed within this area.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:scantransp"></span>
+<img src="document/trait/rootmorpho/scan_transp.png" alt="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner" width="50%" />
+<p class="caption">
+Figure 3.9: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
+</p>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<div id="image-processing" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Image processing<a href="morpho-anatomy.html#image-processing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
+However, when having a lot of scans you might want to automatize the process using the <code>batch</code> option.
+If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
+For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.10</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromescan"></span>
+<img src="MyBook_files/figure-html/bromescan-1.png" alt="Scan of a bromeliad root system in water-filled petri dish" width="50%" />
+<p class="caption">
+Figure 3.10: Scan of a bromeliad root system in water-filled petri dish
+</p>
+</div>
+<p></p>
+<p>To re-crop these images we use the freeware <code>XnConvert</code>. The petri dish has always been placed in the same place using a stencil <a href="#fig:scanstencil"><strong>??</strong></a> on the scan window, enabling us to recrop all scans to the same size.
+Detailed <code>XnConvert</code> tutorial is available <a href="document/software/XnConvert/XnConvert_tuto.pdf">HERE</a>.</p>
+<p></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-1"></span>
+<img src="document/trait/rootmorpho/squre_stencil.jpg" alt="Stencil used for inwater root scans" width="50%" />
+<p class="caption">
+Figure 3.11: Stencil used for inwater root scans
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-2"></span>
+<img src="document/trait/rootmorpho/squre_stencil2.jpg" alt="Stencil used for inwater root scans" width="50%" />
+<p class="caption">
+Figure 3.12: Stencil used for inwater root scans
+</p>
+</div>
+<p></p>
+</div>
+<div id="winrhizo" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> WinRhizo<a href="morpho-anatomy.html#winrhizo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="installation" class="section level4 hasAnchor" number="3.2.3.1">
+<h4><span class="header-section-number">3.2.3.1</span> Installation<a href="morpho-anatomy.html#installation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The winrhizo software is contained on a CD (ask <a href="https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0"><strong>Eliane Louisanna</strong></a>. To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don’t need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.</p>
+</div>
+<div id="startup" class="section level4 hasAnchor" number="3.2.3.2">
+<h4><span class="header-section-number">3.2.3.2</span> Startup<a href="morpho-anatomy.html#startup" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="first-analysis" class="section level4 hasAnchor" number="3.2.3.3">
+<h4><span class="header-section-number">3.2.3.3</span> First analysis<a href="morpho-anatomy.html#first-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click <em>Image</em> -&gt; <em>Origin</em> -&gt; <em>From File</em>. Then you can click the <em>acquisition </em>icon <strong>PIC</strong>.
+This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display <code>.TIFF</code>.
+When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.</p>
+<p>When an image or region is analyzed, winrhizo display the <em>sample identification</em> window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click <em>OK</em> to do the analysis or <em>Cancel</em> to abort it.</p>
+<p>After you clicked <em>OK</em>, winrhizo starts the analysis (can be stopped pressing <em>S</em>). When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to <em>open one</em>, <em>create one</em> or <em>save nothing</em>. Selecting <em>create one</em> will create a new <code>.TXT</code> file to store analysis data (more info about output <a href="morpho-anatomy.html#output">here</a>). Selecting <em>open one</em> will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on <em>save nothing</em>, guess?</p>
+<p>In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it <a href="morpho-anatomy.html#pixel-classification">here</a>).</p>
+<p>WELL DONE! You just analyze your first picture!</p>
+<p>You can practice with scans available <a href="morpho-anatomy.html#resources">here</a></p>
+</div>
+<div id="calibration" class="section level4 hasAnchor" number="3.2.3.4">
+<h4><span class="header-section-number">3.2.3.4</span> Calibration<a href="morpho-anatomy.html#calibration" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If not calibrated (associated with a scale), winrhizo will display results in pixels. <code>.TIFF</code> files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).</p>
+<p>However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to “manually” calibrate your image. Winrhizo calibration files are saved as <code>.CAL</code>. In the <em>Calibration</em> menu you can load pre-existing calibration files. You will find the <code>calib_imge.TIFF</code> <a href="document/trait/rootmorpho/calib_imge.TIF">here</a>. To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on <em>calibration</em> -&gt; <em>pixel size method</em> -&gt; <em>object of known dimension</em> -&gt; <em>1 image</em> -&gt; width=1 , height=1, border=0.35, units=cm -&gt; <em>Ok</em></p>
+<p>Then, winrhizo will propose you to save the calibration in a <code>.CAL</code> file that can be loaded later and used for all your images at a given resolution. .
+Please, when you create a <code>.CAL</code> at a previously not used resolution, store a copy of the calibration file <a href="document/software/Winrhizo/">here</a> so that your work helps your successors!!</p>
+</div>
+<div id="batch" class="section level4 hasAnchor" number="3.2.3.5">
+<h4><span class="header-section-number">3.2.3.5</span> Batch<a href="morpho-anatomy.html#batch" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We saw how to analyze a <a href="morpho-anatomy.html#first-analysis">single picture or region</a>but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a <em>batch</em> (i.e. a folder) containing any number of images you want.</p>
+</div>
+<div id="pixel-classification" class="section level4 hasAnchor" number="3.2.3.6">
+<h4><span class="header-section-number">3.2.3.6</span> Pixel classification<a href="morpho-anatomy.html#pixel-classification" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="output" class="section level4 hasAnchor" number="3.2.3.7">
+<h4><span class="header-section-number">3.2.3.7</span> Output<a href="morpho-anatomy.html#output" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+</div>
+<div id="resources" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Resources<a href="morpho-anatomy.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="handbook-architecture.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hydraulics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MyBook.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
