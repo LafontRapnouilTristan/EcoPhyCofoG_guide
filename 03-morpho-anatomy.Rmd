@@ -153,7 +153,7 @@ Place it on a glass-slide with the trichome-covered side on the top.
 Then, to get your stomata, apply a thin coat of transparent nail polish and let it to dry.
 Then you remove it with double-sided tape and put it on a glass slide (nail polish on top). 
 
-Observations are made with the [`Olympus BX51`](document/machine/Olympus BX51/olympus_bx-51_bx52_microscope_manual.pdf)  microscope.
+Observations are made with the [`Olympus BX51`](document/machine/Olympus BX51/olympus_bx-51_bx52_microscope_manual.pdf) microscope.
 
 And pictures are taken with the installed camera (currently [`Lumenera LW1135C-IO`](document/machine/Lumenera LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf) but about to change). 
 
@@ -181,8 +181,9 @@ We recommend `JPEG` or `TIFF`.
 On these pictures you can then make measurements such as width of the epidermis and cuticle.
 The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the `draw segment` and `ctrl+M` output (area, angle of the line and length).
 
-**SEE MATTHIEU PICS**
-
+```{r measurements, echo=FALSE, out.width="50%", fig.cap="Hand made cross section of a bromeliad leaf and possible anatomical measurements"}
+knitr::include_graphics('document/trait/shootmorpho/meas_anat_tissue.PNG')
+```
 
 
 ### Stem
@@ -205,11 +206,11 @@ The higher the resolution, the more pixel you will have and the more precise wil
 
 Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
 [EPSON's V800](document/machine/EPSON_V800/usersguide.pdf) scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
-And the scanning software is [ViewScan](document/software/Viewscan/Parametre_Scanner.pdf)
+And the scanning software is [VueScan](https://www.hamrick.com/vuescan/epson.html)
 
 #### Scan process
 
-Paste the wall-taped doc.
+[protocol](document/trait/rootmorpho/Parametre_Scanner.pdf)
 
 ##### Flat scan
 
@@ -253,7 +254,8 @@ For instance, this \@ref(fig:bromescan) is the scan from bromeliads roots. We ca
 grid::grid.raster( tiff::readTIFF( "document/trait/rootmorpho/scan_exemple.tif") )
 ```
 
-To re-crop these images we use the freeware `XnConvert`. The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
+To re-crop these images we use the freeware `XnConvert`. 
+The petri dish has always been placed in the same place using a stencil \@ref(fig:scanstencil) on the scan window, enabling us to recrop all scans to the same size.
 Detailed `XnConvert` tutorial is available [HERE](document/software/XnConvert/XnConvert_tuto.pdf).
 
 ```{r scanstencil, echo=FALSE, out.width="50%", fig.cap="Stencil used for inwater root scans"}
@@ -265,22 +267,37 @@ knitr::include_graphics('document/trait/rootmorpho/squre_stencil2.jpg')
 
 #### Installation
 
-The winrhizo software is contained on a CD (ask [**Eliane Louisanna**](https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0). To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.
+The winrhizo software is contained on a CD (ask [**Eliane Louisanna**](https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0).
+To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged.
+Unplugging it will prevent any use of the software.
 
 #### Startup
 
 #### First analysis
 
-Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click *Image* -> *Origin* -> *From File*. Then you can click the *acquisition *icon **PIC**. 
-This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display `.TIFF`. 
+Once you have acquired your images and launched winrhizo you can start to analyze your scans.
+To display a single scan, click *Image* -> *Origin* -> *From File*.
+Then you can click the *acquisition *icon **PIC**. 
+This will open a standard document opening window.
+Then you browse normally to find the wanted scan.
+Make sure that you are looking for the goor format, by default, winrhizo display `.TIFF`. 
 When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.
 
-When an image or region is analyzed, winrhizo display the *sample identification* window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click *OK* to do the analysis or *Cancel* to abort it.
+When an image or region is analyzed, winrhizo display the *sample identification* window which allows you to enter information about the sample.
+These information will be saved with the measurements data.
+In this window click *OK* to do the analysis or *Cancel* to abort it.
 
-After you clicked *OK*, winrhizo starts the analysis (can be stopped pressing *S*). When done, winrhizo is ready to save the data but a file must be opened or created first.
-Winrhizo display a window which asks wether to *open one*, *create one* or *save nothing*. Selecting *create one* will create a new `.TXT` file to store analysis data (more info about output [here][Output]). Selecting *open one* will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on *save nothing*, guess? 
+After you clicked *OK*, winrhizo starts the analysis (can be stopped pressing *S*).
+When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to *open one*, *create one* or *save nothing*.
+Selecting *create one* will create a new `.TXT` file to store analysis data (more info about output [here][Output]).
+Selecting *open one* will allow you to open a pre-existing file to add the new measurements at the end of this file.
+Clicking on *save nothing*, guess? 
 
-In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it [here][Pixel classification]).
+In the image, you can now see which roots have been analyzed.
+This have a skeleton line over them.
+The absence of this skeleton indicates that these roots have not been analyzed.
+This can be due to non-optimal pixel classification (see more about it [here][Pixel classification]).
 
 WELL DONE! You just analyze your first picture!
 
@@ -288,18 +305,35 @@ You can practice with scans available [here][Resources]
 
 #### Calibration
 
-If not calibrated (associated with a scale), winrhizo will display results in pixels. `.TIFF` files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
+If not calibrated (associated with a scale), winrhizo will display results in pixels.
+`.TIFF` files have an embedded scale, automatically detected by winrhizo. 
+Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
 
-However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to "manually" calibrate your image. Winrhizo calibration files are saved as `.CAL`. In the *Calibration* menu you can load pre-existing calibration files. You will find the `calib_imge.TIFF` [here](document/trait/rootmorpho/calib_imge.TIF). To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on *calibration* -> *pixel size method* -> *object of known dimension* -> *1 image* -> width=1 , height=1, border=0.35, units=cm -> *Ok*
+However, you can sometimes have uncalibrated files (mistakes or images from camera).
+Thus, you will need to "manually" calibrate your image. 
+Winrhizo calibration files are saved as `.CAL`. In the *Calibration* menu you can load pre-existing calibration files.
+You will find the `calib_imge.TIFF` [here](document/trait/rootmorpho/calib_imge.TIF). 
+To make your calibration at any DPI, you can print this image and scan it at the wanted DPI.
+The black square in the image delimit a white 1x1cm square.
+Loading this image in winrhizo, you can click on *calibration* -> *pixel size method* -> *object of known dimension* -> *1 image* -> width=1 , height=1, border=0.35, units=cm -> *Ok*
 
 Then, winrhizo will propose you to save the calibration in a `.CAL` file that can be loaded later and used for all your images at a given resolution. \textcolor{red}{DO NOT NAME YOUR FILE Scanner.cal}. 
 Please, when you create a `.CAL` at a previously not used resolution, store a copy of the calibration file [here](document/software/Winrhizo/) so that your work helps your successors!!
 
 #### Batch
 
-We saw how to analyze a [single picture or region ][First analysis]but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a *batch* (i.e. a folder) containing any number of images you want. 
+We saw how to analyze a [single picture or region ][First analysis] but you might have numerous scans to analyze and want to automatize this process.
+To do so you will give winrhizo a *batch* (i.e. a folder) containing any number of images you want. 
 
 #### Pixel classification
+
+Pixel classification is how winrhizo discriminate between actual "root" pixels and scan background.
+To do this distinction you have several options presented in *Analysis* -> *Root & Background Distinction* menu.
+This distinction is made grey levels and can either be set to *automatic* or *manual*.
+Automatic option  either sets a global threshold (default) of grey value at which the pixel is attributed to roots or background or it can be used with *lagarde* options which consider local region (region size can be defined in pixels) of the picture and associate different threshold values.
+We don't recommend the use of *lagarde* option but a careful cleaning of your roots and high quality scans.
+However you can test different options with some of your scans to chose the best options.
+It is also important to tell the software if your scans are Dark roots on White background or the contrary.
 
 #### Output
 
