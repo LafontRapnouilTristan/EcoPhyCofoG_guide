@@ -23,7 +23,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2023-01-25" />
+<meta name="date" content="2023-02-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,9 +171,12 @@
 <li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a><ul>
 <li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
 <li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F<sub>v</sub>.F<sub>m</sub></a></li>
+<li class="chapter" data-level="5.3" data-path="fluorescence.html"><a href="fluorescence.html#etrmax"><i class="fa fa-check"></i><b>5.3</b> ETR<sub>max</sub></a></li>
+<li class="chapter" data-level="5.4" data-path="fluorescence.html"><a href="fluorescence.html#getting-data-out-of-the-minipam-ii"><i class="fa fa-check"></i><b>5.4</b> Getting data out of the MiniPAM II</a></li>
+<li class="chapter" data-level="5.5" data-path="fluorescence.html"><a href="fluorescence.html#process-with-r-scripts"><i class="fa fa-check"></i><b>5.5</b> Process with R scripts</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
-<li class="chapter" data-level="7" data-path="microbiology-and-metabarcoding.html"><a href="microbiology-and-metabarcoding.html"><i class="fa fa-check"></i><b>7</b> Microbiology and metabarcoding</a></li>
+<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a></li>
 <li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
 <li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a><ul>
 <li class="chapter" data-level="9.1" data-path="device-info.html"><a href="device-info.html#vapor-pressure-osmometer---vapro-5520-cheatsheet"><i class="fa fa-check"></i><b>9.1</b> Vapor pressure osmometer - Vapro 5520 cheatsheet</a></li>
@@ -403,7 +470,14 @@ Figure 3.6: Hand made cross section of a bromeliad leaf
 We recommend <code>JPEG</code> or <code>TIFF</code>.</p>
 <p>On these pictures you can then make measurements such as width of the epidermis and cuticle.
 The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the <code>draw segment</code> and <code>ctrl+M</code> output (area, angle of the line and length).</p>
-<p><strong>SEE MATTHIEU PICS</strong></p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:measurements"></span>
+<img src="document/trait/shootmorpho/meas_anat_tissue.PNG" alt="Hand made cross section of a bromeliad leaf and possible anatomical measurements" width="50%" />
+<p class="caption">
+Figure 3.7: Hand made cross section of a bromeliad leaf and possible anatomical measurements
+</p>
+</div>
+
 </div>
 </div>
 <div id="stem" class="section level3 hasAnchor">
@@ -425,11 +499,11 @@ The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or t
 <h4><span class="header-section-number">3.2.1.2</span> Scanner<a href="morpho-anatomy.html#scanner" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog’s lab scale.
 <a href="document/machine/EPSON_V800/usersguide.pdf">EPSON’s V800</a> scanners are the ones used as this document is being written. The scanner model isn’t important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
-And the scanning software is <a href="document/software/Viewscan/Parametre_Scanner.pdf">ViewScan</a></p>
+And the scanning software is <a href="https://www.hamrick.com/vuescan/epson.html">VueScan</a></p>
 </div>
 <div id="scan-process" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.1.3</span> Scan process<a href="morpho-anatomy.html#scan-process" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Paste the wall-taped doc.</p>
+<p><a href="document/trait/rootmorpho/Parametre_Scanner.pdf">protocol</a></p>
 <div id="flat-scan" class="section level5 hasAnchor">
 <h5><span class="header-section-number">3.2.1.3.1</span> Flat scan<a href="morpho-anatomy.html#flat-scan" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>You can decide to use basic scan options with light only coming from below. If you do so you need to have a white background installed under the scanner’s roof (if black roots, if pale ones you’ll need a black background).</p>
@@ -438,30 +512,30 @@ And the scanning software is <a href="document/software/Viewscan/Parametre_Scann
 </div>
 <div id="transparent" class="section level5 hasAnchor">
 <h5><span class="header-section-number">3.2.1.3.2</span> Transparent<a href="morpho-anatomy.html#transparent" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.7</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
+<p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.8</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bigroots"></span>
 <img src="document/trait/rootmorpho/thickroot.PNG" alt="Roots to thick to be flat scanned" width="50%" />
 <p class="caption">
-Figure 3.7: Roots to thick to be flat scanned
+Figure 3.8: Roots to thick to be flat scanned
 </p>
 </div>
 
-<p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.8</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
+<p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.9</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromeroot"></span>
 <img src="document/trait/rootmorpho/bromeroot.JPG" alt="Complex bromeliad adventitious root system" width="50%" />
 <p class="caption">
-Figure 3.8: Complex bromeliad adventitious root system
+Figure 3.9: Complex bromeliad adventitious root system
 </p>
 </div>
 
-<p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.9</a> and you must make sure that you roots are well placed within this area.</p>
+<p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.10</a> and you must make sure that you roots are well placed within this area.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scantransp"></span>
 <img src="document/trait/rootmorpho/scan_transp.png" alt="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner" width="50%" />
 <p class="caption">
-Figure 3.9: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
+Figure 3.10: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
 </p>
 </div>
 
@@ -473,28 +547,29 @@ Figure 3.9: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanne
 <p>To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
 However, when having a lot of scans you might want to automatize the process using the <code>batch</code> option.
 If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
-For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.10</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
+For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.11</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromescan"></span>
 <img src="MyBook_files/figure-html/bromescan-1.png" alt="Scan of a bromeliad root system in water-filled petri dish" width="50%" />
 <p class="caption">
-Figure 3.10: Scan of a bromeliad root system in water-filled petri dish
+Figure 3.11: Scan of a bromeliad root system in water-filled petri dish
 </p>
 </div>
 
-<p>To re-crop these images we use the freeware <code>XnConvert</code>. The petri dish has always been placed in the same place using a stencil <a href="#fig:scanstencil"><strong>??</strong></a> on the scan window, enabling us to recrop all scans to the same size.
+<p>To re-crop these images we use the freeware <code>XnConvert</code>.
+The petri dish has always been placed in the same place using a stencil <a href="#fig:scanstencil"><strong>??</strong></a> on the scan window, enabling us to recrop all scans to the same size.
 Detailed <code>XnConvert</code> tutorial is available <a href="document/software/XnConvert/XnConvert_tuto.pdf">HERE</a>.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-1"></span>
 <img src="document/trait/rootmorpho/squre_stencil.jpg" alt="Stencil used for inwater root scans" width="50%" />
 <p class="caption">
-Figure 3.11: Stencil used for inwater root scans
+Figure 3.12: Stencil used for inwater root scans
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-2"></span>
 <img src="document/trait/rootmorpho/squre_stencil2.jpg" alt="Stencil used for inwater root scans" width="50%" />
 <p class="caption">
-Figure 3.12: Stencil used for inwater root scans
+Figure 3.13: Stencil used for inwater root scans
 </p>
 </div>
 
@@ -503,36 +578,67 @@ Figure 3.12: Stencil used for inwater root scans
 <h3><span class="header-section-number">3.2.3</span> WinRhizo<a href="morpho-anatomy.html#winrhizo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="installation" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.1</span> Installation<a href="morpho-anatomy.html#installation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The winrhizo software is contained on a CD (ask <a href="https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0"><strong>Eliane Louisanna</strong></a>. To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don’t need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.</p>
+<p>The winrhizo software is contained on a CD (ask <a href="https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0"><strong>Eliane Louisanna</strong></a>.
+To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don’t need the CD to run the software but the protection key must be plugged.
+Unplugging it will prevent any use of the software.</p>
 </div>
 <div id="startup" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.2</span> Startup<a href="morpho-anatomy.html#startup" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 </div>
 <div id="first-analysis" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.3</span> First analysis<a href="morpho-anatomy.html#first-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click <em>Image</em> -&gt; <em>Origin</em> -&gt; <em>From File</em>. Then you can click the <em>acquisition </em>icon <strong>PIC</strong>.
-This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display <code>.TIFF</code>.
+<p>Once you have acquired your images and launched winrhizo you can start to analyze your scans.
+To display a single scan, click <em>Image</em> -&gt; <em>Origin</em> -&gt; <em>From File</em>.
+Then you can click the <em>acquisition </em>icon <strong>PIC</strong>.
+This will open a standard document opening window.
+Then you browse normally to find the wanted scan.
+Make sure that you are looking for the goor format, by default, winrhizo display <code>.TIFF</code>.
 When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.</p>
-<p>When an image or region is analyzed, winrhizo display the <em>sample identification</em> window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click <em>OK</em> to do the analysis or <em>Cancel</em> to abort it.</p>
-<p>After you clicked <em>OK</em>, winrhizo starts the analysis (can be stopped pressing <em>S</em>). When done, winrhizo is ready to save the data but a file must be opened or created first.
-Winrhizo display a window which asks wether to <em>open one</em>, <em>create one</em> or <em>save nothing</em>. Selecting <em>create one</em> will create a new <code>.TXT</code> file to store analysis data (more info about output <a href="morpho-anatomy.html#output">here</a>). Selecting <em>open one</em> will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on <em>save nothing</em>, guess?</p>
-<p>In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it <a href="morpho-anatomy.html#pixel-classification">here</a>).</p>
+<p>When an image or region is analyzed, winrhizo display the <em>sample identification</em> window which allows you to enter information about the sample.
+These information will be saved with the measurements data.
+In this window click <em>OK</em> to do the analysis or <em>Cancel</em> to abort it.</p>
+<p>After you clicked <em>OK</em>, winrhizo starts the analysis (can be stopped pressing <em>S</em>).
+When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to <em>open one</em>, <em>create one</em> or <em>save nothing</em>.
+Selecting <em>create one</em> will create a new <code>.TXT</code> file to store analysis data (more info about output <a href="morpho-anatomy.html#output">here</a>).
+Selecting <em>open one</em> will allow you to open a pre-existing file to add the new measurements at the end of this file.
+Clicking on <em>save nothing</em>, guess?</p>
+<p>In the image, you can now see which roots have been analyzed.
+This have a skeleton line over them.
+The absence of this skeleton indicates that these roots have not been analyzed.
+This can be due to non-optimal pixel classification (see more about it <a href="morpho-anatomy.html#pixel-classification">here</a>).</p>
 <p>WELL DONE! You just analyze your first picture!</p>
 <p>You can practice with scans available <a href="morpho-anatomy.html#resources">here</a></p>
 </div>
 <div id="calibration" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.4</span> Calibration<a href="morpho-anatomy.html#calibration" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>If not calibrated (associated with a scale), winrhizo will display results in pixels. <code>.TIFF</code> files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).</p>
-<p>However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to “manually” calibrate your image. Winrhizo calibration files are saved as <code>.CAL</code>. In the <em>Calibration</em> menu you can load pre-existing calibration files. You will find the <code>calib_imge.TIFF</code> <a href="document/trait/rootmorpho/calib_imge.TIF">here</a>. To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on <em>calibration</em> -&gt; <em>pixel size method</em> -&gt; <em>object of known dimension</em> -&gt; <em>1 image</em> -&gt; width=1 , height=1, border=0.35, units=cm -&gt; <em>Ok</em></p>
+<p>If not calibrated (associated with a scale), winrhizo will display results in pixels.
+<code>.TIFF</code> files have an embedded scale, automatically detected by winrhizo.
+Check on your results if they are in px (pixels), in (inches) or cm (centimeters).</p>
+<p>However, you can sometimes have uncalibrated files (mistakes or images from camera).
+Thus, you will need to “manually” calibrate your image.
+Winrhizo calibration files are saved as <code>.CAL</code>. In the <em>Calibration</em> menu you can load pre-existing calibration files.
+You will find the <code>calib_imge.TIFF</code> <a href="document/trait/rootmorpho/calib_imge.TIF">here</a>.
+To make your calibration at any DPI, you can print this image and scan it at the wanted DPI.
+The black square in the image delimit a white 1x1cm square.
+Loading this image in winrhizo, you can click on <em>calibration</em> -&gt; <em>pixel size method</em> -&gt; <em>object of known dimension</em> -&gt; <em>1 image</em> -&gt; width=1 , height=1, border=0.35, units=cm -&gt; <em>Ok</em></p>
 <p>Then, winrhizo will propose you to save the calibration in a <code>.CAL</code> file that can be loaded later and used for all your images at a given resolution. .
 Please, when you create a <code>.CAL</code> at a previously not used resolution, store a copy of the calibration file <a href="document/software/Winrhizo/">here</a> so that your work helps your successors!!</p>
 </div>
 <div id="batch" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.5</span> Batch<a href="morpho-anatomy.html#batch" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>We saw how to analyze a <a href="morpho-anatomy.html#first-analysis">single picture or region</a>but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a <em>batch</em> (i.e. a folder) containing any number of images you want.</p>
+<p>We saw how to analyze a <a href="morpho-anatomy.html#first-analysis">single picture or region</a> but you might have numerous scans to analyze and want to automatize this process.
+To do so you will give winrhizo a <em>batch</em> (i.e. a folder) containing any number of images you want.</p>
 </div>
 <div id="pixel-classification" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.6</span> Pixel classification<a href="morpho-anatomy.html#pixel-classification" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Pixel classification is how winrhizo discriminate between actual “root” pixels and scan background.
+To do this distinction you have several options presented in <em>Analysis</em> -&gt; <em>Root &amp; Background Distinction</em> menu.
+This distinction is made grey levels and can either be set to <em>automatic</em> or <em>manual</em>.
+Automatic option either sets a global threshold (default) of grey value at which the pixel is attributed to roots or background or it can be used with <em>lagarde</em> options which consider local region (region size can be defined in pixels) of the picture and associate different threshold values.
+We don’t recommend the use of <em>lagarde</em> option but a careful cleaning of your roots and high quality scans.
+However you can test different options with some of your scans to chose the best options.
+It is also important to tell the software if your scans are Dark roots on White background or the contrary.</p>
 </div>
 <div id="output" class="section level4 hasAnchor">
 <h4><span class="header-section-number">3.2.3.7</span> Output<a href="morpho-anatomy.html#output" class="anchor-section" aria-label="Anchor link to header"></a></h4>

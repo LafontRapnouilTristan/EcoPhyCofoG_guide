@@ -5,6 +5,7 @@ fig:ctrlmpopup
 fig:measid
 tab:unnamed-chunk-1
 fig:bromecut
+fig:measurements
 fig:bigroots
 fig:bromeroot
 fig:scantransp
@@ -60,8 +61,11 @@ gs
 fluorescence
 theory
 fv.fm
+etrmax
+getting-data-out-of-the-minipam-ii
+process-with-r-scripts
 gaz-fluxes-and-exchanges
-microbiology-and-metabarcoding
+ecophycofog-package
 greenhouse-setups-and-tips
 device-info
 vapor-pressure-osmometer---vapro-5520-cheatsheet

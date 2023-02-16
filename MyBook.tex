@@ -48,6 +48,46 @@
 % Strikeout
 
 % Necessary for code chunks
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % Listings package
 
@@ -281,7 +321,7 @@
 
 \author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
 
-\date{2023-01-25}
+\date{2023-02-16}
 
 
 % Include headers (preamble.tex) here
@@ -397,10 +437,10 @@ Plant functional traits are the features (morphological, physiological, phenolog
 Variation in plant functional traits, and trait syndromes, has proven useful for tackling many important ecological questions at a range of scales, giving rise to a demand for standardized ways to measure ecologically meaningful plant traits.
 The importance of these topics dictates the urgent need for more and better data, and increases the value of standardized protocols for quantifying trait variation of different species, in particular for traits with power to predict plant- and ecosystem-level processes, and for traits that can be measured relatively easily (Pérez-Harguindeguy et al., 2013)
 
-This handbook presents the different protocols used in the ecophysio lab.
+This handbook presents the different protocols used in EcoFoG's ecophysio lab.
 We therefore suggest the methodological principles for a more open and transparent science.
 This handbook not only includes updated methods for the trait measurements, but also includes the excel worksheets for data collection and links toward detailed tutorial or user's guide for all methods used in this lab.
-This handbook will be associated with a package \texttt{EcophyCofog} containing some usefull homemade functions to deal with some devices output.
+This handbook will be associated with an R package \protect\hyperlink{ecophycofog-package}{EcophyCofog} containing some useful homemade functions to deal with some devices output.
 
 \mainmatter
 
@@ -419,7 +459,7 @@ Each chapter of this book correspond to one trait and associated measurement pro
 
 \protect\hyperlink{gaz-fluxes-and-exchanges}{Gaz fluxes and exchanges}
 
-\protect\hyperlink{microbiology-and-metabarcoding}{Microbiology and metabarcoding}
+\protect\hyperlink{ecophycofog-package}{EcophyCofog Package}
 
 \protect\hyperlink{greenhouse-setups-and-tips}{Greenhouse setups and tips}
 
@@ -658,7 +698,18 @@ We recommend \texttt{JPEG} or \texttt{TIFF}.
 On these pictures you can then make measurements such as width of the epidermis and cuticle.
 The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the \texttt{draw\ segment} and \texttt{ctrl+M} output (area, angle of the line and length).
 
-\textbf{SEE MATTHIEU PICS}
+\scriptsize
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{document/trait/shootmorpho/meas_anat_tissue} 
+
+}
+
+\caption{Hand made cross section of a bromeliad leaf and possible anatomical measurements}\label{fig:measurements}
+\end{figure}
+
+\normalsize
 
 \hypertarget{stem}{%
 \subsection{Stem}\label{stem}}
@@ -685,12 +736,12 @@ The higher the resolution, the more pixel you will have and the more precise wil
 
 Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog's lab scale.
 \href{document/machine/EPSON_V800/usersguide.pdf}{EPSON's V800} scanners are the ones used as this document is being written. The scanner model isn't important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
-And the scanning software is \href{document/software/Viewscan/Parametre_Scanner.pdf}{ViewScan}
+And the scanning software is \href{https://www.hamrick.com/vuescan/epson.html}{VueScan}
 
 \hypertarget{scan-process}{%
 \subsubsection{Scan process}\label{scan-process}}
 
-Paste the wall-taped doc.
+\href{document/trait/rootmorpho/Parametre_Scanner.pdf}{protocol}
 
 \hypertarget{flat-scan}{%
 \paragraph{Flat scan}\label{flat-scan}}
@@ -770,7 +821,8 @@ For instance, this \ref{fig:bromescan} is the scan from bromeliads roots. We can
 
 \normalsize
 
-To re-crop these images we use the freeware \texttt{XnConvert}. The petri dish has always been placed in the same place using a stencil \ref{fig:scanstencil} on the scan window, enabling us to recrop all scans to the same size.
+To re-crop these images we use the freeware \texttt{XnConvert}.
+The petri dish has always been placed in the same place using a stencil \ref{fig:scanstencil} on the scan window, enabling us to recrop all scans to the same size.
 Detailed \texttt{XnConvert} tutorial is available \href{document/software/XnConvert/XnConvert_tuto.pdf}{HERE}.
 
 \scriptsize
@@ -800,7 +852,9 @@ Detailed \texttt{XnConvert} tutorial is available \href{document/software/XnConv
 \hypertarget{installation}{%
 \subsubsection{Installation}\label{installation}}
 
-The winrhizo software is contained on a CD (ask \href{https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit\#gid=0}{\textbf{Eliane Louisanna}}. To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged. Unplugging it will prevent any use of the software.
+The winrhizo software is contained on a CD (ask \href{https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit\#gid=0}{\textbf{Eliane Louisanna}}.
+To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don't need the CD to run the software but the protection key must be plugged.
+Unplugging it will prevent any use of the software.
 
 \hypertarget{startup}{%
 \subsubsection{Startup}\label{startup}}
@@ -808,16 +862,29 @@ The winrhizo software is contained on a CD (ask \href{https://docs.google.com/sp
 \hypertarget{first-analysis}{%
 \subsubsection{First analysis}\label{first-analysis}}
 
-Once you have acquired your images and launched winrhizo you can start to analyze your scans. To display a single scan, click \emph{Image} -\textgreater{} \emph{Origin} -\textgreater{} \emph{From File}. Then you can click the \emph{acquisition }icon \textbf{PIC}.
-This will open a standard document opening window. Then you browse normally to find the wanted scan. Make sure that you are looking for the goor format, by default, winrhizo display \texttt{.TIFF}.
+Once you have acquired your images and launched winrhizo you can start to analyze your scans.
+To display a single scan, click \emph{Image} -\textgreater{} \emph{Origin} -\textgreater{} \emph{From File}.
+Then you can click the \emph{acquisition }icon \textbf{PIC}.
+This will open a standard document opening window.
+Then you browse normally to find the wanted scan.
+Make sure that you are looking for the goor format, by default, winrhizo display \texttt{.TIFF}.
 When you open it, winrhizo display the targeted image and you can then click on it (analyze whole image) or make a selection (only selected region) to start an analysis.
 
-When an image or region is analyzed, winrhizo display the \emph{sample identification} window which allows you to enter information about the sample. These informations will be saved with the measurements data. In this window click \emph{OK} to do the analysis or \emph{Cancel} to abort it.
+When an image or region is analyzed, winrhizo display the \emph{sample identification} window which allows you to enter information about the sample.
+These information will be saved with the measurements data.
+In this window click \emph{OK} to do the analysis or \emph{Cancel} to abort it.
 
-After you clicked \emph{OK}, winrhizo starts the analysis (can be stopped pressing \emph{S}). When done, winrhizo is ready to save the data but a file must be opened or created first.
-Winrhizo display a window which asks wether to \emph{open one}, \emph{create one} or \emph{save nothing}. Selecting \emph{create one} will create a new \texttt{.TXT} file to store analysis data (more info about output \protect\hyperlink{output}{here}). Selecting \emph{open one} will allow you to open a pre-existing file to add the new measurements at the end of this file. Clicking on \emph{save nothing}, guess?
+After you clicked \emph{OK}, winrhizo starts the analysis (can be stopped pressing \emph{S}).
+When done, winrhizo is ready to save the data but a file must be opened or created first.
+Winrhizo display a window which asks wether to \emph{open one}, \emph{create one} or \emph{save nothing}.
+Selecting \emph{create one} will create a new \texttt{.TXT} file to store analysis data (more info about output \protect\hyperlink{output}{here}).
+Selecting \emph{open one} will allow you to open a pre-existing file to add the new measurements at the end of this file.
+Clicking on \emph{save nothing}, guess?
 
-In the image, you can now see which roots have been analyzed. This have a skeleton line over them. The absence of this skeleton indicates that these roots have not been analyzed. This can be due to non-optimal pixel classification (see more about it \protect\hyperlink{pixel-classification}{here}).
+In the image, you can now see which roots have been analyzed.
+This have a skeleton line over them.
+The absence of this skeleton indicates that these roots have not been analyzed.
+This can be due to non-optimal pixel classification (see more about it \protect\hyperlink{pixel-classification}{here}).
 
 WELL DONE! You just analyze your first picture!
 
@@ -826,9 +893,17 @@ You can practice with scans available \protect\hyperlink{resources}{here}
 \hypertarget{calibration}{%
 \subsubsection{Calibration}\label{calibration}}
 
-If not calibrated (associated with a scale), winrhizo will display results in pixels. \texttt{.TIFF} files have an embedded scale, automatically detected by winrhizo. Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
+If not calibrated (associated with a scale), winrhizo will display results in pixels.
+\texttt{.TIFF} files have an embedded scale, automatically detected by winrhizo.
+Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
 
-However, you can sometimes have uncalibrated files (mistakes or images from camera). Thus, you will need to \enquote{manually} calibrate your image. Winrhizo calibration files are saved as \texttt{.CAL}. In the \emph{Calibration} menu you can load pre-existing calibration files. You will find the \texttt{calib\_imge.TIFF} \href{document/trait/rootmorpho/calib_imge.TIF}{here}. To make your calibration at any DPI, you can print this image and scan it at the wanted DPI. The black square in the image delimit a white 1x1cm square. Loading this image in winrhizo, you can click on \emph{calibration} -\textgreater{} \emph{pixel size method} -\textgreater{} \emph{object of known dimension} -\textgreater{} \emph{1 image} -\textgreater{} width=1 , height=1, border=0.35, units=cm -\textgreater{} \emph{Ok}
+However, you can sometimes have uncalibrated files (mistakes or images from camera).
+Thus, you will need to \enquote{manually} calibrate your image.
+Winrhizo calibration files are saved as \texttt{.CAL}. In the \emph{Calibration} menu you can load pre-existing calibration files.
+You will find the \texttt{calib\_imge.TIFF} \href{document/trait/rootmorpho/calib_imge.TIF}{here}.
+To make your calibration at any DPI, you can print this image and scan it at the wanted DPI.
+The black square in the image delimit a white 1x1cm square.
+Loading this image in winrhizo, you can click on \emph{calibration} -\textgreater{} \emph{pixel size method} -\textgreater{} \emph{object of known dimension} -\textgreater{} \emph{1 image} -\textgreater{} width=1 , height=1, border=0.35, units=cm -\textgreater{} \emph{Ok}
 
 Then, winrhizo will propose you to save the calibration in a \texttt{.CAL} file that can be loaded later and used for all your images at a given resolution. \textcolor{red}{DO NOT NAME YOUR FILE Scanner.cal}.
 Please, when you create a \texttt{.CAL} at a previously not used resolution, store a copy of the calibration file \href{document/software/Winrhizo/}{here} so that your work helps your successors!!
@@ -836,10 +911,19 @@ Please, when you create a \texttt{.CAL} at a previously not used resolution, sto
 \hypertarget{batch}{%
 \subsubsection{Batch}\label{batch}}
 
-We saw how to analyze a \protect\hyperlink{first-analysis}{single picture or region}but you might have numerous scans to analyze and want to automatize this process. To do so you will give winrhizo a \emph{batch} (i.e.~a folder) containing any number of images you want.
+We saw how to analyze a \protect\hyperlink{first-analysis}{single picture or region} but you might have numerous scans to analyze and want to automatize this process.
+To do so you will give winrhizo a \emph{batch} (i.e.~a folder) containing any number of images you want.
 
 \hypertarget{pixel-classification}{%
 \subsubsection{Pixel classification}\label{pixel-classification}}
+
+Pixel classification is how winrhizo discriminate between actual \enquote{root} pixels and scan background.
+To do this distinction you have several options presented in \emph{Analysis} -\textgreater{} \emph{Root \& Background Distinction} menu.
+This distinction is made grey levels and can either be set to \emph{automatic} or \emph{manual}.
+Automatic option either sets a global threshold (default) of grey value at which the pixel is attributed to roots or background or it can be used with \emph{lagarde} options which consider local region (region size can be defined in pixels) of the picture and associate different threshold values.
+We don't recommend the use of \emph{lagarde} option but a careful cleaning of your roots and high quality scans.
+However you can test different options with some of your scans to chose the best options.
+It is also important to tell the software if your scans are Dark roots on White background or the contrary.
 
 \hypertarget{output}{%
 \subsubsection{Output}\label{output}}
@@ -1080,6 +1164,8 @@ It is used to assess the efficiency of plant photosystems to convert light into 
 
 \href{document/trait/fluorescence/Maxwell\%20and\%20Johnson\%20-\%202000\%20-\%20Chlorophyll\%20fluorescence—a\%20practical\%20guide.pdf}{Maxwell and Johnson \emph{2000}} provided a good synthesis of the theories behind these measurements.
 
+A french and detailed version of Fluorescence measurements is available \href{document/machine/MiniPAM\%20II/Manuel\%20Mini-PAM\%20II6300_\%20Maxime\%20B}{here}
+
 \hypertarget{theory}{%
 \section{Theory}\label{theory}}
 
@@ -1097,7 +1183,7 @@ After this period, the fluorescence starts to fall again ==\textgreater{} \textt
 
 Because :
 
-1 - e\^{}- transfer away from the PSII increases with light activated enzymes : \textbf{photochemical quenching}
+1 - e- transfer away from the PSII increases with light activated enzymes : \textbf{photochemical quenching}
 
 2 - Heat energy estimation : \textbf{Non-photochemical quenching}
 
@@ -1135,13 +1221,118 @@ To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place o
 Then press record on the MiniPAM screen to create a new data entry.
 And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
 You can either note the displayed value manually or extract it later with the MiniPAM associated software \href{https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html}{\texttt{Wincontrol}}.
-If you chose the later, do note the correspondance between your subject ID and the record created by the MiniPAM.
+If you chose the later, do note the correspondence between your subject ID and the record created by the MiniPAM.
+
+\hypertarget{etrmax}{%
+\section{ETRmax}\label{etrmax}}
+
+To measure ETRmax, a leaf is quasi-dark acclimated for 150s in an opaque plastic bag before gradual exposition to increasing PAR values in twelve 30s steps ranging from 50 to 3000 µmol photon m-2 s -1.
+ETR is obtained using the WinControl-3 software (Walz, Effeltrich, Germany) and an R script chosing between two models (Reg1, with photoinhibition, and Reg2, without) given by Platt et al.~(1980).
+
+\begin{itemize}
+\tightlist
+\item
+  Attach the fibre optic cable to the leaf clip holder and use a stand if necessary.
+\item
+  Hold the leaf clip holder firmly to the sheet to be measured (avoid the ribs if possible).
+\item
+  Place the leaf clip holder in the dark for 150 seconds: cover it so that it is not in contact with the ambient light (quasi-dark adaptation)
+\item
+  On the screen (Basic data), press the arrow pointing downwards until you see the Light curve, and then press \textbf{START}.
+\item
+  At the end of the measurement, the curve and all data will be saved automatically.
+\item
+  The only way to retrieve the data is to note the time the RLC was started.
+\end{itemize}
+
+For the curves, the plant must remain in the dark until the end of the curve and above all not move the leaf clip holder so that the flash of light remains in the same place.
+
+\hypertarget{getting-data-out-of-the-minipam-ii}{%
+\section{Getting data out of the MiniPAM II}\label{getting-data-out-of-the-minipam-ii}}
+
+WinControl-3 is a mandatory software to deal with miniPAM II data and can be downloaded \href{https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html}{here}.
+Plug the MiniPAM II to your computer and launch WinControl.
+When you have a good version of WinControl, a window opens with the MINIPAM data.
+To view the data, press \textbf{MEMORY} and a list of data is displayed.
+To download the data shown on the list :
+
+\textbf{MEMORY}→ Select by pressing what you want to download → Download selected files → Check \enquote{clear existing data in WinControl before download→ Ok.
+(Especially for the light curve data. If you check}merge with current data" all data will be merged and then you lose the ETRmax1 and ETRmax2 values)
+
+To view the downloaded data, press \textbf{Report}.
+\textbf{Report} is only an intermediate step to view the data.
+Let some time before downloading reported data for RLC so that the software can compute Reg1 and 2 models.
+To download data from several pages you need to check \enquote{merge withcurrent data in WinControl}.
+(Not recommended for CDNs for fear of losing some data)
+
+To save in \texttt{.csv}, Report → Select all → right clic → Export all→ Ok → file name → save
+
+\hypertarget{process-with-r-scripts}{%
+\section{Process with R scripts}\label{process-with-r-scripts}}
+
+This is done using the \texttt{merge\_minipam} and \texttt{minipam} functions of the \texttt{EcophyCofog} package written by Tristan LAFONT RAPNOUIL and hosted on \href{https://github.com/LafontRapnouilTristan/EcophyCofog}{github}.
+
+See \protect\hyperlink{ecophycofog-package}{EcophyCofog Package} for more information on the package.
+
+First, if your download resulted in several \texttt{.csv} files, you have to run the \texttt{merge\_minipam}.
+Place all your files (and only them!!) in a folder.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{input_path <-}\StringTok{ }\NormalTok{PATH_TO_THE_FOLDER}
+\NormalTok{filename <-}\StringTok{ }\NormalTok{NAME_OF_THE_MERGED_OUTPUT}
+\KeywordTok{merge_minipam}\NormalTok{(input_path, filename)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+Then you'll run the \texttt{minipam} function on your merged file.
+NOTE that you can also chose not to merge your files and process them individually with \texttt{minipam}.
+
+To run this function you'll need a \emph{ID\_match} \texttt{.csv} file.
+It's a file with 4 columns: \textbf{ID} (ID of measured plant, leaf, sample), \textbf{Date} (date of the measurement, DD:MM:YYYY format), \textbf{Time} (Hour at which started the measurement HH:MM format), \textbf{REC} (the MiniPAM record ID)
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{Name_of_the_input_file <-}\StringTok{ }\NormalTok{NAME_OF_YOUR_MERGED_FILE}
+\NormalTok{input_path <-}\StringTok{ }\NormalTok{PATH_TO_SAID_FILE}
+\NormalTok{path_to_ID_match <-}\StringTok{ }\NormalTok{PATH_TO_YOUR_ID_MATCH_FILE}
+\KeywordTok{minipam}\NormalTok{(Name_of_the_input_file, input_path, path_to_ID_match)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+Running this will produce a table with FvFm and ETRmax values for all your samples.
+It'll additionally produce graphics of the RLC (ETR\textasciitilde PAR).
 
 \hypertarget{gaz-fluxes-and-exchanges}{%
 \chapter{Gaz fluxes and exchanges}\label{gaz-fluxes-and-exchanges}}
 
-\hypertarget{microbiology-and-metabarcoding}{%
-\chapter{Microbiology and metabarcoding}\label{microbiology-and-metabarcoding}}
+Gas exchanges can be measured using the CIRAS-3 Analyser (PP Systems, Amesbury, U.S.A).
+
+Using a leaf clip with an enclosed chamber allows to measure CO2 and H2O fluxes in the chamber.
+
+\hypertarget{ecophycofog-package}{%
+\chapter{EcophyCofog Package}\label{ecophycofog-package}}
+
+A package to handle routinely produced raw outputs of the CIRAS-3, MINIPAM II and PSYPRO of EcoFog's ecophysiology lab.
+
+Package written by Tristan LAFONT RAPNOUIL and hosted on \href{https://github.com/LafontRapnouilTristan/EcophyCofog}{github}.
+Can be installed running:
+
+\begin{verbatim}
+install.packages("devtools")
+library(devtools)
+install_github("https://github.com/LafontRapnouilTristan/EcophyCofog")
+\end{verbatim}
 
 \hypertarget{greenhouse-setups-and-tips}{%
 \chapter{Greenhouse setups and tips}\label{greenhouse-setups-and-tips}}

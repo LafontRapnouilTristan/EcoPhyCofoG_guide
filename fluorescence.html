@@ -23,7 +23,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2023-01-25" />
+<meta name="date" content="2023-02-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,9 +171,12 @@
 <li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a><ul>
 <li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
 <li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F<sub>v</sub>.F<sub>m</sub></a></li>
+<li class="chapter" data-level="5.3" data-path="fluorescence.html"><a href="fluorescence.html#etrmax"><i class="fa fa-check"></i><b>5.3</b> ETR<sub>max</sub></a></li>
+<li class="chapter" data-level="5.4" data-path="fluorescence.html"><a href="fluorescence.html#getting-data-out-of-the-minipam-ii"><i class="fa fa-check"></i><b>5.4</b> Getting data out of the MiniPAM II</a></li>
+<li class="chapter" data-level="5.5" data-path="fluorescence.html"><a href="fluorescence.html#process-with-r-scripts"><i class="fa fa-check"></i><b>5.5</b> Process with R scripts</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
-<li class="chapter" data-level="7" data-path="microbiology-and-metabarcoding.html"><a href="microbiology-and-metabarcoding.html"><i class="fa fa-check"></i><b>7</b> Microbiology and metabarcoding</a></li>
+<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a></li>
 <li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
 <li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a><ul>
 <li class="chapter" data-level="9.1" data-path="device-info.html"><a href="device-info.html#vapor-pressure-osmometer---vapro-5520-cheatsheet"><i class="fa fa-check"></i><b>9.1</b> Vapor pressure osmometer - Vapro 5520 cheatsheet</a></li>
@@ -140,6 +207,7 @@
 <p>Fluorescence measurements are made with the <a href="document/machine/MiniPAM%20II/minipamexp.pdf"><code>MiniPAM II</code></a> fluorometer.
 It is used to assess the efficiency of plant photosystems to convert light into chemical energy.</p>
 <p><a href="document/trait/fluorescence/Maxwell%20and%20Johnson%20-%202000%20-%20Chlorophyll%20fluorescence—a%20practical%20guide.pdf">Maxwell and Johnson <em>2000</em></a> provided a good synthesis of the theories behind these measurements.</p>
+<p>A french and detailed version of Fluorescence measurements is available <a href="document/machine/MiniPAM%20II/Manuel%20Mini-PAM%20II6300_%20Maxime%20B">here</a></p>
 <div id="theory" class="section level2 hasAnchor">
 <h2><span class="header-section-number">5.1</span> Theory<a href="fluorescence.html#theory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will try to summarize it a bit here.
@@ -151,7 +219,7 @@ The PSII are sayed “closed” until e<sup>-</sup> go down the reaction chain.<
 <p>Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!</p>
 <p>After this period, the fluorescence starts to fall again ==&gt; <code>fluorescence quenching</code></p>
 <p>Because :</p>
-<p>1 - e^- transfer away from the PSII increases with light activated enzymes : <strong>photochemical quenching</strong></p>
+<p>1 - e<sup>-</sup> transfer away from the PSII increases with light activated enzymes : <strong>photochemical quenching</strong></p>
 <p>2 - Heat energy estimation : <strong>Non-photochemical quenching</strong></p>
 <p>~ 15 to 20 min are needed to reach the equilibrium but it varies between species.</p>
 <p>For usefull informations, we need to supress one of the 2 (typically 1).
@@ -174,7 +242,63 @@ Indeed, if no photochemical quenching (PQ), then we only have non-photochemical 
 Then press record on the MiniPAM screen to create a new data entry.
 And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
 You can either note the displayed value manually or extract it later with the MiniPAM associated software <a href="https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html"><code>Wincontrol</code></a>.
-If you chose the later, do note the correspondance between your subject ID and the record created by the MiniPAM.</p>
+If you chose the later, do note the correspondence between your subject ID and the record created by the MiniPAM.</p>
+</div>
+<div id="etrmax" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.3</span> ETR<sub>max</sub><a href="fluorescence.html#etrmax" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To measure ETRmax, a leaf is quasi-dark acclimated for 150s in an opaque plastic bag before gradual exposition to increasing PAR values in twelve 30s steps ranging from 50 to 3000 µmol photon m-2 s -1.
+ETR is obtained using the WinControl-3 software (Walz, Effeltrich, Germany) and an R script chosing between two models (Reg1, with photoinhibition, and Reg2, without) given by Platt et al. (1980).</p>
+<ul>
+<li>Attach the fibre optic cable to the leaf clip holder and use a stand if necessary.</li>
+<li>Hold the leaf clip holder firmly to the sheet to be measured (avoid the ribs if possible).</li>
+<li>Place the leaf clip holder in the dark for 150 seconds: cover it so that it is not in contact with the ambient light (quasi-dark adaptation)</li>
+<li>On the screen (Basic data), press the arrow pointing downwards until you see the Light curve, and then press <strong>START</strong>.</li>
+<li>At the end of the measurement, the curve and all data will be saved automatically.</li>
+<li>The only way to retrieve the data is to note the time the RLC was started.</li>
+</ul>
+<p>For the curves, the plant must remain in the dark until the end of the curve and above all not move the leaf clip holder so that the flash of light remains in the same place.</p>
+</div>
+<div id="getting-data-out-of-the-minipam-ii" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.4</span> Getting data out of the MiniPAM II<a href="fluorescence.html#getting-data-out-of-the-minipam-ii" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>WinControl-3 is a mandatory software to deal with miniPAM II data and can be downloaded <a href="https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html">here</a>.
+Plug the MiniPAM II to your computer and launch WinControl.
+When you have a good version of WinControl, a window opens with the MINIPAM data.
+To view the data, press <strong>MEMORY</strong> and a list of data is displayed.
+To download the data shown on the list :</p>
+<p><strong>MEMORY</strong>→ Select by pressing what you want to download → Download selected files → Check “clear existing data in WinControl before download→ Ok.
+(Especially for the light curve data. If you check”merge with current data" all data will be merged and then you lose the ETRmax1 and ETRmax2 values)</p>
+<p>To view the downloaded data, press <strong>Report</strong>.
+<strong>Report</strong> is only an intermediate step to view the data.
+Let some time before downloading reported data for RLC so that the software can compute Reg1 and 2 models.
+To download data from several pages you need to check “merge withcurrent data in WinControl”.
+(Not recommended for CDNs for fear of losing some data)</p>
+<p>To save in <code>.csv</code>, Report → Select all → right clic → Export all→ Ok → file name → save</p>
+</div>
+<div id="process-with-r-scripts" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.5</span> Process with R scripts<a href="fluorescence.html#process-with-r-scripts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is done using the <code>merge_minipam</code> and <code>minipam</code> functions of the <code>EcophyCofog</code> package written by Tristan LAFONT RAPNOUIL and hosted on <a href="https://github.com/LafontRapnouilTristan/EcophyCofog">github</a>.</p>
+<p>See <a href="ecophycofog-package.html#ecophycofog-package">EcophyCofog Package</a> for more information on the package.</p>
+<p>First, if your download resulted in several <code>.csv</code> files, you have to run the <code>merge_minipam</code>.
+Place all your files (and only them!!) in a folder.</p>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="fluorescence.html#cb1-1"></a><span class="kw">library</span>(EcophyCofog)</span>
+<span id="cb1-2"><a href="fluorescence.html#cb1-2"></a>input_path &lt;-<span class="st"> </span>PATH_TO_THE_FOLDER</span>
+<span id="cb1-3"><a href="fluorescence.html#cb1-3"></a>filename &lt;-<span class="st"> </span>NAME_OF_THE_MERGED_OUTPUT</span>
+<span id="cb1-4"><a href="fluorescence.html#cb1-4"></a><span class="kw">merge_minipam</span>(input_path, filename)</span></code></pre></div>
+
+<p>Then you’ll run the <code>minipam</code> function on your merged file.
+NOTE that you can also chose not to merge your files and process them individually with <code>minipam</code>.</p>
+<p>To run this function you’ll need a <em>ID_match</em> <code>.csv</code> file.
+It’s a file with 4 columns: <strong>ID</strong> (ID of measured plant, leaf, sample), <strong>Date</strong> (date of the measurement, DD:MM:YYYY format), <strong>Time</strong> (Hour at which started the measurement HH:MM format), <strong>REC</strong> (the MiniPAM record ID)</p>
+
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="fluorescence.html#cb2-1"></a><span class="kw">library</span>(EcophyCofog)</span>
+<span id="cb2-2"><a href="fluorescence.html#cb2-2"></a>Name_of_the_input_file &lt;-<span class="st"> </span>NAME_OF_YOUR_MERGED_FILE</span>
+<span id="cb2-3"><a href="fluorescence.html#cb2-3"></a>input_path &lt;-<span class="st"> </span>PATH_TO_SAID_FILE</span>
+<span id="cb2-4"><a href="fluorescence.html#cb2-4"></a>path_to_ID_match &lt;-<span class="st"> </span>PATH_TO_YOUR_ID_MATCH_FILE</span>
+<span id="cb2-5"><a href="fluorescence.html#cb2-5"></a><span class="kw">minipam</span>(Name_of_the_input_file, input_path, path_to_ID_match)</span></code></pre></div>
+
+<p>Running this will produce a table with FvFm and ETRmax values for all your samples.
+It’ll additionally produce graphics of the RLC (ETR~PAR).</p>
 
 </div>
 </div>
