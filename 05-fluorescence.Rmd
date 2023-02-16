@@ -23,7 +23,7 @@ After this period, the fluorescence starts to fall again ==> `fluorescence quenc
 
 Because : 
 
-1 - e<sup>-<\sup> transfer away from the PSII increases with light activated enzymes : **photochemical quenching**
+1 - e<sup>-</sup> transfer away from the PSII increases with light activated enzymes : **photochemical quenching**
 
 2 - Heat energy estimation : **Non-photochemical quenching**
 
@@ -62,7 +62,7 @@ And, finally just insert the optical fiber in the leaf clip, open it and press F
 You can either note the displayed value manually or extract it later with the MiniPAM associated software [`Wincontrol`](https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html).
 If you chose the later, do note the correspondence between your subject ID and the record created by the MiniPAM.
 
-## ETR<sub>max<\sub>
+## ETR<sub>max</sub>
 
 To measure ETRmax, a leaf is quasi-dark acclimated for 150s in an opaque plastic bag before gradual exposition to increasing PAR values in twelve 30s steps ranging from 50 to 3000 µmol photon m-2 s -1.
 ETR is obtained using the WinControl-3 software (Walz, Effeltrich, Germany) and an R script chosing between two models (Reg1, with photoinhibition, and Reg2, without) given by Platt et al. (1980).
