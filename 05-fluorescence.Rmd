@@ -105,7 +105,8 @@ First, if your download resulted in several `.csv` files, you have to run the `m
 Place all your files (and only them!!) in a folder.
 
 
-```
+
+```{r eval=F}
 library(EcophyCofog)
 
 input_path <- PATH_TO_THE_FOLDER
@@ -114,13 +115,17 @@ filename <- NAME_OF_THE_MERGED_OUTPUT
 merge_minipam(input_path,filename)
 ```
 
+
+
+
 Then you'll run the `minipam` function on your merged file.
 NOTE that you can also chose not to merge your files and process them individually with `minipam`.
 
 To run this function you'll need a *ID_match* `.csv` file.
 It's a file with 4 columns: **ID** (ID of measured plant, leaf, sample), **Date** (date of the measurement, DD:MM:YYYY format), **Time** (Hour at which started the measurement HH:MM format), **REC** (the MiniPAM record ID)
 
-```
+
+```{r eval=F}
 library(EcophyCofog)
 
 Name_of_the_input_file <- NAME_OF_YOUR_MERGED_FILE
@@ -131,6 +136,7 @@ minipam(Name_of_the_input_file,
             input_path,
             path_to_ID_match)
 ```
+
 
 Running this will produce a table with FvFm and ETRmax values for all your samples.
 It'll additionally produce graphics of the RLC (ETR~PAR).
