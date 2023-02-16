@@ -2,5 +2,5 @@
 
 Gas exchanges can be measured using the CIRAS-3 Analyser (PP Systems, Amesbury, U.S.A).
 
-Using a leaf clip with an enclosed chamber allows to measure CO<sub>2<\sub> and H<sub>2<\sub>O fluxes in the chamber.
+Using a leaf clip with an enclosed chamber allows to measure CO<sub>2</sub> and H<sub>2</sub>O fluxes in the chamber.
 
