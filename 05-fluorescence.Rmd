@@ -5,6 +5,8 @@ It is used to assess the efficiency of plant photosystems to convert light into 
 
 [Maxwell and Johnson *2000*](document/trait/fluorescence/Maxwell and Johnson - 2000 - Chlorophyll fluorescence—a practical guide.pdf) provided a good synthesis of the theories behind these measurements. 
 
+A french and detailed version of Fluorescence measurements is available [here](document/machine/MiniPAM II/Manuel Mini-PAM II6300_ Maxime B)
+
 ## Theory
 
 We will try to summarize it a bit here.
@@ -21,7 +23,7 @@ After this period, the fluorescence starts to fall again ==> `fluorescence quenc
 
 Because : 
 
-1 - e^- transfer away from the PSII increases with light activated enzymes : **photochemical quenching**
+1 - e<sup>-<\sup> transfer away from the PSII increases with light activated enzymes : **photochemical quenching**
 
 2 - Heat energy estimation : **Non-photochemical quenching**
 
@@ -58,7 +60,77 @@ To measure Fv/Fm with the MiniPAM you have to use the dark leaf clip and place o
 Then press record on the MiniPAM screen to create a new data entry.
 And, finally just insert the optical fiber in the leaf clip, open it and press Fv/Fm on the MiniPAM screen.
 You can either note the displayed value manually or extract it later with the MiniPAM associated software [`Wincontrol`](https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html).
-If you chose the later, do note the correspondance between your subject ID and the record created by the MiniPAM.
+If you chose the later, do note the correspondence between your subject ID and the record created by the MiniPAM.
+
+## ETR<sub>max<\sub>
+
+To measure ETRmax, a leaf is quasi-dark acclimated for 150s in an opaque plastic bag before gradual exposition to increasing PAR values in twelve 30s steps ranging from 50 to 3000 µmol photon m-2 s -1.
+ETR is obtained using the WinControl-3 software (Walz, Effeltrich, Germany) and an R script chosing between two models (Reg1, with photoinhibition, and Reg2, without) given by Platt et al. (1980).
+
+ - Attach the fibre optic cable to the leaf clip holder and use a stand if necessary.
+ - Hold the leaf clip holder firmly to the sheet to be measured (avoid the ribs if possible).
+ - Place the leaf clip holder in the dark for 150 seconds: cover it so that it is not in contact with the ambient light (quasi-dark adaptation)
+ - On the screen (Basic data), press the arrow pointing downwards until you see the Light curve, and then press **START**. 
+ - At the end of the measurement, the curve and all data will be saved automatically.
+ - The only way to retrieve the data is to note the time the RLC was started.
+
+For the curves, the plant must remain in the dark until the end of the curve and above all not move the leaf clip holder so that the flash of light remains in the same place.
+
+## Getting data out of the MiniPAM II
+
+WinControl-3  is a mandatory software to deal with miniPAM II data and can be downloaded [here](https://www.walz.com/products/chl_p700/mini-pam-II/downloads.html).
+Plug the MiniPAM II to your computer and launch WinControl.
+When you have a good version of WinControl, a window opens with the MINIPAM data. 
+To view the data, press **MEMORY** and a list of data is displayed. 
+To download the data shown on the list :
+
+**MEMORY**→ Select by pressing what you want to download → Download selected files → Check "clear existing data in WinControl before download→ Ok. 
+(Especially for the light curve data. If you check "merge with current data" all data will be merged and then you lose the ETRmax1 and ETRmax2 values)
+
+To view the downloaded data, press **Report**.
+**Report** is only an intermediate step to view the data.
+Let some time before downloading reported data for RLC so that the software can compute Reg1 and 2 models.
+To download data from several pages you need to check "merge withcurrent data in WinControl". 
+(Not recommended for CDNs for fear of losing some data)
+
+To save in `.csv`, Report → Select all → right clic → Export all→ Ok → file name → save
+
+## Process with R scripts
+
+This is done using the `merge_minipam` and `minipam` functions of the `EcophyCofog` package written by Tristan LAFONT RAPNOUIL and hosted on [github](https://github.com/LafontRapnouilTristan/EcophyCofog).
+
+See [EcophyCofog Package] for more information on the package.
+
+First, if your download resulted in several `.csv` files, you have to run the `merge_minipam`.
+Place all your files (and only them!!) in a folder.
 
 
+```
+library(EcophyCofog)
 
+input_path <- PATH_TO_THE_FOLDER
+filename <- NAME_OF_THE_MERGED_OUTPUT
+
+merge_minipam(input_path,filename)
+```
+
+Then you'll run the `minipam` function on your merged file.
+NOTE that you can also chose not to merge your files and process them individually with `minipam`.
+
+To run this function you'll need a *ID_match* `.csv` file.
+It's a file with 4 columns: **ID** (ID of measured plant, leaf, sample), **Date** (date of the measurement, DD:MM:YYYY format), **Time** (Hour at which started the measurement HH:MM format), **REC** (the MiniPAM record ID)
+
+```
+library(EcophyCofog)
+
+Name_of_the_input_file <- NAME_OF_YOUR_MERGED_FILE
+input_path <- PATH_TO_SAID_FILE
+path_to_ID_match <- PATH_TO_YOUR_ID_MATCH_FILE
+
+minipam(Name_of_the_input_file,
+            input_path,
+            path_to_ID_match)
+```
+
+Running this will produce a table with FvFm and ETRmax values for all your samples.
+It'll additionally produce graphics of the RLC (ETR~PAR).
