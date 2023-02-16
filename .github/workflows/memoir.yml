@@ -7,6 +7,7 @@ name: rmarkdown
 
 jobs:
   render:
+  if: "contains(github.event.head_commit.message, '[build]')"
     runs-on: macOS-latest
     steps:
       - name: Checkout repo
@@ -38,6 +39,7 @@ jobs:
           name: ghpages
           path: docs
   checkout-and-deploy:
+  if: "contains(github.event.head_commit.message, '[build]')"
     runs-on: ubuntu-latest
     needs: render
     steps:
