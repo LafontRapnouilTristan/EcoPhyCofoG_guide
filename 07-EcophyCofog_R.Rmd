@@ -1,0 +1,10 @@
+# EcophyCofog Package
+
+Package written by Tristan LAFONT RAPNOUIL and hosted on [github](https://github.com/LafontRapnouilTristan/EcophyCofog).
+Can be installed running:
+
+```
+install.packages("devtools")
+library(devtools)
+install_github("https://github.com/LafontRapnouilTristan/EcophyCofog")
+```
