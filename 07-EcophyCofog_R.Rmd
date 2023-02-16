@@ -1,5 +1,7 @@
 # EcophyCofog Package
 
+A package to handle routinely produced raw outputs of the CIRAS-3, MINIPAM II and PSYPRO of EcoFog's ecophysiology lab.
+
 Package written by Tristan LAFONT RAPNOUIL and hosted on [github](https://github.com/LafontRapnouilTristan/EcophyCofog).
 Can be installed running:
 
