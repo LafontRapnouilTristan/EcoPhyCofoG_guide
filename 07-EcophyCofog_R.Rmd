@@ -48,7 +48,7 @@ legend <- xtract_legend(myggplot)
 
 Create a meaningless numeric data frame for testing things.
 
-```{r}
+```{r eval=F}
 data <- dummy_data(nbcol=4,nbrow=100)
 ```
 
@@ -72,10 +72,36 @@ merge_minipam(input_path,filename)
 
 ### minipam
 
+Take as input a csv dataframe containing output of the minipam.
+For ETR and F<sub>v</sub>/F<sub>m</sub> measurements only.
+And return clean files containing each type of measurements + the ETR curves.
+
+```{r eval=F}
+library(EcophyCofog)
+
+Name_of_the_input_file <- NAME_OF_YOUR_MERGED_FILE
+input_path <- PATH_TO_SAID_FILE
+path_to_ID_match <- PATH_TO_YOUR_ID_MATCH_FILE
+
+minipam(Name_of_the_input_file,
+            input_path,
+            path_to_ID_match)
+```
+
 
 ## CIRAS-3
 
 ### merge_ciras
+
+Used to merge all ciras output of a foled into one file.
+
+path_to_xls a character string with your path to all your ciras `.xls` output.
+Their name must always end as _treatment_sampleID.xls (e.g. CIRAS_3_Aechmea m _DP_1.xls).
+Skip: the number of useless rows at the top of your `.xls` file, Jean-Yves Goret template have three.
+
+```{r eval=F}
+merge_ciras(path_to_xls, skip=3)
+```
 
 
 ## PSYPRO
