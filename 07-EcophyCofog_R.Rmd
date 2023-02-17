@@ -143,7 +143,7 @@ Process the PASCO probe output csv to get the gasfluxes.
 `param` *A* the Area
 `param` *V* the Volume
 
-```{r}
+```{r eval=F}
 PASCO_transfo2(data,
                ech,
                name_run,
@@ -165,7 +165,7 @@ Both for sample names and then tags combination.
 `param` *save_file_path*  path to where you want to save the excel output
 `param` *starting_plate_number* where from start plate numbering
 
-```{r}
+```{r eval=F}
 plate_layout (samples,
               proj,
               name_file,
@@ -182,7 +182,7 @@ plate_layout (samples,
 `param` *file_tag_layout* name of your xlsx output, having the map of your tagz.
 
 
-```{r}
+```{r eval=F}
 tag_layout(tag_list,
            PCR_plates,
            output_path,
