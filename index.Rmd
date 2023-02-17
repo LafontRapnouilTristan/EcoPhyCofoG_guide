@@ -4,8 +4,8 @@ author: "Marion Boisseaux, Tristan Lafont Rapnouil and hopefully many other peop
 date: "`r Sys.Date()`"
 url: https://GitHubID.github.io/Repository/
 github-repo: GitHubID/Repository
-description: "Bookdown template based on LaTeX memoir class"
-cover-image: "images/logo.png"
+description: ""
+cover-image: "images/mariono.jpg"
 # Title page...
 maintitlepage:
   epigraph: |
