@@ -1,6 +1,6 @@
 --- 
 title: "User's guide for Ecofog's Ecophysiology Lab"
-author: "Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil"
+author: "Marion Boisseaux, Tristan Lafont Rapnouil and hopefully many other people"
 date: "`r Sys.Date()`"
 url: https://GitHubID.github.io/Repository/
 github-repo: GitHubID/Repository
