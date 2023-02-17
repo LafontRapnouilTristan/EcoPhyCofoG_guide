@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Morpho-anatomy | User’s guide for Ecofog’s Ecophysiology Lab</title>
+  <title>3 Morpho-anatomy | Memoir Template</title>
   <meta name="description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Morpho-anatomy | User’s guide for Ecofog’s Ecophysiology Lab" />
+  <meta property="og:title" content="3 Morpho-anatomy | Memoir Template" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
   <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="github-repo" content="GitHubID/Repository" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Morpho-anatomy | User’s guide for Ecofog’s Ecophysiology Lab" />
+  <meta name="twitter:title" content="3 Morpho-anatomy | Memoir Template" />
   
   <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2023-02-16" />
+<meta name="date" content="2023-02-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,25 +49,24 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -87,13 +86,13 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -106,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -139,36 +138,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="handbook-architecture.html"><a href="handbook-architecture.html"><i class="fa fa-check"></i><b>2</b> Handbook architecture</a></li>
-<li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a><ul>
-<li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a><ul>
+<li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#mass-associated-traits"><i class="fa fa-check"></i><b>3.1.1</b> Mass associated traits</a></li>
 <li class="chapter" data-level="3.1.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#leaf-anatomy"><i class="fa fa-check"></i><b>3.1.2</b> Leaf anatomy</a></li>
 <li class="chapter" data-level="3.1.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#stem"><i class="fa fa-check"></i><b>3.1.3</b> Stem</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a><ul>
+<li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-acquisition"><i class="fa fa-check"></i><b>3.2.1</b> Image Acquisition</a></li>
 <li class="chapter" data-level="3.2.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-processing"><i class="fa fa-check"></i><b>3.2.2</b> Image processing</a></li>
 <li class="chapter" data-level="3.2.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#winrhizo"><i class="fa fa-check"></i><b>3.2.3</b> WinRhizo</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#resources"><i class="fa fa-check"></i><b>3.3</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="hydraulics.html"><a href="hydraulics.html"><i class="fa fa-check"></i><b>4</b> Hydraulics</a><ul>
-<li class="chapter" data-level="4.1" data-path="hydraulics.html"><a href="hydraulics.html#leaf-turgor-loss-point-pi_tlp"><i class="fa fa-check"></i><b>4.1</b> Leaf turgor loss point, <span class="math inline">\(\pi_{tlp}\)</span></a><ul>
+<li class="chapter" data-level="4" data-path="hydraulics.html"><a href="hydraulics.html"><i class="fa fa-check"></i><b>4</b> Hydraulics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="hydraulics.html"><a href="hydraulics.html#leaf-turgor-loss-point-pi_tlp"><i class="fa fa-check"></i><b>4.1</b> Leaf turgor loss point, <span class="math inline">\(\pi_{tlp}\)</span></a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="hydraulics.html"><a href="hydraulics.html#materials"><i class="fa fa-check"></i><b>4.1.1</b> Materials</a></li>
 <li class="chapter" data-level="4.1.2" data-path="hydraulics.html"><a href="hydraulics.html#methods"><i class="fa fa-check"></i><b>4.1.2</b> Methods</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="hydraulics.html"><a href="hydraulics.html#leaf-midday-water-potential"><i class="fa fa-check"></i><b>4.2</b> Leaf midday water potential</a><ul>
+<li class="chapter" data-level="4.2" data-path="hydraulics.html"><a href="hydraulics.html#leaf-midday-water-potential"><i class="fa fa-check"></i><b>4.2</b> Leaf midday water potential</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="hydraulics.html"><a href="hydraulics.html#pressure-chamber-method"><i class="fa fa-check"></i><b>4.2.1</b> Pressure chamber method</a></li>
 <li class="chapter" data-level="4.2.2" data-path="hydraulics.html"><a href="hydraulics.html#psychrometry-method"><i class="fa fa-check"></i><b>4.2.2</b> Psychrometry method</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="hydraulics.html"><a href="hydraulics.html#relative-water-content-rwc"><i class="fa fa-check"></i><b>4.3</b> Relative water content RWC (%)</a><ul>
+<li class="chapter" data-level="4.3" data-path="hydraulics.html"><a href="hydraulics.html#relative-water-content-rwc"><i class="fa fa-check"></i><b>4.3</b> Relative water content RWC (%)</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="hydraulics.html"><a href="hydraulics.html#material"><i class="fa fa-check"></i><b>4.3.1</b> Material</a></li>
 <li class="chapter" data-level="4.3.2" data-path="hydraulics.html"><a href="hydraulics.html#method"><i class="fa fa-check"></i><b>4.3.2</b> Method</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="hydraulics.html"><a href="hydraulics.html#gmin"><i class="fa fa-check"></i><b>4.4</b> gmin</a></li>
 <li class="chapter" data-level="4.5" data-path="hydraulics.html"><a href="hydraulics.html#gs"><i class="fa fa-check"></i><b>4.5</b> gs</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a><ul>
+<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
 <li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F<sub>v</sub>.F<sub>m</sub></a></li>
 <li class="chapter" data-level="5.3" data-path="fluorescence.html"><a href="fluorescence.html#etrmax"><i class="fa fa-check"></i><b>5.3</b> ETR<sub>max</sub></a></li>
@@ -176,9 +183,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.5" data-path="fluorescence.html"><a href="fluorescence.html#process-with-r-scripts"><i class="fa fa-check"></i><b>5.5</b> Process with R scripts</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
-<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a></li>
+<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#utilitaries"><i class="fa fa-check"></i><b>7.1</b> Utilitaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#library"><i class="fa fa-check"></i><b>7.1.1</b> Library</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#notin"><i class="fa fa-check"></i><b>7.1.2</b> NotIn</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#xtract_legend"><i class="fa fa-check"></i><b>7.1.3</b> xtract_legend</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#dummy_data"><i class="fa fa-check"></i><b>7.1.4</b> dummy_data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#minipam"><i class="fa fa-check"></i><b>7.2</b> MiniPAM</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#merge_minipam"><i class="fa fa-check"></i><b>7.2.1</b> merge_minipam</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#minipam-1"><i class="fa fa-check"></i><b>7.2.2</b> minipam</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#ciras-3"><i class="fa fa-check"></i><b>7.3</b> CIRAS-3</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#merge_ciras"><i class="fa fa-check"></i><b>7.3.1</b> merge_ciras</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#psypro"><i class="fa fa-check"></i><b>7.4</b> PSYPRO</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#psypro-1"><i class="fa fa-check"></i><b>7.4.1</b> psypro</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco"><i class="fa fa-check"></i><b>7.5</b> PASCO</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco_transfo"><i class="fa fa-check"></i><b>7.5.1</b> PASCO_transfo</a></li>
+<li class="chapter" data-level="7.5.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco_transfo2"><i class="fa fa-check"></i><b>7.5.2</b> PASCO_transfo2</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pcr-layout"><i class="fa fa-check"></i><b>7.6</b> PCR layout</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#plate_layout"><i class="fa fa-check"></i><b>7.6.1</b> plate_layout</a></li>
+<li class="chapter" data-level="7.6.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#tag_layout"><i class="fa fa-check"></i><b>7.6.2</b> tag_layout</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
-<li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a><ul>
+<li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="device-info.html"><a href="device-info.html#vapor-pressure-osmometer---vapro-5520-cheatsheet"><i class="fa fa-check"></i><b>9.1</b> Vapor pressure osmometer - Vapro 5520 cheatsheet</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -194,7 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">User’s guide for Ecofog’s Ecophysiology Lab</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Memoir Template</a>
           </h1>
         </div>
 
@@ -202,13 +242,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="morpho-anatomy" class="section level1 hasAnchor">
+<div id="morpho-anatomy" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">3</span> Morpho-anatomy<a href="morpho-anatomy.html#morpho-anatomy" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="shoot-traits" class="section level2 hasAnchor">
+<div id="shoot-traits" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Shoot traits<a href="morpho-anatomy.html#shoot-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Shoot traits refer to all morpho-anatomical traits that can be measured on plant aerial part.
 Most of these traits are measured on the leaves but see <a href="morpho-anatomy.html#stem">Stem</a> section.</p>
-<div id="mass-associated-traits" class="section level3 hasAnchor">
+<div id="mass-associated-traits" class="section level3 hasAnchor" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Mass associated traits<a href="morpho-anatomy.html#mass-associated-traits" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Plant growth strategies and overall performances are often assessed via mass associated traits.
 Three masses are used to calculate different metrics.
@@ -220,7 +260,7 @@ And the <em>Dry Mass</em> (<strong>DM</strong>) which is the mass of dryed leave
 See <a href="morpho-anatomy.html#leaf-surface">here</a> for the leaf surface measurements protocols.</p>
 <p>From these masses and surfaces are calculated metrics such as SLA/LMA, RWC, LDMC, WHC (<a href="morpho-anatomy.html#calculation">Calculation</a>).</p>
 <p></p>
-<div id="leaf-surface" class="section level4 hasAnchor">
+<div id="leaf-surface" class="section level4 hasAnchor" number="3.1.1.1">
 <h4><span class="header-section-number">3.1.1.1</span> Leaf surface<a href="morpho-anatomy.html#leaf-surface" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Most of leaf surfaces are obtained from leaf scans using office scanner.
 The used scanners are <a href="document/machine/EPSON_V800/usersguide.pdf">EPSON’s V800</a>.
@@ -305,7 +345,7 @@ Fill the fields as follow:
 + <code>Output</code>: folder to receive your output.
 + <code>Output format</code>: quite clear!</p>
 </div>
-<div id="calculation" class="section level4 hasAnchor">
+<div id="calculation" class="section level4 hasAnchor" number="3.1.1.2">
 <h4><span class="header-section-number">3.1.1.2</span> Calculation<a href="morpho-anatomy.html#calculation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p></p>
 <table>
@@ -434,12 +474,12 @@ Water holding capcity
 </tr>
 </tbody>
 </table>
-
+<p></p>
 </div>
 </div>
-<div id="leaf-anatomy" class="section level3 hasAnchor">
+<div id="leaf-anatomy" class="section level3 hasAnchor" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Leaf anatomy<a href="morpho-anatomy.html#leaf-anatomy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="stomata-and-trichomes-density" class="section level4 hasAnchor">
+<div id="stomata-and-trichomes-density" class="section level4 hasAnchor" number="3.1.2.1">
 <h4><span class="header-section-number">3.1.2.1</span> Stomata and trichomes density<a href="morpho-anatomy.html#stomata-and-trichomes-density" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Stomata and trichomes density are acquired via epidermis printing.
 First, apply double sided tape on your leaf and remove it.
@@ -453,113 +493,113 @@ Then you remove it with double-sided tape and put it on a glass slide (nail poli
 <p><strong>There is a new opportunity to use <code>LabelStoma</code>, a deep leaning software for stomata detection.
 It is developed by Ángela Casado-García and we are trying to make it work on some species that we study at EcoFog.</strong></p>
 </div>
-<div id="anatomical-structure" class="section level4 hasAnchor">
+<div id="anatomical-structure" class="section level4 hasAnchor" number="3.1.2.2">
 <h4><span class="header-section-number">3.1.2.2</span> Anatomical structure<a href="morpho-anatomy.html#anatomical-structure" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Leaf anatomical observations are made on razor blade hand-made cross sections of leaves.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromecut"></span>
 <img src="document/trait/shootmorpho/bromecut1.jpg" alt="Hand made cross section of a bromeliad leaf" width="50%" />
 <p class="caption">
 Figure 3.6: Hand made cross section of a bromeliad leaf
 </p>
 </div>
-
+<p></p>
 <p>These cuts are directly placed in water/oil on a glass-slide and observed with the <a href="document/machine/Olympus%20BX51/olympus_bx-51_bx52_microscope_manual.pdf"><code>Olympus BX51</code></a> microscope.</p>
 <p>And pictures are taken with the installed camera (currently <a href="document/machine/Lumenera%20LW1135C-IO/Lumenera-USB-GigE-Camera-User-Manual.pdf"><code>Lumenera LW1135C-IO</code></a> but about to change).</p>
 <p>
 We recommend <code>JPEG</code> or <code>TIFF</code>.</p>
 <p>On these pictures you can then make measurements such as width of the epidermis and cuticle.
 The width of certain type of tissue (chlorenchyma, parenchyma, hydrenchyma) or the distance between vessels using ImageJ tools such as the <code>draw segment</code> and <code>ctrl+M</code> output (area, angle of the line and length).</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:measurements"></span>
 <img src="document/trait/shootmorpho/meas_anat_tissue.PNG" alt="Hand made cross section of a bromeliad leaf and possible anatomical measurements" width="50%" />
 <p class="caption">
 Figure 3.7: Hand made cross section of a bromeliad leaf and possible anatomical measurements
 </p>
 </div>
-
+<p></p>
 </div>
 </div>
-<div id="stem" class="section level3 hasAnchor">
+<div id="stem" class="section level3 hasAnchor" number="3.1.3">
 <h3><span class="header-section-number">3.1.3</span> Stem<a href="morpho-anatomy.html#stem" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
 </div>
-<div id="root-traits" class="section level2 hasAnchor">
+<div id="root-traits" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Root traits<a href="morpho-anatomy.html#root-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Root morphology analysis (length, diameter, etc.) are conducted using the Winrhizo software.</p>
 <p>Winrhizo is a licenced software created by Regent Instrument Canada Inc. It exist 4 different version and we own the <em>Basic Version</em>. It allows root morphology analysis from scans.</p>
-<div id="image-acquisition" class="section level3 hasAnchor">
+<div id="image-acquisition" class="section level3 hasAnchor" number="3.2.1">
 <h3><span class="header-section-number">3.2.1</span> Image Acquisition<a href="morpho-anatomy.html#image-acquisition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="format" class="section level4 hasAnchor">
+<div id="format" class="section level4 hasAnchor" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Format<a href="morpho-anatomy.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Supported image format are <code>.TIFF</code>, <code>.JPEG</code> and <code>.BMP</code>. <code>.TIFF</code>and <code>.BMP</code> are not compressed and are thus to be preferred. <code>.TIFF</code> images are compatible with all OS and should be privileged but you must be careful to save them <em>uncompressed</em> as <code>WinRhizo</code> won’t be able to open <em>compressed</em> ones.</p>
 <p>The higher the resolution, the more pixel you will have and the more precise will be your measurements. However, with resolution, scan time and image size increase. 800DPI is the standard in this lab but 400 is the winrhizo recommendation. This depend on the required level of precision as well as the size of the analyzed roots ( the finer the higher must be the resolution to get more details).</p>
 </div>
-<div id="scanner" class="section level4 hasAnchor">
+<div id="scanner" class="section level4 hasAnchor" number="3.2.1.2">
 <h4><span class="header-section-number">3.2.1.2</span> Scanner<a href="morpho-anatomy.html#scanner" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Any scanner can be used to acquire scans for Winrhizo software. However, be sure that the format is compatible and that all the images inside your project are saved in the same format and the same resolution. For coherence purposes we encourage you to use the same formats between studies at Ecofog’s lab scale.
 <a href="document/machine/EPSON_V800/usersguide.pdf">EPSON’s V800</a> scanners are the ones used as this document is being written. The scanner model isn’t important but we recommend to use scanners with a transparent (double-lamp) option. This will allow cleaner root scans for complex root systems.
 And the scanning software is <a href="https://www.hamrick.com/vuescan/epson.html">VueScan</a></p>
 </div>
-<div id="scan-process" class="section level4 hasAnchor">
+<div id="scan-process" class="section level4 hasAnchor" number="3.2.1.3">
 <h4><span class="header-section-number">3.2.1.3</span> Scan process<a href="morpho-anatomy.html#scan-process" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p><a href="document/trait/rootmorpho/Parametre_Scanner.pdf">protocol</a></p>
-<div id="flat-scan" class="section level5 hasAnchor">
+<div id="flat-scan" class="section level5 hasAnchor" number="3.2.1.3.1">
 <h5><span class="header-section-number">3.2.1.3.1</span> Flat scan<a href="morpho-anatomy.html#flat-scan" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>You can decide to use basic scan options with light only coming from below. If you do so you need to have a white background installed under the scanner’s roof (if black roots, if pale ones you’ll need a black background).</p>
 <p>Choosing this option will simplify your protocol and can suffice for simple and thin enough root systems.</p>
 <p><strong>EXEMPLE</strong> scan marion</p>
 </div>
-<div id="transparent" class="section level5 hasAnchor">
+<div id="transparent" class="section level5 hasAnchor" number="3.2.1.3.2">
 <h5><span class="header-section-number">3.2.1.3.2</span> Transparent<a href="morpho-anatomy.html#transparent" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>If your root are too big <a href="morpho-anatomy.html#fig:bigroots">3.8</a>, then self-shading can appear on flat scan and bias winrhizo’s analysis. To avoid this shading you can remove the background from the scanner’s roof to enable double-lamp scanning. The light coming from top and bottom as one, shading will be avoid and scans will be cleaner.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bigroots"></span>
 <img src="document/trait/rootmorpho/thickroot.PNG" alt="Roots to thick to be flat scanned" width="50%" />
 <p class="caption">
 Figure 3.8: Roots to thick to be flat scanned
 </p>
 </div>
-
+<p></p>
 <p>Another case where you can prefer <code>Transparent</code> option is for complex root systems (e.g. bromeliaceae, <a href="morpho-anatomy.html#fig:bromeroot">3.9</a>) . For this type of roots, you can scan them in a thin coat of water to disentangle fine roots. Doing so you will have a better analysis of the root system morphology and structure but once again have shading issue. Supressing them requires the use of the <code>Transparent</code> mode.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromeroot"></span>
 <img src="document/trait/rootmorpho/bromeroot.JPG" alt="Complex bromeliad adventitious root system" width="50%" />
 <p class="caption">
 Figure 3.9: Complex bromeliad adventitious root system
 </p>
 </div>
-
+<p></p>
 <p><strong>BEWARE:</strong> The <code>Transparent</code> scan window is smaller than the normal mode scan. The actual scanned zone is showed <a href="morpho-anatomy.html#fig:scantransp">3.10</a> and you must make sure that you roots are well placed within this area.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scantransp"></span>
 <img src="document/trait/rootmorpho/scan_transp.png" alt="Flat (red) and Transparent (blue) scan zone of EPSON's V800 scanner" width="50%" />
 <p class="caption">
 Figure 3.10: Flat (red) and Transparent (blue) scan zone of EPSON’s V800 scanner
 </p>
 </div>
-
+<p></p>
 </div>
 </div>
 </div>
-<div id="image-processing" class="section level3 hasAnchor">
+<div id="image-processing" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Image processing<a href="morpho-anatomy.html#image-processing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To analyze with winrhizo, you can either make it manually, one image at a time and by drawing rectangles around the roots you want to analyze.
 However, when having a lot of scans you might want to automatize the process using the <code>batch</code> option.
 If this is your choice, make sure that your images only contain roots!! Sometimes you will have to remove some parts of the scans to leave only roots in your images.
 For instance, this <a href="morpho-anatomy.html#fig:bromescan">3.11</a> is the scan from bromeliads roots. We can see the water-filled petri dishes border on the scan and this will be an issue for automatized Winrhizo analysis.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bromescan"></span>
 <img src="MyBook_files/figure-html/bromescan-1.png" alt="Scan of a bromeliad root system in water-filled petri dish" width="50%" />
 <p class="caption">
 Figure 3.11: Scan of a bromeliad root system in water-filled petri dish
 </p>
 </div>
-
+<p></p>
 <p>To re-crop these images we use the freeware <code>XnConvert</code>.
 The petri dish has always been placed in the same place using a stencil <a href="#fig:scanstencil"><strong>??</strong></a> on the scan window, enabling us to recrop all scans to the same size.
 Detailed <code>XnConvert</code> tutorial is available <a href="document/software/XnConvert/XnConvert_tuto.pdf">HERE</a>.</p>
-
+<p></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:scanstencil-1"></span>
 <img src="document/trait/rootmorpho/squre_stencil.jpg" alt="Stencil used for inwater root scans" width="50%" />
 <p class="caption">
@@ -572,20 +612,20 @@ Figure 3.12: Stencil used for inwater root scans
 Figure 3.13: Stencil used for inwater root scans
 </p>
 </div>
-
+<p></p>
 </div>
-<div id="winrhizo" class="section level3 hasAnchor">
+<div id="winrhizo" class="section level3 hasAnchor" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> WinRhizo<a href="morpho-anatomy.html#winrhizo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="installation" class="section level4 hasAnchor">
+<div id="installation" class="section level4 hasAnchor" number="3.2.3.1">
 <h4><span class="header-section-number">3.2.3.1</span> Installation<a href="morpho-anatomy.html#installation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The winrhizo software is contained on a CD (ask <a href="https://docs.google.com/spreadsheets/d/1EqjCVr6w7fykUJtLOVwSNBucNfFGbiYXGlRcoL-s7V8/edit#gid=0"><strong>Eliane Louisanna</strong></a>.
 To be used you need to copy the software from the disk to your computer and install the protection key drivers (also on the CD). Once installed you don’t need the CD to run the software but the protection key must be plugged.
 Unplugging it will prevent any use of the software.</p>
 </div>
-<div id="startup" class="section level4 hasAnchor">
+<div id="startup" class="section level4 hasAnchor" number="3.2.3.2">
 <h4><span class="header-section-number">3.2.3.2</span> Startup<a href="morpho-anatomy.html#startup" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 </div>
-<div id="first-analysis" class="section level4 hasAnchor">
+<div id="first-analysis" class="section level4 hasAnchor" number="3.2.3.3">
 <h4><span class="header-section-number">3.2.3.3</span> First analysis<a href="morpho-anatomy.html#first-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Once you have acquired your images and launched winrhizo you can start to analyze your scans.
 To display a single scan, click <em>Image</em> -&gt; <em>Origin</em> -&gt; <em>From File</em>.
@@ -610,7 +650,7 @@ This can be due to non-optimal pixel classification (see more about it <a href="
 <p>WELL DONE! You just analyze your first picture!</p>
 <p>You can practice with scans available <a href="morpho-anatomy.html#resources">here</a></p>
 </div>
-<div id="calibration" class="section level4 hasAnchor">
+<div id="calibration" class="section level4 hasAnchor" number="3.2.3.4">
 <h4><span class="header-section-number">3.2.3.4</span> Calibration<a href="morpho-anatomy.html#calibration" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If not calibrated (associated with a scale), winrhizo will display results in pixels.
 <code>.TIFF</code> files have an embedded scale, automatically detected by winrhizo.
@@ -625,12 +665,12 @@ Loading this image in winrhizo, you can click on <em>calibration</em> -&gt; <em>
 <p>Then, winrhizo will propose you to save the calibration in a <code>.CAL</code> file that can be loaded later and used for all your images at a given resolution. .
 Please, when you create a <code>.CAL</code> at a previously not used resolution, store a copy of the calibration file <a href="document/software/Winrhizo/">here</a> so that your work helps your successors!!</p>
 </div>
-<div id="batch" class="section level4 hasAnchor">
+<div id="batch" class="section level4 hasAnchor" number="3.2.3.5">
 <h4><span class="header-section-number">3.2.3.5</span> Batch<a href="morpho-anatomy.html#batch" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We saw how to analyze a <a href="morpho-anatomy.html#first-analysis">single picture or region</a> but you might have numerous scans to analyze and want to automatize this process.
 To do so you will give winrhizo a <em>batch</em> (i.e. a folder) containing any number of images you want.</p>
 </div>
-<div id="pixel-classification" class="section level4 hasAnchor">
+<div id="pixel-classification" class="section level4 hasAnchor" number="3.2.3.6">
 <h4><span class="header-section-number">3.2.3.6</span> Pixel classification<a href="morpho-anatomy.html#pixel-classification" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Pixel classification is how winrhizo discriminate between actual “root” pixels and scan background.
 To do this distinction you have several options presented in <em>Analysis</em> -&gt; <em>Root &amp; Background Distinction</em> menu.
@@ -640,12 +680,12 @@ We don’t recommend the use of <em>lagarde</em> option but a careful cleaning o
 However you can test different options with some of your scans to chose the best options.
 It is also important to tell the software if your scans are Dark roots on White background or the contrary.</p>
 </div>
-<div id="output" class="section level4 hasAnchor">
+<div id="output" class="section level4 hasAnchor" number="3.2.3.7">
 <h4><span class="header-section-number">3.2.3.7</span> Output<a href="morpho-anatomy.html#output" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 </div>
 </div>
 </div>
-<div id="resources" class="section level2 hasAnchor">
+<div id="resources" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Resources<a href="morpho-anatomy.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>

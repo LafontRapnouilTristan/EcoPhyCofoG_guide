@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Greenhouse setups and tips | User’s guide for Ecofog’s Ecophysiology Lab</title>
+  <title>8 Greenhouse setups and tips | Memoir Template</title>
   <meta name="description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Greenhouse setups and tips | User’s guide for Ecofog’s Ecophysiology Lab" />
+  <meta property="og:title" content="8 Greenhouse setups and tips | Memoir Template" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
   <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="github-repo" content="GitHubID/Repository" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Greenhouse setups and tips | User’s guide for Ecofog’s Ecophysiology Lab" />
+  <meta name="twitter:title" content="8 Greenhouse setups and tips | Memoir Template" />
   
   <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
 
 
-<meta name="date" content="2023-02-16" />
+<meta name="date" content="2023-02-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,25 +49,24 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -87,13 +86,13 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -106,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -139,36 +138,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="handbook-architecture.html"><a href="handbook-architecture.html"><i class="fa fa-check"></i><b>2</b> Handbook architecture</a></li>
-<li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a><ul>
-<li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a><ul>
+<li class="chapter" data-level="3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html"><i class="fa fa-check"></i><b>3</b> Morpho-anatomy</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#shoot-traits"><i class="fa fa-check"></i><b>3.1</b> Shoot traits</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#mass-associated-traits"><i class="fa fa-check"></i><b>3.1.1</b> Mass associated traits</a></li>
 <li class="chapter" data-level="3.1.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#leaf-anatomy"><i class="fa fa-check"></i><b>3.1.2</b> Leaf anatomy</a></li>
 <li class="chapter" data-level="3.1.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#stem"><i class="fa fa-check"></i><b>3.1.3</b> Stem</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a><ul>
+<li class="chapter" data-level="3.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#root-traits"><i class="fa fa-check"></i><b>3.2</b> Root traits</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-acquisition"><i class="fa fa-check"></i><b>3.2.1</b> Image Acquisition</a></li>
 <li class="chapter" data-level="3.2.2" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#image-processing"><i class="fa fa-check"></i><b>3.2.2</b> Image processing</a></li>
 <li class="chapter" data-level="3.2.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#winrhizo"><i class="fa fa-check"></i><b>3.2.3</b> WinRhizo</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="morpho-anatomy.html"><a href="morpho-anatomy.html#resources"><i class="fa fa-check"></i><b>3.3</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="hydraulics.html"><a href="hydraulics.html"><i class="fa fa-check"></i><b>4</b> Hydraulics</a><ul>
-<li class="chapter" data-level="4.1" data-path="hydraulics.html"><a href="hydraulics.html#leaf-turgor-loss-point-pi_tlp"><i class="fa fa-check"></i><b>4.1</b> Leaf turgor loss point, <span class="math inline">\(\pi_{tlp}\)</span></a><ul>
+<li class="chapter" data-level="4" data-path="hydraulics.html"><a href="hydraulics.html"><i class="fa fa-check"></i><b>4</b> Hydraulics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="hydraulics.html"><a href="hydraulics.html#leaf-turgor-loss-point-pi_tlp"><i class="fa fa-check"></i><b>4.1</b> Leaf turgor loss point, <span class="math inline">\(\pi_{tlp}\)</span></a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="hydraulics.html"><a href="hydraulics.html#materials"><i class="fa fa-check"></i><b>4.1.1</b> Materials</a></li>
 <li class="chapter" data-level="4.1.2" data-path="hydraulics.html"><a href="hydraulics.html#methods"><i class="fa fa-check"></i><b>4.1.2</b> Methods</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="hydraulics.html"><a href="hydraulics.html#leaf-midday-water-potential"><i class="fa fa-check"></i><b>4.2</b> Leaf midday water potential</a><ul>
+<li class="chapter" data-level="4.2" data-path="hydraulics.html"><a href="hydraulics.html#leaf-midday-water-potential"><i class="fa fa-check"></i><b>4.2</b> Leaf midday water potential</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="hydraulics.html"><a href="hydraulics.html#pressure-chamber-method"><i class="fa fa-check"></i><b>4.2.1</b> Pressure chamber method</a></li>
 <li class="chapter" data-level="4.2.2" data-path="hydraulics.html"><a href="hydraulics.html#psychrometry-method"><i class="fa fa-check"></i><b>4.2.2</b> Psychrometry method</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="hydraulics.html"><a href="hydraulics.html#relative-water-content-rwc"><i class="fa fa-check"></i><b>4.3</b> Relative water content RWC (%)</a><ul>
+<li class="chapter" data-level="4.3" data-path="hydraulics.html"><a href="hydraulics.html#relative-water-content-rwc"><i class="fa fa-check"></i><b>4.3</b> Relative water content RWC (%)</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="hydraulics.html"><a href="hydraulics.html#material"><i class="fa fa-check"></i><b>4.3.1</b> Material</a></li>
 <li class="chapter" data-level="4.3.2" data-path="hydraulics.html"><a href="hydraulics.html#method"><i class="fa fa-check"></i><b>4.3.2</b> Method</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="hydraulics.html"><a href="hydraulics.html#gmin"><i class="fa fa-check"></i><b>4.4</b> gmin</a></li>
 <li class="chapter" data-level="4.5" data-path="hydraulics.html"><a href="hydraulics.html#gs"><i class="fa fa-check"></i><b>4.5</b> gs</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a><ul>
+<li class="chapter" data-level="5" data-path="fluorescence.html"><a href="fluorescence.html"><i class="fa fa-check"></i><b>5</b> Fluorescence</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="fluorescence.html"><a href="fluorescence.html#theory"><i class="fa fa-check"></i><b>5.1</b> Theory</a></li>
 <li class="chapter" data-level="5.2" data-path="fluorescence.html"><a href="fluorescence.html#fv.fm"><i class="fa fa-check"></i><b>5.2</b> F<sub>v</sub>.F<sub>m</sub></a></li>
 <li class="chapter" data-level="5.3" data-path="fluorescence.html"><a href="fluorescence.html#etrmax"><i class="fa fa-check"></i><b>5.3</b> ETR<sub>max</sub></a></li>
@@ -176,9 +183,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.5" data-path="fluorescence.html"><a href="fluorescence.html#process-with-r-scripts"><i class="fa fa-check"></i><b>5.5</b> Process with R scripts</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="gaz-fluxes-and-exchanges.html"><a href="gaz-fluxes-and-exchanges.html"><i class="fa fa-check"></i><b>6</b> Gaz fluxes and exchanges</a></li>
-<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a></li>
+<li class="chapter" data-level="7" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html"><i class="fa fa-check"></i><b>7</b> EcophyCofog Package</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#utilitaries"><i class="fa fa-check"></i><b>7.1</b> Utilitaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#library"><i class="fa fa-check"></i><b>7.1.1</b> Library</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#notin"><i class="fa fa-check"></i><b>7.1.2</b> NotIn</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#xtract_legend"><i class="fa fa-check"></i><b>7.1.3</b> xtract_legend</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#dummy_data"><i class="fa fa-check"></i><b>7.1.4</b> dummy_data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#minipam"><i class="fa fa-check"></i><b>7.2</b> MiniPAM</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#merge_minipam"><i class="fa fa-check"></i><b>7.2.1</b> merge_minipam</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#minipam-1"><i class="fa fa-check"></i><b>7.2.2</b> minipam</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#ciras-3"><i class="fa fa-check"></i><b>7.3</b> CIRAS-3</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#merge_ciras"><i class="fa fa-check"></i><b>7.3.1</b> merge_ciras</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#psypro"><i class="fa fa-check"></i><b>7.4</b> PSYPRO</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#psypro-1"><i class="fa fa-check"></i><b>7.4.1</b> psypro</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco"><i class="fa fa-check"></i><b>7.5</b> PASCO</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco_transfo"><i class="fa fa-check"></i><b>7.5.1</b> PASCO_transfo</a></li>
+<li class="chapter" data-level="7.5.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pasco_transfo2"><i class="fa fa-check"></i><b>7.5.2</b> PASCO_transfo2</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#pcr-layout"><i class="fa fa-check"></i><b>7.6</b> PCR layout</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#plate_layout"><i class="fa fa-check"></i><b>7.6.1</b> plate_layout</a></li>
+<li class="chapter" data-level="7.6.2" data-path="ecophycofog-package.html"><a href="ecophycofog-package.html#tag_layout"><i class="fa fa-check"></i><b>7.6.2</b> tag_layout</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="greenhouse-setups-and-tips.html"><a href="greenhouse-setups-and-tips.html"><i class="fa fa-check"></i><b>8</b> Greenhouse setups and tips</a></li>
-<li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a><ul>
+<li class="chapter" data-level="9" data-path="device-info.html"><a href="device-info.html"><i class="fa fa-check"></i><b>9</b> Device info</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="device-info.html"><a href="device-info.html#vapor-pressure-osmometer---vapro-5520-cheatsheet"><i class="fa fa-check"></i><b>9.1</b> Vapor pressure osmometer - Vapro 5520 cheatsheet</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -194,7 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">User’s guide for Ecofog’s Ecophysiology Lab</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Memoir Template</a>
           </h1>
         </div>
 
@@ -202,7 +242,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="greenhouse-setups-and-tips" class="section level1 hasAnchor">
+<div id="greenhouse-setups-and-tips" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">8</span> Greenhouse setups and tips<a href="greenhouse-setups-and-tips.html#greenhouse-setups-and-tips" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
 </div>

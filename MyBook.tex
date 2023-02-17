@@ -302,7 +302,7 @@
 
 \usepackage{hyperref}
 \hypersetup{
-  pdftitle={User's guide for Ecofog's Ecophysiology Lab},
+  pdftitle={Memoir Template},
   pdfauthor={Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil},
   colorlinks=true,
   linkcolor=Maroon,
@@ -317,11 +317,11 @@
 % Title, author, date from YAML to LaTeX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{User's guide for Ecofog's Ecophysiology Lab}
+\title{Memoir Template}
 
 \author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
 
-\date{2023-02-16}
+\date{2023-02-17}
 
 
 % Include headers (preamble.tex) here
@@ -411,6 +411,7 @@ Leave an empty line for line breaks.}
 
 % Before Body
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 
@@ -898,7 +899,7 @@ If not calibrated (associated with a scale), winrhizo will display results in pi
 Check on your results if they are in px (pixels), in (inches) or cm (centimeters).
 
 However, you can sometimes have uncalibrated files (mistakes or images from camera).
-Thus, you will need to \enquote{manually} calibrate your image.
+Thus, you will need to ``manually'' calibrate your image.
 Winrhizo calibration files are saved as \texttt{.CAL}. In the \emph{Calibration} menu you can load pre-existing calibration files.
 You will find the \texttt{calib\_imge.TIFF} \href{document/trait/rootmorpho/calib_imge.TIF}{here}.
 To make your calibration at any DPI, you can print this image and scan it at the wanted DPI.
@@ -917,7 +918,7 @@ To do so you will give winrhizo a \emph{batch} (i.e.~a folder) containing any nu
 \hypertarget{pixel-classification}{%
 \subsubsection{Pixel classification}\label{pixel-classification}}
 
-Pixel classification is how winrhizo discriminate between actual \enquote{root} pixels and scan background.
+Pixel classification is how winrhizo discriminate between actual ``root'' pixels and scan background.
 To do this distinction you have several options presented in \emph{Analysis} -\textgreater{} \emph{Root \& Background Distinction} menu.
 This distinction is made grey levels and can either be set to \emph{automatic} or \emph{manual}.
 Automatic option either sets a global threshold (default) of grey value at which the pixel is attributed to roots or background or it can be used with \emph{lagarde} options which consider local region (region size can be defined in pixels) of the picture and associate different threshold values.
@@ -1175,7 +1176,7 @@ Measuring fluorescence can give information about the other if we control one (i
 
 We use the \texttt{Kautsky\ effect}, a variation of the \texttt{fluorescence} pattern when exposing the leaf to light.
 When passing from darkness to light, photon will saturate the plant photosystem II and e\^{}- acceptors.
-The PSII are sayed \enquote{closed} until e\textsuperscript{-} go down the reaction chain.
+The PSII are sayed ``closed'' until e\textsuperscript{-} go down the reaction chain.
 
 Thus, for a few seconds, the system cannot do photochemistry and only emits fluo (measurable) and heat!!!
 
@@ -1256,13 +1257,13 @@ When you have a good version of WinControl, a window opens with the MINIPAM data
 To view the data, press \textbf{MEMORY} and a list of data is displayed.
 To download the data shown on the list :
 
-\textbf{MEMORY}→ Select by pressing what you want to download → Download selected files → Check \enquote{clear existing data in WinControl before download→ Ok.
-(Especially for the light curve data. If you check}merge with current data" all data will be merged and then you lose the ETRmax1 and ETRmax2 values)
+\textbf{MEMORY}→ Select by pressing what you want to download → Download selected files → Check ``clear existing data in WinControl before download→ Ok.
+(Especially for the light curve data. If you check''merge with current data'' all data will be merged and then you lose the ETRmax1 and ETRmax2 values)
 
 To view the downloaded data, press \textbf{Report}.
 \textbf{Report} is only an intermediate step to view the data.
 Let some time before downloading reported data for RLC so that the software can compute Reg1 and 2 models.
-To download data from several pages you need to check \enquote{merge withcurrent data in WinControl}.
+To download data from several pages you need to check ``merge withcurrent data in WinControl''.
 (Not recommended for CDNs for fear of losing some data)
 
 To save in \texttt{.csv}, Report → Select all → right clic → Export all→ Ok → file name → save
@@ -1281,10 +1282,10 @@ Place all your files (and only them!!) in a folder.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(EcophyCofog)}
-\NormalTok{input_path <-}\StringTok{ }\NormalTok{PATH_TO_THE_FOLDER}
-\NormalTok{filename <-}\StringTok{ }\NormalTok{NAME_OF_THE_MERGED_OUTPUT}
-\KeywordTok{merge_minipam}\NormalTok{(input_path, filename)}
+\FunctionTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{input\_path }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_THE\_FOLDER}
+\NormalTok{filename }\OtherTok{\textless{}{-}}\NormalTok{ NAME\_OF\_THE\_MERGED\_OUTPUT}
+\FunctionTok{merge\_minipam}\NormalTok{(input\_path, filename)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1300,11 +1301,11 @@ It's a file with 4 columns: \textbf{ID} (ID of measured plant, leaf, sample), \t
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(EcophyCofog)}
-\NormalTok{Name_of_the_input_file <-}\StringTok{ }\NormalTok{NAME_OF_YOUR_MERGED_FILE}
-\NormalTok{input_path <-}\StringTok{ }\NormalTok{PATH_TO_SAID_FILE}
-\NormalTok{path_to_ID_match <-}\StringTok{ }\NormalTok{PATH_TO_YOUR_ID_MATCH_FILE}
-\KeywordTok{minipam}\NormalTok{(Name_of_the_input_file, input_path, path_to_ID_match)}
+\FunctionTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{Name\_of\_the\_input\_file }\OtherTok{\textless{}{-}}\NormalTok{ NAME\_OF\_YOUR\_MERGED\_FILE}
+\NormalTok{input\_path }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_SAID\_FILE}
+\NormalTok{path\_to\_ID\_match }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_YOUR\_ID\_MATCH\_FILE}
+\FunctionTok{minipam}\NormalTok{(Name\_of\_the\_input\_file, input\_path, path\_to\_ID\_match)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1333,6 +1334,165 @@ install.packages("devtools")
 library(devtools)
 install_github("https://github.com/LafontRapnouilTristan/EcophyCofog")
 \end{verbatim}
+
+\hypertarget{utilitaries}{%
+\section{Utilitaries}\label{utilitaries}}
+
+\hypertarget{library}{%
+\subsection{Library}\label{library}}
+
+Used to load install (if required) and load multiple package at once.
+
+usage:
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{EcophyCofog}\SpecialCharTok{::}\FunctionTok{Library}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"pckg1"}\NormalTok{, }\StringTok{"pckg2"}\NormalTok{, }\StringTok{"pckg3"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{notin}{%
+\subsection{NotIn}\label{notin}}
+
+A custom operator to test the differences between vectors.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"a"}\NormalTok{, }\StringTok{"b"}\NormalTok{, }\StringTok{"c"}\NormalTok{)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"d"}\NormalTok{, }\StringTok{"a"}\NormalTok{, }\StringTok{"e"}\NormalTok{)}
+\NormalTok{x }\SpecialCharTok{\%notin\%}\NormalTok{ y}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\texttt{{[}1{]}\ FALSE\ \ TRUE\ \ TRUE}
+
+\hypertarget{xtract_legend}{%
+\subsection{xtract\_legend}\label{xtract_legend}}
+
+Store the legend of a ggplot object.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{legend }\OtherTok{\textless{}{-}} \FunctionTok{xtract\_legend}\NormalTok{(myggplot)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{dummy_data}{%
+\subsection{dummy\_data}\label{dummy_data}}
+
+Create a meaningless numeric data frame for testing things.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{dummy\_data}\NormalTok{(}\AttributeTok{nbcol =} \DecValTok{4}\NormalTok{, }\AttributeTok{nbrow =} \DecValTok{100}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{minipam}{%
+\section{MiniPAM}\label{minipam}}
+
+\hypertarget{merge_minipam}{%
+\subsection{merge\_minipam}\label{merge_minipam}}
+
+Merge several miniPAM output files.
+All files should be stored in one folder, and only them!!
+See \protect\hyperlink{fluorescence}{Fluorescence} for more details.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{input\_path }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_THE\_FOLDER}
+\NormalTok{filename }\OtherTok{\textless{}{-}}\NormalTok{ NAME\_OF\_THE\_MERGED\_OUTPUT}
+\FunctionTok{merge\_minipam}\NormalTok{(input\_path, filename)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{minipam-1}{%
+\subsection{minipam}\label{minipam-1}}
+
+Take as input a csv dataframe containing output of the minipam.
+For ETR and Fv/Fm measurements only.
+And return clean files containing each type of measurements + the ETR curves.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(EcophyCofog)}
+\NormalTok{Name\_of\_the\_input\_file }\OtherTok{\textless{}{-}}\NormalTok{ NAME\_OF\_YOUR\_MERGED\_FILE}
+\NormalTok{input\_path }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_SAID\_FILE}
+\NormalTok{path\_to\_ID\_match }\OtherTok{\textless{}{-}}\NormalTok{ PATH\_TO\_YOUR\_ID\_MATCH\_FILE}
+\FunctionTok{minipam}\NormalTok{(Name\_of\_the\_input\_file, input\_path, path\_to\_ID\_match)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{ciras-3}{%
+\section{CIRAS-3}\label{ciras-3}}
+
+\hypertarget{merge_ciras}{%
+\subsection{merge\_ciras}\label{merge_ciras}}
+
+Used to merge all ciras output of a foled into one file.
+
+path\_to\_xls a character string with your path to all your ciras \texttt{.xls} output.
+Their name must always end as \_treatment\_sampleID.xls (e.g.~CIRAS\_3\_Aechmea m \_DP\_1.xls).
+Skip: the number of useless rows at the top of your \texttt{.xls} file, Jean-Yves Goret template have three.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{merge\_ciras}\NormalTok{(path\_to\_xls, }\AttributeTok{skip =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\hypertarget{psypro}{%
+\section{PSYPRO}\label{psypro}}
+
+\hypertarget{psypro-1}{%
+\subsection{psypro}\label{psypro-1}}
+
+\hypertarget{pasco}{%
+\section{PASCO}\label{pasco}}
+
+\hypertarget{pasco_transfo}{%
+\subsection{PASCO\_transfo}\label{pasco_transfo}}
+
+\hypertarget{pasco_transfo2}{%
+\subsection{PASCO\_transfo2}\label{pasco_transfo2}}
+
+\hypertarget{pcr-layout}{%
+\section{PCR layout}\label{pcr-layout}}
+
+\hypertarget{plate_layout}{%
+\subsection{plate\_layout}\label{plate_layout}}
+
+\hypertarget{tag_layout}{%
+\subsection{tag\_layout}\label{tag_layout}}
 
 \hypertarget{greenhouse-setups-and-tips}{%
 \chapter{Greenhouse setups and tips}\label{greenhouse-setups-and-tips}}
@@ -1381,6 +1541,7 @@ Then open \emph{index.Rmd} and click on the \emph{Build Book} button in the \emp
 
 % After-body (LaTeX code inclusion)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 
