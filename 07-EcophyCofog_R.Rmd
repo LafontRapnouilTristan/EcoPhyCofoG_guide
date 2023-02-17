@@ -95,9 +95,9 @@ minipam(Name_of_the_input_file,
 
 Used to merge all ciras output of a foled into one file.
 
-path_to_xls a character string with your path to all your ciras `.xls` output.
+*path_to_xls* a character string with your path to all your ciras `.xls` output.
 Their name must always end as _treatment_sampleID.xls (e.g. CIRAS_3_Aechmea m _DP_1.xls).
-Skip: the number of useless rows at the top of your `.xls` file, Jean-Yves Goret template have three.
+*skip*: the number of useless rows at the top of your `.xls` file, Jean-Yves Goret template have three.
 
 ```{r eval=F}
 merge_ciras(path_to_xls, skip=3)
@@ -108,16 +108,84 @@ merge_ciras(path_to_xls, skip=3)
 
 ### psypro
 
+Transform psypro output files into csv dataframe with mean water potential of your triplicate.
+`param` *usedset* the predetermined name of your set 0,1,2 or 3.
+`param` *lim* min and max values expected out of the psypro for you samples.
+Used to standardized graphs for faster reading.
+Discuss with lab members to understand!!
+`param` *ID_vec* a vector of length 8 (number of sensors) with your samples' ID.
+Empty sensors are named 0!!
+`param` *path_to_calibration* path to you calibration file.
+`param` *psypro_output* path to your psypro output.
+
+```{r eval=F}
+psypro(usedset ,
+       lim = c(-3,2),
+       ID_vec,
+       path_to_calibration,
+       psypro_output)
+```
 
 ## PASCO
 
 ### PASCO_transfo
 
+An earlier version of PASCO_transfo2, should not be used anymore.
+
 ### PASCO_transfo2
 
+Process the PASCO probe output csv to get the gasfluxes.
+
+`param` *data* a data frame output from Sparkview (usually read from .csv)
+`param` *ech* a character vector with either the probe or sample name
+`param` *name_run* a character vector with the name of all your runs (e.g., c("stab1","RECO","NEE"))
+`param` *select* a numeric vector of the runs you want to keep (e.g., c(2,3))
+`param` *A* the Area
+`param` *V* the Volume
+
+```{r}
+PASCO_transfo2(data,
+               ech,
+               name_run,
+               select,
+               A=1,
+               V=5)
+```
 
 ## PCR layout
 
+Functions to create excel files containing the PCR plate layout (with controls and all) from your sample list.
+Both for sample names and then tags combination.
+
 ### plate_layout
 
+`param` *samples* a vector containing all your samples ID, they will fill the plate in the order they are in this vector, when having replicates for one sample, plz index them as "SampleName 1" to "SampleName N" and not "SampleName_X" or "SampleName.X".
+`param` *proj* name of your project to name your plates as : "proj-PLx"
+`param` *name_file* a name to your output file
+`param` *save_file_path*  path to where you want to save the excel output
+`param` *starting_plate_number* where from start plate numbering
+
+```{r}
+plate_layout (samples,
+              proj,
+              name_file,
+              save_file_path,
+              starting_plate_number = 1)
+```
+
 ### tag_layout
+
+`param` *tag_list* a dataframe with 3 column : 'tag_name' (e.g. f1 to fx and r1 to rx), 'tag_sequence' (e.g. ACACACAC) and 'tag_type' (i.e. forward or reverse)
+`param` *PCR_plates* a matrix object representing your plates map/layout, output of "plate_layout" function of this package. MAKE SURE that ALL empty cells are filled with NA when importing to R
+`param` *output_path* path to an output folder that will receive to new files
+`param` *file_corresp_tag* name of the sample-tagpairs correspondance dataframe
+`param` *file_tag_layout* name of your xlsx output, having the map of your tagz.
+
+
+```{r}
+tag_layout(tag_list,
+           PCR_plates,
+           output_path,
+           file_corresp_tag,
+           file_tag_layout)
+```
