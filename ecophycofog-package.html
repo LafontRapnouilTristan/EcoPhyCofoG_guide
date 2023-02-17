@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
   <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
 
-<meta name="author" content="Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil" />
+<meta name="author" content="Marion Boisseaux, Tristan Lafont Rapnouil and hopefully many other people" />
 
 
 <meta name="date" content="2023-02-17" />
@@ -318,9 +318,9 @@ And return clean files containing each type of measurements + the ETR curves.</p
 <div id="merge_ciras" class="section level3 hasAnchor" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> merge_ciras<a href="ecophycofog-package.html#merge_ciras" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Used to merge all ciras output of a foled into one file.</p>
-<p>path_to_xls a character string with your path to all your ciras <code>.xls</code> output.
+<p><em>path_to_xls</em> a character string with your path to all your ciras <code>.xls</code> output.
 Their name must always end as _treatment_sampleID.xls (e.g. CIRAS_3_Aechmea m _DP_1.xls).
-Skip: the number of useless rows at the top of your <code>.xls</code> file, Jean-Yves Goret template have three.</p>
+<em>skip</em>: the number of useless rows at the top of your <code>.xls</code> file, Jean-Yves Goret template have three.</p>
 <p></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="ecophycofog-package.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">merge_ciras</span>(path_to_xls, <span class="at">skip =</span> <span class="dv">3</span>)</span></code></pre></div>
 <p></p>
@@ -330,24 +330,67 @@ Skip: the number of useless rows at the top of your <code>.xls</code> file, Jean
 <h2><span class="header-section-number">7.4</span> PSYPRO<a href="ecophycofog-package.html#psypro" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="psypro-1" class="section level3 hasAnchor" number="7.4.1">
 <h3><span class="header-section-number">7.4.1</span> psypro<a href="ecophycofog-package.html#psypro-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Transform psypro output files into csv dataframe with mean water potential of your triplicate.
+<code>param</code> <em>usedset</em> the predetermined name of your set 0,1,2 or 3.
+<code>param</code> <em>lim</em> min and max values expected out of the psypro for you samples.
+Used to standardized graphs for faster reading.
+Discuss with lab members to understand!!
+<code>param</code> <em>ID_vec</em> a vector of length 8 (number of sensors) with your samples’ ID.
+Empty sensors are named 0!!
+<code>param</code> <em>path_to_calibration</em> path to you calibration file.
+<code>param</code> <em>psypro_output</em> path to your psypro output.</p>
+<p></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="ecophycofog-package.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">psypro</span>(usedset, <span class="at">lim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">3</span>, <span class="dv">2</span>), ID_vec, path_to_calibration,</span>
+<span id="cb11-2"><a href="ecophycofog-package.html#cb11-2" aria-hidden="true" tabindex="-1"></a>    psypro_output)</span></code></pre></div>
+<p></p>
 </div>
 </div>
 <div id="pasco" class="section level2 hasAnchor" number="7.5">
 <h2><span class="header-section-number">7.5</span> PASCO<a href="ecophycofog-package.html#pasco" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="pasco_transfo" class="section level3 hasAnchor" number="7.5.1">
 <h3><span class="header-section-number">7.5.1</span> PASCO_transfo<a href="ecophycofog-package.html#pasco_transfo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An earlier version of PASCO_transfo2, should not be used anymore.</p>
 </div>
 <div id="pasco_transfo2" class="section level3 hasAnchor" number="7.5.2">
 <h3><span class="header-section-number">7.5.2</span> PASCO_transfo2<a href="ecophycofog-package.html#pasco_transfo2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Process the PASCO probe output csv to get the gasfluxes.</p>
+<p><code>param</code> <em>data</em> a data frame output from Sparkview (usually read from .csv)
+<code>param</code> <em>ech</em> a character vector with either the probe or sample name
+<code>param</code> <em>name_run</em> a character vector with the name of all your runs (e.g., c(“stab1”,“RECO”,“NEE”))
+<code>param</code> <em>select</em> a numeric vector of the runs you want to keep (e.g., c(2,3))
+<code>param</code> <em>A</em> the Area
+<code>param</code> <em>V</em> the Volume</p>
+<p></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="ecophycofog-package.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">PASCO_transfo2</span>(data, ech, name_run, select, <span class="at">A =</span> <span class="dv">1</span>, <span class="at">V =</span> <span class="dv">5</span>)</span></code></pre></div>
+<p></p>
 </div>
 </div>
 <div id="pcr-layout" class="section level2 hasAnchor" number="7.6">
 <h2><span class="header-section-number">7.6</span> PCR layout<a href="ecophycofog-package.html#pcr-layout" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Functions to create excel files containing the PCR plate layout (with controls and all) from your sample list.
+Both for sample names and then tags combination.</p>
 <div id="plate_layout" class="section level3 hasAnchor" number="7.6.1">
 <h3><span class="header-section-number">7.6.1</span> plate_layout<a href="ecophycofog-package.html#plate_layout" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><code>param</code> <em>samples</em> a vector containing all your samples ID, they will fill the plate in the order they are in this vector, when having replicates for one sample, plz index them as “SampleName 1” to “SampleName N” and not “SampleName_X” or “SampleName.X”.
+<code>param</code> <em>proj</em> name of your project to name your plates as : “proj-PLx”
+<code>param</code> <em>name_file</em> a name to your output file
+<code>param</code> <em>save_file_path</em> path to where you want to save the excel output
+<code>param</code> <em>starting_plate_number</em> where from start plate numbering</p>
+<p></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="ecophycofog-package.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plate_layout</span>(samples, proj, name_file, save_file_path, <span class="at">starting_plate_number =</span> <span class="dv">1</span>)</span></code></pre></div>
+<p></p>
 </div>
 <div id="tag_layout" class="section level3 hasAnchor" number="7.6.2">
 <h3><span class="header-section-number">7.6.2</span> tag_layout<a href="ecophycofog-package.html#tag_layout" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><code>param</code> <em>tag_list</em> a dataframe with 3 column : ‘tag_name’ (e.g. f1 to fx and r1 to rx), ‘tag_sequence’ (e.g. ACACACAC) and ‘tag_type’ (i.e. forward or reverse)
+<code>param</code> <em>PCR_plates</em> a matrix object representing your plates map/layout, output of “plate_layout” function of this package. MAKE SURE that ALL empty cells are filled with NA when importing to R
+<code>param</code> <em>output_path</em> path to an output folder that will receive to new files
+<code>param</code> <em>file_corresp_tag</em> name of the sample-tagpairs correspondance dataframe
+<code>param</code> <em>file_tag_layout</em> name of your xlsx output, having the map of your tagz.</p>
+<p></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="ecophycofog-package.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tag_layout</span>(tag_list, PCR_plates, output_path, file_corresp_tag,</span>
+<span id="cb14-2"><a href="ecophycofog-package.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    file_tag_layout)</span></code></pre></div>
+<p></p>
 
 </div>
 </div>

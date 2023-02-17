@@ -303,7 +303,7 @@
 \usepackage{hyperref}
 \hypersetup{
   pdftitle={Memoir Template},
-  pdfauthor={Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil},
+  pdfauthor={Marion Boisseaux, Tristan Lafont Rapnouil and hopefully many other people},
   colorlinks=true,
   linkcolor=Maroon,
   citecolor=Blue,
@@ -319,7 +319,7 @@
 
 \title{Memoir Template}
 
-\author{Marion Boisseaux, Daniela Krebber, Tristan Lafont Rapnouil}
+\author{Marion Boisseaux, Tristan Lafont Rapnouil and hopefully many other people}
 
 \date{2023-02-17}
 
@@ -1456,9 +1456,9 @@ And return clean files containing each type of measurements + the ETR curves.
 
 Used to merge all ciras output of a foled into one file.
 
-path\_to\_xls a character string with your path to all your ciras \texttt{.xls} output.
+\emph{path\_to\_xls} a character string with your path to all your ciras \texttt{.xls} output.
 Their name must always end as \_treatment\_sampleID.xls (e.g.~CIRAS\_3\_Aechmea m \_DP\_1.xls).
-Skip: the number of useless rows at the top of your \texttt{.xls} file, Jean-Yves Goret template have three.
+\emph{skip}: the number of useless rows at the top of your \texttt{.xls} file, Jean-Yves Goret template have three.
 
 \scriptsize
 
@@ -1476,23 +1476,101 @@ Skip: the number of useless rows at the top of your \texttt{.xls} file, Jean-Yve
 \hypertarget{psypro-1}{%
 \subsection{psypro}\label{psypro-1}}
 
+Transform psypro output files into csv dataframe with mean water potential of your triplicate.
+\texttt{param} \emph{usedset} the predetermined name of your set 0,1,2 or 3.
+\texttt{param} \emph{lim} min and max values expected out of the psypro for you samples.
+Used to standardized graphs for faster reading.
+Discuss with lab members to understand!!
+\texttt{param} \emph{ID\_vec} a vector of length 8 (number of sensors) with your samples' ID.
+Empty sensors are named 0!!
+\texttt{param} \emph{path\_to\_calibration} path to you calibration file.
+\texttt{param} \emph{psypro\_output} path to your psypro output.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{psypro}\NormalTok{(usedset, }\AttributeTok{lim =} \FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{3}\NormalTok{, }\DecValTok{2}\NormalTok{), ID\_vec, path\_to\_calibration,}
+\NormalTok{    psypro\_output)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
 \hypertarget{pasco}{%
 \section{PASCO}\label{pasco}}
 
 \hypertarget{pasco_transfo}{%
 \subsection{PASCO\_transfo}\label{pasco_transfo}}
 
+An earlier version of PASCO\_transfo2, should not be used anymore.
+
 \hypertarget{pasco_transfo2}{%
 \subsection{PASCO\_transfo2}\label{pasco_transfo2}}
+
+Process the PASCO probe output csv to get the gasfluxes.
+
+\texttt{param} \emph{data} a data frame output from Sparkview (usually read from .csv)
+\texttt{param} \emph{ech} a character vector with either the probe or sample name
+\texttt{param} \emph{name\_run} a character vector with the name of all your runs (e.g., c(``stab1'',``RECO'',``NEE''))
+\texttt{param} \emph{select} a numeric vector of the runs you want to keep (e.g., c(2,3))
+\texttt{param} \emph{A} the Area
+\texttt{param} \emph{V} the Volume
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{PASCO\_transfo2}\NormalTok{(data, ech, name\_run, select, }\AttributeTok{A =} \DecValTok{1}\NormalTok{, }\AttributeTok{V =} \DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
 
 \hypertarget{pcr-layout}{%
 \section{PCR layout}\label{pcr-layout}}
 
+Functions to create excel files containing the PCR plate layout (with controls and all) from your sample list.
+Both for sample names and then tags combination.
+
 \hypertarget{plate_layout}{%
 \subsection{plate\_layout}\label{plate_layout}}
 
+\texttt{param} \emph{samples} a vector containing all your samples ID, they will fill the plate in the order they are in this vector, when having replicates for one sample, plz index them as ``SampleName 1'' to ``SampleName N'' and not ``SampleName\_X'' or ``SampleName.X''.
+\texttt{param} \emph{proj} name of your project to name your plates as : ``proj-PLx''
+\texttt{param} \emph{name\_file} a name to your output file
+\texttt{param} \emph{save\_file\_path} path to where you want to save the excel output
+\texttt{param} \emph{starting\_plate\_number} where from start plate numbering
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plate\_layout}\NormalTok{(samples, proj, name\_file, save\_file\_path, }\AttributeTok{starting\_plate\_number =} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
 \hypertarget{tag_layout}{%
 \subsection{tag\_layout}\label{tag_layout}}
+
+\texttt{param} \emph{tag\_list} a dataframe with 3 column : `tag\_name' (e.g.~f1 to fx and r1 to rx), `tag\_sequence' (e.g.~ACACACAC) and `tag\_type' (i.e.~forward or reverse)
+\texttt{param} \emph{PCR\_plates} a matrix object representing your plates map/layout, output of ``plate\_layout'' function of this package. MAKE SURE that ALL empty cells are filled with NA when importing to R
+\texttt{param} \emph{output\_path} path to an output folder that will receive to new files
+\texttt{param} \emph{file\_corresp\_tag} name of the sample-tagpairs correspondance dataframe
+\texttt{param} \emph{file\_tag\_layout} name of your xlsx output, having the map of your tagz.
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tag\_layout}\NormalTok{(tag\_list, PCR\_plates, output\_path, file\_corresp\_tag,}
+\NormalTok{    file\_tag\_layout)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
 
 \hypertarget{greenhouse-setups-and-tips}{%
 \chapter{Greenhouse setups and tips}\label{greenhouse-setups-and-tips}}
