@@ -10,3 +10,88 @@ install.packages("devtools")
 library(devtools)
 install_github("https://github.com/LafontRapnouilTristan/EcophyCofog")
 ```
+
+## Utilitaries
+
+### Library
+
+Used to load install (if required) and load multiple package at once.
+
+usage:
+
+```{r eval=F}
+EcophyCofog::Library(c("pckg1","pckg2","pckg3"))
+```
+
+### NotIn
+
+A custom operator to test the differences between vectors.
+
+```{r eval=F}
+x <- c("a","b","c")
+y <- c("d","a","e")
+x %notin% y
+```
+
+`[1] FALSE  TRUE  TRUE`
+
+
+### xtract_legend
+
+Store the legend of a ggplot object.
+
+```{r eval=F}
+legend <- xtract_legend(myggplot)
+```
+
+### dummy_data
+
+Create a meaningless numeric data frame for testing things.
+
+```{r}
+data <- dummy_data(nbcol=4,nbrow=100)
+```
+
+## MiniPAM
+
+### merge_minipam
+
+Merge several miniPAM output files.
+All files should be stored in one folder, and only them!!
+See [Fluorescence] for more details.
+
+```{r eval=F}
+library(EcophyCofog)
+
+input_path <- PATH_TO_THE_FOLDER
+filename <- NAME_OF_THE_MERGED_OUTPUT
+
+merge_minipam(input_path,filename)
+```
+
+
+### minipam
+
+
+## CIRAS-3
+
+### merge_ciras
+
+
+## PSYPRO
+
+### psypro
+
+
+## PASCO
+
+### PASCO_transfo
+
+### PASCO_transfo2
+
+
+## PCR layout
+
+### plate_layout
+
+### tag_layout
