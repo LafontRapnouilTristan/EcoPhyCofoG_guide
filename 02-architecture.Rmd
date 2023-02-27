@@ -4,7 +4,6 @@ This handbook is written for operational ends. As such, it is not a review or sc
 
 Each chapter of this book correspond to one trait and associated measurement process.
 
-
 [Morpho-anatomy]
 
 [Hydraulics]
